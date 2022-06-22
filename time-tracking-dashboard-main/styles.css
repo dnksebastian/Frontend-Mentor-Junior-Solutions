@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+  --custom-blue: hsl(246, 80%, 60%);
+  --custom-light-orange: hsl(15, 100%, 70%); /*work*/
+  --custom-soft-blue: hsl(195, 74%, 62%); /*play*/
+  --custom-light-red: hsl(348, 100%, 68%); /*study*/
+  --custom-lime-green: hsl(145, 58%, 55%); /*exercise*/
+  --custom-violet: hsl(264, 64%, 52%); /*social*/
+  --custom-soft-yellow: hsl(43, 84%, 65%); /*self care*/
+
+  /* ### Neutral */
+
+  --custom-very-dark-blue: hsl(226, 43%, 10%);
+  --custom-dark-blue: hsl(235, 46%, 20%);
+  --custom-desaturated-blue: hsl(235, 45%, 61%);
+  --custom-pale-blue: hsl(236, 100%, 87%);
+}
+
+html {
+  font-size: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+  min-height: 1469px;
+  min-width: 375px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--custom-very-dark-blue);
+  color: white;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#dashboard-wrapper {
+  display: grid;
+  margin: 0 auto;
+  min-width: 33rem;
+  gap: 2.3rem;
+}
+
+#user-tile {
+  background-color: var(--custom-dark-blue);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 20.4rem;
+}
+
+.user-info {
+  background-color: var(--custom-blue);
+  height: 13.2rem;
+  border-radius: 1.5rem;
+  padding-top: 3.1rem;
+  padding-left: 2.8rem;
+}
+
+.user-wrapper {
+  display: flex;
+}
+
+.avatar-wrapper {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 0.37rem solid white;
+}
+.avatar-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.user-data {
+  margin-left: 1.7rem;
+  padding-top: 1rem;
+}
+.user-data span {
+  display: block;
+  font-weight: 300;
+}
+
+.ud-helper {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  opacity: 70%;
+}
+.user-name {
+  font-size: 2.4rem;
+}
+
+.timeframes {
+  margin-top: 2.45rem;
+  list-style: none;
+  display: flex;
+}
+
+.timeframes li {
+  text-align: center;
+  width: 33.3%;
+}
+.timeframes a {
+  text-decoration: none;
+  color: var(--custom-pale-blue);
+  opacity: 70%;
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.timeframes a:focus,
+.timeframes a:hover {
+  color: white;
+  font-weight: 400;
+}
+
+.time-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  height: 16rem;
+  background-repeat: no-repeat;
+  background-position: top -0.2rem right 2rem;
+}
+
+.time-tile:nth-of-type(2) {
+  background-color: var(--custom-light-orange);
+  background-image: url(./images/icon-work.svg);
+}
+
+.time-tile:nth-of-type(3) {
+  background-color: var(--custom-soft-blue);
+  background-image: url(./images/icon-play.svg);
+}
+
+.time-tile:nth-of-type(4) {
+  background-color: var(--custom-light-red);
+  background-image: url(./images/icon-study.svg);
+}
+
+.time-tile:nth-of-type(5) {
+  background-color: var(--custom-lime-green);
+  background-image: url(./images/icon-exercise.svg);
+}
+
+.time-tile:nth-of-type(6) {
+  background-color: var(--custom-violet);
+  background-image: url(./images/icon-social.svg);
+}
+
+.time-tile:nth-of-type(7) {
+  background-color: var(--custom-soft-yellow);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+.tile-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--custom-dark-blue);
+  height: 77%;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.tile-content-wrap:hover {
+  cursor: pointer;
+  /* background-color: hsl(235, 46%, 20%); */
+  background-color: hsl(236, 47%, 30%);
+}
+
+.tile-content-wrap span {
+  display: block;
+}
+
+.left {
+  margin-left: 2.4rem;
+}
+
+.activity {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.current-time {
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6.5rem;
+  margin-right: 2.4rem;
+  text-align: right;
+}
+
+.right i {
+  font-size: 2.3rem;
+  padding-bottom: 1.3rem;
+  opacity: 60%;
+  width: 20%;
+  height: 30%;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.right i:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.picked-timeframe {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: var(--custom-pale-blue);
+}
+
+.attribution {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 950px) {
+  html,
+  body,
+  main {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  #dashboard-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 84%;
+    height: 51%;
+    max-height: 523px;
+    min-height: 453px;
+    gap: 2.5rem;
+  }
+
+  #user-tile {
+    height: 100%;
+    grid-row: 1 / span 2;
+  }
+
+  .user-info {
+    background-color: var(--custom-blue);
+    height: 68%;
+  }
+
+  .user-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .avatar-wrapper {
+    height: 36%;
+    width: 36%;
+  }
+
+  .user-data {
+    margin-left: 0;
+    padding-top: 20%;
+  }
+
+  .user-name {
+    font-size: 4rem;
+  }
+
+  .timeframes {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.45rem;
+    margin-left: 11%;
+    height: 21%;
+  }
+
+  .timeframes li {
+    text-align: left;
+    width: 100%;
+  }
+
+  .time-tile {
+    height: 100%;
+  }
+
+  .tile-content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 81%;
+    position: relative;
+  }
+
+  .left {
+    margin-left: 12%;
+    margin-top: 10%;
+  }
+
+  .activity {
+    font-size: 1.9rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .current-time {
+    font-size: 5.5rem;
+  }
+
+  .right {
+    padding-top: 1rem;
+    margin-left: 12%;
+  }
+
+  .right i {
+    position: absolute;
+    top: 13.5%;
+    right: 13.5%;
+  }
+}

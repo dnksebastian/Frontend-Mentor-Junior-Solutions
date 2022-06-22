@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --custom-moderate-violet: hsl(263, 55%, 52%);
+  --custom-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --custom-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --custom-white: hsl(0, 0%, 100%);
+
+  --custom-light-gray: hsl(0, 0%, 81%);
+  --custom-light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+}
+
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 10px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.3rem;
+  background-color: var(--custom-light-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+margin-bottom: 5rem;
+}
+
+#cards {
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 19%;
+  display: grid;
+  gap: 2.6rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem 3.2rem 3.2rem 3.2rem;
+  color: var(--custom-white);
+  border-radius: 7px;
+}
+
+.card-wrapper:nth-of-type(1) {
+  background-color: var(--custom-moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+.card-wrapper:nth-of-type(2) {
+  background-color: var(--custom-very-dark-grayish-blue);
+}
+.card-wrapper:nth-of-type(3),
+.card-wrapper:nth-of-type(5) {
+  background-color: var(--custom-white);
+  color: var(--custom-very-dark-grayish-blue);
+}
+.card-wrapper:nth-of-type(4) {
+  background-color: var(--custom-very-dark-blackish-blue);
+}
+
+.card-wrapper:nth-of-type(1) .avatar-wrapper {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-wrapper:nth-of-type(4) .avatar-wrapper {
+  border: 2px solid var(--custom-moderate-violet);
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 3rem;
+  width: 3rem;
+}
+
+.avatar {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.author-info {
+  margin-left: 1.5rem;
+}
+
+.author-info span {
+  display: block;
+}
+
+.user-status {
+  font-size: 1.1rem;
+  opacity: 50%;
+}
+
+.header-highlight {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1.7rem;
+}
+
+.user-quote {
+  margin-top: 1.6rem;
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  opacity: 70%;
+}
+.card-wrapper:first-of-type .user-quote {
+  padding-right: 1.5rem;
+}
+.card-wrapper:nth-of-type(5) .user-quote {
+  padding-right: 0.1rem;
+}
+
+.attribution {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 715px) {
+  #cards {
+    margin-top: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+  #cards {
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 11.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .card-wrapper:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    background-position: top right 5%;
+  }
+  .card-wrapper:nth-of-type(4) {
+    grid-column: 2 / span 2;
+  }
+  .card-wrapper:nth-of-type(5) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    box-shadow: 5rem 5rem 5rem -5rem hsla(0, 0%, 81%, 0.9);
+  }
+
+  .card-wrapper:nth-of-type(3),
+  .card-wrapper:nth-of-type(5) {
+    box-shadow: 4rem 4rem 4rem -4rem hsla(0, 0%, 81%, 0.9);
+}
+}
