@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-html-css-Hk44PqXXc](https://www.frontendmentor.io/solutions/testimonials-grid-section-html-css-Hk44PqXXc)
-- Live Site URL: [https://dnksebastian.github.io/Testimonials-Grid-Section/](https://dnksebastian.github.io/Testimonials-Grid-Section/)
+- Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/testimonials-grid-section-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/testimonials-grid-section-main/)
 
 ## My process
 

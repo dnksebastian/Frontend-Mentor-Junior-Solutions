@@ -15,7 +15,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-app-html-css-js-kJ9UEWW_0](https://www.frontendmentor.io/solutions/advice-generator-app-html-css-js-kJ9UEWW_0)
-- Live Site URL: [https://dnksebastian.github.io/Advice-Generator-App/](https://dnksebastian.github.io/Advice-Generator-App/)
+- Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/advice-generator-app-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/advice-generator-app-main/)
 
 ## My process
 

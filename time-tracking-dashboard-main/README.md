@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-html-css-js-vMLbm8IuK9](https://www.frontendmentor.io/solutions/time-tracking-dashboard-html-css-js-vMLbm8IuK9)
-- Live Site URL: [https://dnksebastian.github.io/Time-Tracking-Dashboard/](https://dnksebastian.github.io/Time-Tracking-Dashboard/)
+- Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/time-tracking-dashboard-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/time-tracking-dashboard-main/)
 
 ## My process
 
