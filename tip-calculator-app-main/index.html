@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="./app.js" defer></script>
 </head>
+
 <body>
 
-  Bill
+  <main id="calculator-wrapper">
+    
+    <form id="calculator">
+      
+      <div id="calculator-input">
+        <div id="bill-input">
+          <label for="bill">Bill</label>
+          <input type="text" name="bill" id="bill" placeholder="0" required>
+        </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <div id="tip-value">
+          <label for="tip">Select Tip %</label>
+          <input type="radio" name="radio_button_name" value="5%" />
+          <input type="radio" name="radio_button_name" value="10%" />
+          <input type="radio" name="radio_button_name" value="15%" />
+          <input type="radio" name="radio_button_name" value="25%" />
+          <input type="radio" name="radio_button_name" value="50%" />
+          <input type="text" name="custom-value" id="customtip" placeholder="Custom">
+        </div>
+        <div id="people-num">
+          <label for="">Number of People</label>
+          <input type="text" name="peoplenumber" id="peoplenumber" placeholder="0" required>
+        </div>
+      </div>
+      
+      <div id="calculator-result">
+        <div id="amount">
+          Tip Amount
+          / person
+        </div>
+        <div id="total">
+          Total
+          / person
+        </div>
+        <button type="reset">Reset</button>
+      </div>
+      
+    </form>
 
-  Number of People
+  </main>
 
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sebastian</a>.
+  </footer>
 </body>
+
 </html>
