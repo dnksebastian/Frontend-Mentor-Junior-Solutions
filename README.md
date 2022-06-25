@@ -5,7 +5,7 @@
 <h2 align="center"><a href="https://www.frontendmentor.io/profile/dnksebastian" target="_blank">My FrontendMentor Profile</a></h2>
 
 <div align="center"> 
-## Junior Challenges :shipit:
+##Junior Challenges :shipit:
 
 | Challange name | Live Page | Repository |
 | :------------: | :-------: | :--------: |

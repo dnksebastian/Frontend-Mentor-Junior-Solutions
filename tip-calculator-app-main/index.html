@@ -22,43 +22,70 @@
 <body>
 
   <main id="calculator-wrapper">
-    
-    <form id="calculator">
-      
-      <div id="calculator-input">
-        <div id="bill-input">
-          <label for="bill">Bill</label>
-          <input type="text" name="bill" id="bill" placeholder="0" required>
+
+    <div id="calculator-input">
+      <div id="bill-input">
+        <p class="input-name">Bill</p>
+        <input type="text" name="bill" id="bill" placeholder="142.55" required>
+      </div>
+
+      <p class="input-name">Select Tip %</p>
+
+      <div id="tip-value">
+        <div>
+          <label for="tip5">5%</label>
+          <input type="radio" name="radio_button_name" value="5%" id="tip5" checked />
         </div>
 
-        <div id="tip-value">
-          <label for="tip">Select Tip %</label>
-          <input type="radio" name="radio_button_name" value="5%" />
-          <input type="radio" name="radio_button_name" value="10%" />
-          <input type="radio" name="radio_button_name" value="15%" />
-          <input type="radio" name="radio_button_name" value="25%" />
-          <input type="radio" name="radio_button_name" value="50%" />
+        <div>
+          <label for="tip10">10%</label>
+          <input type="radio" name="radio_button_name" value="10%" id="tip10"/>
+        </div>
+
+        <div>
+          <label for="tip15">15%</label>
+          <input type="radio" name="radio_button_name" value="15%" id="tip15" />
+        </div>
+        
+        <div>
+          <label for="tip25">25%</label>
+          <input type="radio" name="radio_button_name" value="25%" id="tip25"/>
+        </div>
+
+        <div>
+          <label for="tip50">50%</label>
+          <input type="radio" name="radio_button_name" value="50%" id="tip50"/>
+        </div>
+
+        <div>
           <input type="text" name="custom-value" id="customtip" placeholder="Custom">
         </div>
-        <div id="people-num">
-          <label for="">Number of People</label>
-          <input type="text" name="peoplenumber" id="peoplenumber" placeholder="0" required>
-        </div>
+        
       </div>
-      
-      <div id="calculator-result">
-        <div id="amount">
-          Tip Amount
-          / person
-        </div>
-        <div id="total">
-          Total
-          / person
-        </div>
-        <button type="reset">Reset</button>
+      <div id="people-num">
+        <p class="input-name">Number of People</p>
+        <input type="text" name="peoplenumber" id="peoplenumber" placeholder="5" required>
       </div>
-      
-    </form>
+    </div>
+
+    <div id="calculator-result">
+      <div id="amount">
+        <div class="helper">
+          <p class="result-name">Tip Amount</p>
+          <p class="result-helper">/ person</p>
+        </div>
+        <p id="tip-amount-value">$4.27</p>
+      </div>
+      <div id="total">
+        <div class="helper">
+          <p class="result-name">Total</p>
+          <p class="result-helper">/ person</p>
+        </div>
+        <p id="tip-amount-value">$32.79</p>
+      </div>
+      <button type="reset">Reset</button>
+    </div>
+
 
   </main>
 
