@@ -2,10 +2,10 @@
 
 <p align="center">This is a collection of my junior level challenges from <a href="https://www.frontendmentor.io/" target="_blank">FrontendMentor.io</a></p>
 
-<h2 align="center"><a href="https://www.frontendmentor.io/profile/dnksebastian" target="_blank">My FrontendMentor Profile</a></h2>
+<h2 align="center"><a href="https://www.frontendmentor.io/profile/dnksebastian" target="_blank">My FrontendMentor Profile</a>  :shipit:</h2>
 
 <div align="center"> 
-##Junior Challenges :shipit:
+## Junior Challenges
 
 | Challange name | Live Page | Repository |
 | :------------: | :-------: | :--------: |
