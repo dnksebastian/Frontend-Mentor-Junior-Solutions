@@ -49,21 +49,21 @@ main {
 }
 
 #calculator-wrapper {
-    padding: 3.3rem;
+  padding: 2.5rem;
 }
 
 #calculator-input {
+  padding: .9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
 .input-name {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--custom-dark-grayish-cyan);
-    margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--custom-dark-grayish-cyan);
+  margin-bottom: 0.5rem;
 }
 
 #calculator-input input[type="text"] {
@@ -73,10 +73,10 @@ main {
   color: var(--custom-very-dark-cyan);
   font-weight: 700;
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   padding-right: 1.5rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--custom-very-light-grayish-cyan);
   background-repeat: no-repeat;
   background-position: left 2rem center;
@@ -90,28 +90,73 @@ input[id="peoplenumber"] {
   background-image: url(./images/icon-person.svg);
 }
 
+#bill-input {
+  margin-bottom: 3.5rem;
+}
+
+.tipheader {
+margin-bottom: 1.5rem;
+}
+
 #tip-value {
   display: grid;
+  gap: 1.6rem;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  
+  margin-bottom: 3.2rem;
+}
+
+#tip-value div {
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 #tip-value label {
+  padding: .6rem 0;
+  display: block;
+  text-align: center;
   font: inherit;
-  font-size: 2.4rem;
   background-color: var(--custom-very-dark-cyan);
-  border-radius: .5rem;
+  font-size: 2.4rem;
+  border-radius: 0.5rem;
   color: var(--custom-white);
 }
 
-#tip-value input {
+#tip-value div input {
   display: none;
 }
 
+
+#tip-value div:last-of-type input {
+  display: block;
+  height: 100%;
+}
+
+#tip-value div:last-of-type label {
+  display: none;
+}
+
+#people-num {
+  margin-bottom: 2.5rem;
+}
+
 #calculator-result {
-    background-color: var(--custom-very-dark-cyan);
+  padding: 2.5rem;
+  background-color: var(--custom-very-dark-cyan);
+  border-radius: 1.5rem;
+}
+
+#resetbtn {
+  padding: 1rem 0;
+  font: inherit;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background-color: var(--custom-strong-cyan);
+  color: var(--custom-very-dark-cyan);
+  width: 100%;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
 }
 
 .attribution {
