@@ -35,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-image: url(./images/logo.svg);
   background-repeat: no-repeat;
   background-position: top 5rem center;
@@ -43,11 +44,10 @@ body {
 #calculator-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 700px;
   background-color: var(--custom-white);
   border-radius: 2.5rem;
   margin-top: 14.3rem;
-  /* margin-top: 38%; */
-  /* margin-top: auto; */
   margin-bottom: auto;
   padding: 2.5rem;
 }
@@ -75,11 +75,12 @@ body {
   width: 100%;
   padding: 0.5rem;
   padding-right: 1.5rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
   background-color: var(--custom-very-light-grayish-cyan);
   background-repeat: no-repeat;
   background-position: left 2rem center;
+  transition: .3s;
 }
 
 #calculator-input input[type="text"]:hover {
@@ -112,7 +113,6 @@ margin-bottom: 1.5rem;
 
 #tip-value div {
   width: 100%;
-  /* border: 1px solid red; */
 }
 
 #tip-value label {
@@ -158,6 +158,8 @@ margin-bottom: 1.5rem;
 }
 
 #calculator-result {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   padding-left: 2.3rem;
   background-color: var(--custom-very-dark-cyan);
@@ -206,6 +208,7 @@ margin-bottom: 1.5rem;
 }
 
 .attribution {
+  width: 100%;
   text-align: center;
   background-color: var(--custom-strong-cyan);
 }
@@ -224,14 +227,64 @@ margin-bottom: 1.5rem;
 
   #calculator-wrapper {
     flex-direction: row;
+    max-width: 922px;
+    min-height: 482px;
+    gap: 5.2rem;
     width: 64%;
     height: 47%;
     margin: auto;
     margin-top: 21%;
+    padding: 3.2rem;
   }
 
   #calculator-input, #calculator-result {
     flex: 1;
   }
+
+  #calculator-input {
+    padding: 1.6rem;
+    padding-right: 0;
+  }
+
+
+  #tip-value {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+  }
+
+
+
+  #calculator-result {
+    padding-left: 1.5rem;
+  }
+  
+
+  .res-name {
+    margin-top: 3.5rem;
+    padding-left: 2.2rem;
+  }
+
+  .res-name:nth-of-type(2) {
+    margin-top: 5.2rem;
+  }
+  
+  .tip-amount-value {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    padding-right: 2.3rem;
+  }
+  
+  
+  #resetbtn {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    align-self: center;
+  }
+
+
 
 }
