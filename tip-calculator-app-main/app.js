@@ -1,11 +1,11 @@
 const billInputValue = document.getElementById("bill");
 
-const radioTip5 = document.getElementById("tip5");
-const radioTip10 = document.getElementById("tip10");
-const radioTip15 = document.getElementById("tip15");
-const radioTip25 = document.getElementById("tip25");
-const radioTip55 = document.getElementById("tip50");
+
 const radioTipCustom = document.getElementById("customtip");
+
+const radioTipElements = document.querySelector('input[name="radio-tip"]:checked');
+
+console.log(radioTipElements);
 
 const peopleNumInputValue = document.getElementById("peoplenumber");
 
@@ -17,17 +17,28 @@ const resetBtnElement = document.getElementById('resetbtn');
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
 
-function calculateTipValues (billv, tipv, peoplen) {
+function calculateTipValues () {
 
-    const tipValue = billv * tipv
-    const totalOrderValue = billv + tipValue
-    const tipPerPerson = tipValue / peoplen
-    const totalPerPerson = totalOrderValue / peoplen
+    let billValue = billInputValue.value
+    let tipValue = radioTipElements.value
+    let customValue = radioTipCustom.value
+    let peopleNumber = peopleNumInputValue.value
 
-    return tipValue, totalOrderValue, tipPerPerson, totalPerPerson
+    let tipPerPerson = (billValue * tipValue) / peopleNumber
+    
+    console.log(tipPerPerson);
+
 }
 
 
+function testF () {
+    let value = billInputValue.value
+    console.log(value);
+
+};
+
+
+peopleNumInputValue.addEventListener('keyup', calculateTipValues);
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
