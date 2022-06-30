@@ -26,7 +26,7 @@
     <div id="calculator-input">
       <div id="bill-input">
         <p class="input-name">Bill</p>
-        <input type="text" name="bill" id="bill" placeholder="142.55" required>
+        <input type="text" name="bill" id="bill" placeholder="0" required>
       </div>
 
       <p class="input-name tipheader">Select Tip %</p>
@@ -34,13 +34,13 @@
       <div id="tip-value">
 
         <div>
-          <input type="radio" name="radio_button_name" value="5%" id="tip5" />
+          <input type="radio" name="radio-tip" value="5%" id="tip5" />
           <label for="tip5">5%</label>
         </div>
 
 
         <div>
-          <input type="radio" name="radio_button_name" value="10%" id="tip10" />
+          <input type="radio" name="radio-tip" value="10%" id="tip10" />
           <label for="tip10">10%</label>
 
         </div>
@@ -48,20 +48,20 @@
 
         <div>
 
-          <input type="radio" name="radio_button_name" value="15%" id="tip15" />
+          <input type="radio" name="radio-tip" value="15%" id="tip15" />
           <label for="tip15">15%</label>
         </div>
 
 
         <div>
-          <input type="radio" name="radio_button_name" value="25%" id="tip25" />
+          <input type="radio" name="radio-tip" value="25%" id="tip25" />
           <label for="tip25">25%</label>
 
         </div>
 
 
         <div>
-          <input type="radio" name="radio_button_name" value="50%" id="tip50" />
+          <input type="radio" name="radio-tip" value="50%" id="tip50" />
           <label for="tip50">50%</label>
 
         </div>
@@ -75,7 +75,7 @@
 
       <div id="people-num">
         <p class="input-name">Number of People</p>
-        <input type="text" name="peoplenumber" id="peoplenumber" placeholder="5" required>
+        <input type="text" name="peoplenumber" id="peoplenumber" placeholder="0" required>
       </div>
     </div>
 
@@ -85,16 +85,16 @@
           <p class="result-name">Tip Amount</p>
           <p class="result-helper">/ person</p>
         </div>
-        <p class="tip-amount-value">$4.27</p>
+        <p class="tip-amount-value" id="tip-person">$0.00</p>
       </div>
       <div class="res-name total">
         <div class="helper">
           <p class="result-name">Total</p>
           <p class="result-helper">/ person</p>
         </div>
-        <p class="tip-amount-value">$32.79</p>
+        <p class="tip-amount-value" id="tip-total">$0.00</p>
       </div>
-      <button id="resetbtn" type="reset">Reset</button>
+      <button id="resetbtn" type="reset" disabled="true">Reset</button>
     </div>
 
 
