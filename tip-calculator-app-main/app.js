@@ -1,49 +1,56 @@
 const billInputValue = document.getElementById("bill");
 
-
 const radioTipCustom = document.getElementById("customtip");
 
-const radioTipElements = document.querySelector('input[name="radio-tip"]:checked');
-
-console.log(radioTipElements);
+// const radioTipElements = document.querySelector(
+//   'input[name="radio-tip"]:checked'
+// );
 
 const peopleNumInputValue = document.getElementById("peoplenumber");
 
 const tipPersonValue = document.getElementById("tip-person");
 const tipTotalValue = document.getElementById("tip-total");
 
-const resetBtnElement = document.getElementById('resetbtn');
+const resetBtnElement = document.getElementById("resetbtn");
 
+let amountTipPerPerson;
+let amountTotalPerPerson;
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
 
-function calculateTipValues () {
+function calculateTipValues() {
+  const radioTipElements = document.querySelector(
+    'input[name="radio-tip"]:checked'
+  );
 
-    let billValue = billInputValue.value
-    let tipValue = radioTipElements.value
-    let customValue = radioTipCustom.value
-    let peopleNumber = peopleNumInputValue.value
+  let billValue = billInputValue.value;
+  let tipValue = radioTipElements.value;
+  let customValue = radioTipCustom.value;
+  let peopleNumber = peopleNumInputValue.value;
 
-    let tipPerPerson = (billValue * tipValue) / peopleNumber
-    
-    console.log(tipPerPerson);
+  let totalValue = billValue + (billValue * tipValue);
+  let totalPerPerson = totalValue / peopleNumber;
+  let tipPerPerson = (billValue * tipValue) / peopleNumber;
 
+  amountTipPerPerson = parseFloat(tipPerPerson.toFixed(2));
+  amountTotalPerPerson = parseFloat(totalPerPerson.toFixed(2));
 }
 
+function validateCalculator() {
+//   console.log(radioTipElements);
+}
 
-function testF () {
-    let value = billInputValue.value
-    console.log(value);
+function populateCalculatorFields() {
+  tipPersonValue.textContent = `$${amountTipPerPerson}`;
+  tipTotalValue.textContent = `$${amountTotalPerPerson}`;
+}
 
-};
-
-
-peopleNumInputValue.addEventListener('keyup', calculateTipValues);
+peopleNumInputValue.addEventListener("keyup", calculateTipValues);
+peopleNumInputValue.addEventListener("keyup", populateCalculatorFields);
+billInputValue.addEventListener("keyup", validateCalculator);
 
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
 /* -=-=-=-=-=-=-=-=-=-=-=-=- */
-
-
 
 // console.log(billInputValue);
 // console.log(radioTip5);

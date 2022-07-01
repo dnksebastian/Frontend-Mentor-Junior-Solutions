@@ -26,7 +26,7 @@
     <div id="calculator-input">
       <div id="bill-input">
         <p class="input-name">Bill</p>
-        <input type="text" name="bill" id="bill" placeholder="0" required>
+        <input type="number" name="bill" id="bill" placeholder="0" step="0.01" min="0" max="1000000" required>
       </div>
 
       <p class="input-name tipheader">Select Tip %</p>
@@ -63,11 +63,10 @@
         <div>
           <input type="radio" name="radio-tip" value="0.5" id="tip50" />
           <label for="tip50">50%</label>
-
         </div>
 
         <div>
-          <input type="text" name="custom-value" id="customtip" placeholder="Custom">
+          <input type="number" name="custom-value" id="customtip" step="0.01" min="0" max="1000000" placeholder="Custom">
           <label for="tipcustom"></label>
         </div>
 
@@ -75,7 +74,7 @@
 
       <div id="people-num">
         <p class="input-name">Number of People</p>
-        <input type="text" name="peoplenumber" id="peoplenumber" placeholder="0" required>
+        <input type="number" name="peoplenumber" id="peoplenumber" placeholder="0" min="0" max="1000000" required>
       </div>
     </div>
 

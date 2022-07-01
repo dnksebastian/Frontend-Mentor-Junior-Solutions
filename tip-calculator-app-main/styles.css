@@ -66,7 +66,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#calculator-input input[type="text"] {
+#calculator-input input[type="number"] {
   text-align: right;
   font: inherit;
   font-size: 2.4rem;
@@ -83,8 +83,18 @@ body {
   transition: 0.3s;
 }
 
-#calculator-input input[type="text"]:hover {
+#calculator-input input[type="number"]:hover {
   border: 2px solid var(--custom-strong-cyan);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input[id="bill"] {
