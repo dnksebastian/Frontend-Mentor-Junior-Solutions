@@ -87,7 +87,7 @@ body {
 }
 
 #calculator-input input[type="number"]:hover {
-  border: 2px solid var(--custom-strong-cyan);
+  border: 2px solid var(--custom-strong-cyan) !important;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
