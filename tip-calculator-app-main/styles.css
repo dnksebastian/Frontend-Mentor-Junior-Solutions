@@ -5,6 +5,8 @@
 }
 
 :root {
+  --afterelement-display: none;
+
   /* Primary */
 
   --custom-strong-cyan: hsl(172, 67%, 45%);
@@ -45,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 700px;
+  min-width: 387px;
   background-color: var(--custom-white);
   border-radius: 2.5rem;
   margin-top: 14.3rem;
@@ -163,6 +166,17 @@ input[id="peoplenumber"] {
 
 #people-num {
   margin-bottom: 2.5rem;
+  position: relative;
+}
+
+#people-num::after {
+  position: absolute;
+  font-size: 1.6rem;
+  top: .01rem;
+  right: 1rem;
+  color: #B48372;
+  content: "Can't be zero";
+  display: var(--afterelement-display);
 }
 
 #calculator-result {
@@ -216,6 +230,12 @@ input[id="peoplenumber"] {
 }
 
 .btn-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: hsl(183, 79%, 24%);
+}
+
+#resetbtn:disabled {
   cursor: not-allowed;
   pointer-events: none;
   background-color: hsl(183, 79%, 24%);
