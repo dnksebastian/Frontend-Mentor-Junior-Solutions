@@ -253,7 +253,7 @@ input[id="peoplenumber"] {
 
 @media screen and (min-width: 1400px) {
   body {
-    background-position: top 16.2rem center;
+    background-position: top 5% center;
   }
 
   #calculator-wrapper {
@@ -264,7 +264,6 @@ input[id="peoplenumber"] {
     width: 64%;
     height: 47%;
     margin: auto;
-    margin-top: 21%;
     padding: 3.2rem;
   }
 
@@ -310,5 +309,17 @@ input[id="peoplenumber"] {
     margin-bottom: 2rem;
     width: 90%;
     align-self: center;
+  }
+}
+
+
+@media screen and (width: 1440px) {
+
+  body {
+    background-position: top 16.2rem center;
+  }
+
+  #calculator-wrapper {
+    margin-top: 21%;
   }
 }
