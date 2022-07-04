@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-html-css-js-OUu6JJfWfv](https://www.frontendmentor.io/solutions/tip-calculator-app-html-css-js-OUu6JJfWfv)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/tip-calculator-app-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/tip-calculator-app-main/)
 
 ## My process
