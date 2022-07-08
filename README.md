@@ -13,7 +13,7 @@
 | Testimonials Grid Section |  <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/testimonials-grid-section-main/" target="_blank">Live</a>  |  <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/testimonials-grid-section-main" target="_blank">Repo</a>  |
 | Advice Generator App | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/advice-generator-app-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/advice-generator-app-main" target="_blank">Repo</a>  |
 | Tip Calculator App | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/tip-calculator-app-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/tip-calculator-app-main" target="_blank">Repo</a>  |
-| Fylo Data Storage Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-data-storage-component-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/fylo-data-storage-component-master" target="_blank">Repo</a>  |
+| Fylo Data Storage Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-data-storage-component-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/fylo-data-storage-component-master/" target="_blank">Repo</a>  |
 | 6 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 7 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 
