@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+
+  <main id="component-wrapper">
+    <div id="icon-panel">
+      <div id="logo-wrapper">
+        <img src="./images/logo.svg" alt="Fylo logo">
+      </div>
+      <div id="icon-helper-wrapper">
+        <div class="icon-wrapper"><img src="./images/icon-document.svg" alt="Document icon"></div>
+        <div class="icon-wrapper">        <img src="./images/icon-folder.svg" alt="Folder icon"></div>
+        <div class="icon-wrapper">        <img src="./images/icon-upload.svg" alt="Upload icon"></div>
+      </div>
+    </div>
+
+    <div id="data-storage">
+      
+      <aside id="data-left"><span id="data-value">185</span>GB Left</aside>
+      <label for="datastorage-bar">You’ve used <span class="highlight">815 GB</span> of your storage</label>
+      <div class="bar-wrap">
+        <div class="progress-wrapper">
+          <progress id="datastorage-bar" max="1000" value="815"> 815 </progress>
+        </div>
+        <div class="bar-helper">
+          <span id="minvalue">0 GB</span>
+          <span id="maxvalue">1000 GB</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sebastian</a>.
+  </footer>
+</body>
+
+</html>
