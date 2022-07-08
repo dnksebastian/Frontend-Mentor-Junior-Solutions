@@ -32,6 +32,7 @@ body {
   background-color: var(--custom-very-dark-blue);
   background-image: url(./images/bg-mobile.png);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +43,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 37.5rem;
-  width: 33rem;
+  /* height: 37.5rem; */
+  /* width: 33rem; */
+  width: 330px;
+  min-height: 375px;
   margin: auto 0 3rem 0;
   font-size: 1.4rem;
   color: var(--custom-pale-blue);
@@ -54,7 +57,7 @@ body {
 #data-storage {
   background-color: var(--cusom-dark-blue);
   border-radius: 1rem;
-  box-shadow: 0px 45px 40px -20px rgba(0,0,0,0.2);
+  box-shadow: 0px 45px 40px -20px rgba(0, 0, 0, 0.2);
 }
 
 #icon-panel {
@@ -137,7 +140,7 @@ progress {
 .progress-wrapper::before {
   content: "";
   position: absolute;
-  margin: .3rem auto .1rem .3rem;
+  margin: 0.3rem auto 0.1rem 0.3rem;
   top: 0;
   left: 0;
   height: 65%;
@@ -168,7 +171,6 @@ progress {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid teal; */
 }
 
 #data-left {
@@ -217,5 +219,54 @@ progress {
     background-image: url(./images/bg-desktop.png);
     background-position: bottom;
     background-size: 100%;
+  }
+
+  #component-wrapper {
+    padding: 1.3rem 0 2.3rem 0;
+    flex-direction: row;
+    min-height: 240px;
+    max-height: 240px;
+    width: 921.6px;
+    margin: auto auto 0 auto;
+    gap: 3rem;
+  }
+
+  #icon-panel {
+    flex: 39%;
+    height: 100%;
+  }
+
+  #logo-wrapper {
+    width: 12.9rem;
+  }
+
+  #data-storage {
+    padding: 1.7rem 1rem 0 4rem;
+    align-items: flex-start;
+    flex: 61%;
+    position: relative;
+    margin-top: 4.7rem;
+  }
+
+  .bar-wrap {
+    width: 94%;
+  }
+
+  #data-left {
+    top: -4.7rem;
+    right: -28rem;
+    width: 18rem;
+  }
+
+  #data-left::after {
+    content: "";
+    position: absolute;
+    bottom: -2.1rem;
+    right: 0rem;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    border-width: 2rem 2rem 2rem 2rem;
+    height: 0px;
+    width: 0px;
   }
 }
