@@ -92,7 +92,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 18rem 6rem 6rem 6rem;
+  padding: 18rem 6rem 27rem 6rem;
+  background-image: url(./images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .section-ilu {
@@ -166,7 +170,118 @@ main {
 /* Middle section styles */
 
 #middle-section {
-  background-color: rgba(220, 20, 60, 0.403);
+  /* background-color: var(--custom-light-grayish-blue); */
+  background-color: #f8f8fe;
+  /* background-color: rgba(220, 20, 60, 0.534); */
+  padding: 7.5rem 4rem 1rem 4rem;
+}
+
+#middle-section .section-ilu {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-content {
+  padding-top: 17rem;
+  color: var(--custom-very-dark-blue);
+  text-align: center;
+}
+
+.section-content h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.section-details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5.5rem;
+  font-size: 2.8rem;
+  color: var(--custom-very-dark-blue);
+  text-align: left;
+}
+
+.section-details p {
+  line-height: 4.1rem;
+  padding-right: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.section-details a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 2.7rem;
+  /* background-color: rgba(137, 43, 226, 0.273); */
+  padding: 1.1rem 0rem;
+  color: var(--custom-moderate-cyan);
+  border-bottom: 2px solid var(--custom-moderate-cyan);
+}
+
+.section-details a::after {
+  height: 3rem;
+  width: 3rem;
+  content: "";
+  background-image: url(./images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 1.1rem;
+  vertical-align: middle;
+}
+
+#arrow {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+#quotewrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 2rem;
+  text-align: left;
+
+  padding: 8.5rem 1rem 1rem 5.5rem;
+
+  background-image: url(./images/icon-quotes.svg);
+  background-repeat: no-repeat;
+  background-size: 2.3rem;
+  background-position: top 4.6rem left 5.5rem;
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 7.7rem;
+  /* padding: 2rem; */
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#quotewrap p {
+  padding-right: 1rem;
+  line-height: 3.4rem;
+}
+
+
+.user-cred {
+  border:1px solid red;
+  display: flex;
+}
+.avatar-wrapper {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-wrapper img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 /* Footer styles */
