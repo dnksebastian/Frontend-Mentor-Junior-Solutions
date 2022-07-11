@@ -78,7 +78,7 @@ nav ul {
 /* Main styles */
 
 main {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -173,7 +173,7 @@ main {
   /* background-color: var(--custom-light-grayish-blue); */
   background-color: #f8f8fe;
   /* background-color: rgba(220, 20, 60, 0.534); */
-  padding: 7.5rem 4rem 1rem 4rem;
+  padding: 7.5rem 4rem 16.5rem 4rem;
 }
 
 #middle-section .section-ilu {
@@ -243,37 +243,34 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  font-size: 2rem;
-  text-align: left;
-
-  padding: 8.5rem 1rem 1rem 5.5rem;
-
+  font-size: 2.1rem;
+  text-align: justify;
+  padding: 8.5rem 3.1rem 4.1rem 5.3rem;
   background-image: url(./images/icon-quotes.svg);
   background-repeat: no-repeat;
-  background-size: 2.3rem;
+  background-size: 2.35rem;
   background-position: top 4.6rem left 5.5rem;
   width: 84%;
   margin: 0 auto;
-  margin-top: 7.7rem;
-  /* padding: 2rem; */
+  margin-top: 7.8rem;
   border-radius: 1rem;
   background-color: white;
+  box-shadow: 0px 0px 30px -10px var(--custom-light-gray);
 }
 
 #quotewrap p {
+  line-height: 3.5rem;
   padding-right: 1rem;
-  line-height: 3.4rem;
+  padding-bottom: 2.6rem;
 }
-
 
 .user-cred {
-  border:1px solid red;
   display: flex;
+  gap: 1.7rem;
 }
 .avatar-wrapper {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.7rem;
+  height: 4.7rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -284,7 +281,107 @@ main {
   width: 100%;
 }
 
+.quoteauthor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.quoteautor span {
+  display: block;
+}
+
+.authorname {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.authorpos {
+  font-size: 1.3rem;
+}
+
+/* Bottom section styles */
+
+#bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: var(--custom-desaturated-blue);
+  padding: 6rem 3rem 13.8rem 3rem;
+}
+
+.bottom-content {
+  text-align: center;
+  padding: 4.9rem 6rem 4.7rem 4.7rem;
+}
+
+.bottom-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.bottom-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.6rem;
+  line-height: 4.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.bottom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.4rem;
+}
+
+.bottom-form input, .bottom-form button {
+  font-family: "Open Sans", sans-serif;
+  padding: 1.8rem 1.5rem;
+  font-size: 1.9rem;
+  width: 70%;
+  border: 2px solid transparent;
+  border-radius: .3rem;
+  box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.75);
+}
+
+.bottom-form input {
+  color: var(--custom-light-gray);
+}
+
+.bottom-form button {
+  color: white;
+  background-color: var(--custom-bright-blue);
+}
+
+
 /* Footer styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  color: white;
+  background-color: var(--custom-very-dark-blue);
+}
+
+.footlogo-wrap img {
+  border: 1px solid red;
+}
+
+footer ul {
+  list-style: none;
+}
 
 .attribution {
   font-size: 1rem;
