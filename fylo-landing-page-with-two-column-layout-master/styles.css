@@ -5,6 +5,10 @@
 }
 
 :root {
+
+  --fa-border-radius: 50%;
+  --fa-border-padding: 1rem 2.5rem;
+
   /* ### Primary */
 
   --custom-very-dark-blue: hsl(243, 87%, 12%);
@@ -45,7 +49,6 @@ header {
   width: 100%;
   height: 10rem;
   padding: 0 4.4rem;
-  background-color: rgba(100, 148, 237, 0.247);
 }
 
 #logo-wrapper {
@@ -60,7 +63,7 @@ header {
 
 nav ul {
   display: flex;
-  gap: 5.4rem;
+  gap: 5.2rem;
 }
 
 .menu-element {
@@ -342,14 +345,15 @@ main {
   gap: 1.4rem;
 }
 
-.bottom-form input, .bottom-form button {
+.bottom-form input,
+.bottom-form button {
   font-family: "Open Sans", sans-serif;
   padding: 1.8rem 1.5rem;
   font-size: 1.9rem;
   width: 70%;
   border: 2px solid transparent;
-  border-radius: .3rem;
-  box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.75);
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.75);
 }
 
 .bottom-form input {
@@ -361,29 +365,117 @@ main {
   background-color: var(--custom-bright-blue);
 }
 
-
 /* Footer styles */
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex: 1;
+  padding: 13rem 8.1rem 0rem 8.1rem;
   width: 100%;
   color: white;
   background-color: var(--custom-very-dark-blue);
+  font-size: 3.2rem;
+}
+
+.footlogo-wrap {
+  width: 35rem;
+  height: 10.5rem;
 }
 
 .footlogo-wrap img {
-  border: 1px solid red;
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(141deg)
+    brightness(1000%) contrast(100%);
+}
+
+.contact {
+  padding-top: 7.7rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* #footphone,
+#footemail {
+  display: block;
+} */
+
+#footphone::before,
+#footemail::before {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 4rem;
+}
+
+#footphone::before {
+  background-image: url(./images/icon-phone.svg);
+}
+
+#footemail::before {
+  background-image: url(./images/icon-email.svg);
 }
 
 footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3.2rem;
   list-style: none;
 }
 
+.footmenu1 {
+  padding-bottom: 3rem;
+}
+
+.footmenu2 {
+  padding-bottom: 3rem;
+}
+
+.footsocialicons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2.6rem;
+}
+
+.footsocialicons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
 .attribution {
+  width: 100%;
   font-size: 1rem;
   text-align: center;
 }
