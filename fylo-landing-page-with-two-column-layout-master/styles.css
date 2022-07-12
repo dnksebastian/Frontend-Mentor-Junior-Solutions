@@ -5,7 +5,6 @@
 }
 
 :root {
-
   --fa-border-radius: 50%;
   --fa-border-padding: 1rem 2.5rem;
 
@@ -76,6 +75,11 @@ nav ul {
   font-family: "Raleway", sans-serif;
   font-size: 2.4rem;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-element a:hover {
+  color: var(--custom-bright-blue);
 }
 
 /* Main styles */
@@ -168,6 +172,12 @@ main {
   border: 1px solid transparent;
   color: white;
   background-color: var(--custom-bright-blue);
+  transition: 0.3s;
+}
+
+#top-form button:hover,
+#top-form button:focus {
+  background-color: #6b9bff;
 }
 
 /* Middle section styles */
@@ -220,6 +230,7 @@ main {
   padding: 1.1rem 0rem;
   color: var(--custom-moderate-cyan);
   border-bottom: 2px solid var(--custom-moderate-cyan);
+  transition: 0.3s;
 }
 
 .section-details a::after {
@@ -235,11 +246,17 @@ main {
   vertical-align: middle;
 }
 
-#arrow {
+.section-details a:hover,
+.section-details a:focus {
+  color: #83d7c7;
+  border-bottom: 2px solid #83d7c7;
+}
+
+/* #arrow {
   display: inline-block;
   width: 3.2rem;
   height: 3.2rem;
-}
+} */
 
 #quotewrap {
   display: flex;
@@ -357,12 +374,20 @@ main {
 }
 
 .bottom-form input {
+  border: 1px solid transparent;
   color: var(--custom-light-gray);
 }
 
 .bottom-form button {
   color: white;
   background-color: var(--custom-bright-blue);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bottom-form button:hover,
+.bottom-form button:focus {
+  background-color: #6B9BFF;
 }
 
 /* Footer styles */
@@ -467,12 +492,15 @@ footer ul {
   align-items: center;
 }
 
-
 footer a {
   color: white;
   text-decoration: none;
+  transition: .3s;
 }
 
+footer a:hover, footer a:focus {
+  color: #757EBF;
+}
 
 .attribution {
   width: 100%;
