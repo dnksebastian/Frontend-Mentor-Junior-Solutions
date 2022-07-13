@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./styles.css">
 
   <script src="https://kit.fontawesome.com/462a0c429c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -53,9 +54,12 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
 
-        <form action="mailto:" method="POST" name="emailform" id="top-form">
-          <input type="email" name="email" id="email" placeholder="Enter your email...">
-          <button id="emailbtn">Get Started</button>
+        <form name="emailform" id="top-form">
+          <div class="input-helper">
+            <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+            <p class="error-message-top">Please check your email</p>
+          </div>
+          <button id="emailbtn" type="submit">Get Started</button>
         </form>
       </div>
 
@@ -108,9 +112,12 @@
       </div>
 
 
-      <form class="bottom-form" action="">
-        <input type="email" name="" id="" placeholder="email@example.com">
-        <button>Get Started For Free</button>
+      <form class="bottom-form" id="botform">
+        <div class="botinput-helper">
+          <input type="email" name="botform-mail" id="botform-input" placeholder="email@example.com" required>
+          <p class="error-message-bot">Please check your email</p>
+        </div>
+        <button type="submit">Get Started For Free</button>
       </form>
 
 
@@ -154,13 +161,13 @@
     <div class="footsocialicons">
       <ul>
         <li>
-          <a href="#"><i class="fa-fw fa-brands fa-facebook-f fa-border --fa-border-radius --fa-border-padding center"></i></a>
+          <a href="#"><i class="fa-fw fa-brands fa-facebook-f"></i></a>
         </li>
         <li>
-          <a href="#"><i class="fa-fw fa-brands fa-twitter fa-border --fa-border-radius --fa-border-padding center"></i></a>
+          <a href="#"><i class="fa-fw fa-brands fa-twitter"></i></a>
         </li>
         <li>
-          <a href="#"><i class="fa-fw fa-brands fa-instagram fa-border --fa-border-radius --fa-border-padding center"></i></a>
+          <a href="#"><i class="fa-fw fa-brands fa-instagram"></i></a>
         </li>
       </ul>
     </div>

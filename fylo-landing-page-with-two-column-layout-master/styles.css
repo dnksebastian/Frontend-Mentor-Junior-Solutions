@@ -5,9 +5,6 @@
 }
 
 :root {
-  --fa-border-radius: 50%;
-  --fa-border-padding: 1rem 2.5rem;
-
   /* ### Primary */
 
   --custom-very-dark-blue: hsl(243, 87%, 12%);
@@ -75,6 +72,7 @@ nav ul {
   font-family: "Raleway", sans-serif;
   font-size: 2.4rem;
   text-decoration: none;
+  color: var(--custom-very-dark-blue);
   transition: 0.3s;
 }
 
@@ -149,22 +147,50 @@ main {
   padding-bottom: 1rem;
 }
 
+.input-helper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 #top-form input,
 #top-form button {
   font-family: "Open Sans", sans-serif;
   padding: 2.3rem 0rem;
   border-radius: 0.5rem;
   font-size: 2.5rem;
-  cursor: pointer;
 }
 
 #top-form input {
   color: var(--custom-desaturated-blue);
   background-color: transparent;
   width: 100%;
-  border: 1px solid black;
+  border: 2px solid black;
   padding-left: 3.9rem;
 }
+
+
+.section-desc .error-message-top {
+  display: none;
+  line-height: normal;
+  align-self: flex-start;
+  padding: .3rem 0 0 0;
+  color: red;
+  font-size: 1.7rem;
+}
+
+#top-form input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+#top-form input:not(:focus):not(:placeholder-shown):invalid ~ .error-message-top {
+  display: block;
+}
+#top-form input:not(:focus):not(:placeholder-shown):valid {
+  border: 2px solid green;
+}
+
 
 #top-form button {
   font-weight: 700;
@@ -172,6 +198,7 @@ main {
   border: 1px solid transparent;
   color: white;
   background-color: var(--custom-bright-blue);
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -251,12 +278,6 @@ main {
   color: #83d7c7;
   border-bottom: 2px solid #83d7c7;
 }
-
-/* #arrow {
-  display: inline-block;
-  width: 3.2rem;
-  height: 3.2rem;
-} */
 
 #quotewrap {
   display: flex;
@@ -359,7 +380,24 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 1.4rem;
+  gap: 1.3rem;
+}
+
+.botinput-helper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.botinput-helper .error-message-bot {
+  text-align: left;
+  display: none;
+  color: red;
+  font-size: 1.7rem;
+  padding-top: .3rem;
+  width: 70%;
 }
 
 .bottom-form input,
@@ -374,9 +412,23 @@ main {
 }
 
 .bottom-form input {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   color: var(--custom-light-gray);
 }
+
+
+.bottom-form input:not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+.bottom-form input:not(:focus):not(:placeholder-shown):valid {
+  border: 2px solid green;
+} 
+
+.bottom-form input:not(:focus):not(:placeholder-shown):invalid ~ .error-message-bot {
+  display: block;
+}
+
 
 .bottom-form button {
   color: white;
@@ -387,7 +439,7 @@ main {
 
 .bottom-form button:hover,
 .bottom-form button:focus {
-  background-color: #6B9BFF;
+  background-color: #6b9bff;
 }
 
 /* Footer styles */
@@ -405,6 +457,17 @@ footer {
   font-size: 3.2rem;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #757ebf;
+}
+
 .footlogo-wrap {
   width: 35rem;
   height: 10.5rem;
@@ -420,7 +483,7 @@ footer {
 
 .contact {
   padding-top: 7.7rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3.2rem;
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
@@ -462,11 +525,11 @@ footer ul {
 }
 
 .footmenu1 {
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 .footmenu2 {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .footsocialicons {
@@ -486,20 +549,17 @@ footer ul {
   gap: 2rem;
 }
 
-.fa-brands {
+.footsocialicons a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 1rem;
 }
-
-footer a {
-  color: white;
-  text-decoration: none;
-  transition: .3s;
-}
-
-footer a:hover, footer a:focus {
-  color: #757EBF;
+.footsocialicons a:hover,
+.footsocialicons a:focus {
+  border: 2px solid #757ebf;
 }
 
 .attribution {
