@@ -571,3 +571,289 @@ footer ul {
   text-decoration: none;
   color: hsl(228, 45%, 44%);
 }
+
+/* Media queries */
+
+@media screen and (max-width: 650px) {
+
+
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30rem;
+    padding: 0 1rem;
+  }
+  
+  #logo-wrapper {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+  
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+
+  #top-section {
+    padding-top: 10rem;
+  }
+
+
+  footer {
+    align-items: center;
+    padding: 7rem 5rem 0rem 5rem;
+    font-size: 2.5rem;
+  }
+
+  
+  .footlogo-wrap {
+    width: 30rem;
+    height: 8.5rem;
+  }
+  
+  
+  .contact {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    gap: 3.5rem;
+  }
+  
+  
+  #footphone::before,
+  #footemail::before {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+  
+  footer ul {
+    align-items: center;
+    gap: 3.2rem;
+  }
+  
+  .footmenu1 {
+    padding-bottom: 7rem;
+  }
+  
+  .footmenu2 {
+    padding-bottom: 4rem;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+
+  header {
+    height: 12rem;
+    padding: 0 8rem;
+  }
+
+  #logo-wrapper {
+    padding-bottom: .7rem;
+  }
+
+  nav ul {
+    gap: 5.5rem;
+  }
+  
+  .menu-element {
+    padding-bottom: 2.1rem;
+  }
+  
+  .menu-element a {
+    font-size: 1.7rem;
+  }
+
+  #top-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 7.8rem 7.8rem 28rem 7.7rem;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  
+  #top-section .section-ilu {
+    padding: 0;
+    width: 50%;
+  }
+  
+  .section-desc {
+    padding-top: 8rem;
+    width: 50%;
+    text-align: left;
+  }
+  
+  .section-desc h1 {
+    font-size: 4rem;
+    line-height: 5.8rem;
+  }
+  
+  .section-desc p {
+    padding: 1.7rem 4rem 0rem 0rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  
+  #top-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-top: 2.2rem;
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  .input-helper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 52%;
+  }
+  
+  #top-form input,
+  #top-form button {
+    padding: 1.2rem 0rem;
+    font-size: 1.5rem;
+  }
+  
+  #top-form input {
+    width: 100%;
+    border: 2px solid black;
+    padding-left: 2.2rem;
+  }
+
+  #top-form button {
+    width: 48%;
+  }
+  
+  
+  .section-desc .error-message-top {
+    display: none;
+    line-height: normal;
+    align-self: flex-start;
+    padding: .3rem 0 0 0;
+    color: red;
+    font-size: 1.7rem;
+  }
+  
+  
+  #top-form button {
+    width: 32%;
+  }
+
+  /*  mid section */
+
+
+  #middle-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f8f8fe;
+    padding: 2rem 4rem 10.5rem 4rem;
+  }
+  
+  #middle-section .section-ilu {
+    padding-top: 6.7rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    width: 45%;
+  }
+  
+  .section-content {
+    padding-top: 4.1rem;
+    padding-left: 4rem;
+    color: var(--custom-very-dark-blue);
+    text-align: left;
+    width: 55%;
+  }
+  
+  .section-content h2 {
+    font-size: 4rem;
+  }
+  
+  .section-details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.7rem;
+    font-size: 1.6rem;
+    text-align: left;
+    padding-right: 17rem;
+  }
+  
+  .section-details p {
+    line-height: 2.5rem;
+    padding-bottom: 1.6rem;
+  }
+  
+  .section-details a {
+    font-size: 1.6rem;
+    margin: 0 auto 0 0;
+    padding: 0rem 0rem;
+  }
+  
+  .section-details a::after {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-position: center;
+    background-size: cover;
+    margin-left: 0.7rem;
+  }
+  
+  
+  #quotewrap {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 5.2rem 1.5rem 2.7rem 3rem;
+    background-size: 1.5rem;
+    background-position: top 2.9rem left 3.2rem;
+    width: 50%;
+    margin: 0 auto 0 0;
+    margin-top: 4.5rem;
+  }
+  
+  #quotewrap p {
+    line-height: 2.3rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .user-cred {
+    display: flex;
+    gap: .9rem;
+  }
+
+  .avatar-wrapper {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  
+  .quoteauthor {
+    gap: 0.1rem;
+  }
+  
+  .authorname {
+    font-size: 1.2rem;
+  }
+  
+  .authorpos {
+    font-size: .9rem;
+  }
+
+  /* bot section */
+
+}
