@@ -856,4 +856,165 @@ footer ul {
 
   /* bot section */
 
+  
+#bottom-section {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  padding: 6rem 3rem 6.5rem 3rem;
+}
+
+.bottom-content {
+  text-align: left;
+  padding: 4.5rem 10rem 2rem 4.7rem;
+  width: 50%;
+}
+
+.bottom-content h3 {
+  font-size: 3.25rem;
+  padding-bottom: 1.9rem;
+}
+
+.bottom-content p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.bottom-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5rem 2rem 1rem 12rem;
+  width: 50%;
+  gap: 1.7rem;
+}
+
+.botinput-helper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 87%;
+}
+
+.botinput-helper .error-message-bot {
+  text-align: left;
+  display: none;
+  color: red;
+  font-size: 1.2rem;
+  padding-top: .3rem;
+  width: 70%;
+}
+
+.bottom-form button {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.5rem;
+  width: 36%;
+}
+
+.bottom-form input {
+  padding: 1.4rem 1.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+
+/* footer styles */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 5rem 8.1rem 0rem 8.1rem;
+  width: 100%;
+  color: white;
+  background-color: var(--custom-very-dark-blue);
+  font-size: 1.6rem;
+}
+
+
+.footlogo-wrap {
+  background-color: aqua;
+  width: 17.5rem;
+  height: 5.2rem;
+}
+
+.contact {
+  background-color: chartreuse;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#footphone::before,
+#footemail::before {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.7rem;
+}
+
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.3rem;
+}
+
+.footmenu1 {
+  background-color: coral;
+  padding-bottom: 2.5rem;
+}
+
+.footmenu2 {
+  background-color: darkorchid;
+  padding-bottom: 1rem;
+}
+
+.footsocialicons {
+  background-color: darkgoldenrod;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .1rem;
+  font-size: 1.4rem;
+}
+
+.footsocialicons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footsocialicons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: .7rem;
+}
+
+.attribution {
+  align-self: flex-end;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
 }
