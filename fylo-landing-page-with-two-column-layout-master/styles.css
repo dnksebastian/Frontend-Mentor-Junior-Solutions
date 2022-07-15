@@ -36,10 +36,6 @@ body {
   align-items: center;
 }
 
-html, body {
-  background-color: var(--custom-very-dark-blue);
-}
-
 /* Header styling */
 
 header {
@@ -1005,4 +1001,11 @@ footer ul {
   /* text-align: center; */
 }
 
+}
+
+@media screen and (min-width: 1435px) and (max-width: 1445px) {
+
+  footer {
+    padding: 7rem 2rem 5rem 1rem;
+  }
 }
