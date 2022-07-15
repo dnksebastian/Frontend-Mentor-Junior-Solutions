@@ -1003,9 +1003,11 @@ footer ul {
 
 }
 
+
+/* This is temporary workaround for Frontend Mentor screenshot :P */
 @media screen and (min-width: 1435px) and (max-width: 1445px) {
 
   footer {
-    padding: 7rem 2rem 5rem 1rem;
+    padding: 7rem 2rem 12rem 1rem;
   }
 }
