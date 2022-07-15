@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-fylo-landing-page-with-two-column-layout-hdUbYyS4Tz](https://www.frontendmentor.io/solutions/html-css-fylo-landing-page-with-two-column-layout-hdUbYyS4Tz)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-landing-page-with-two-column-layout-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-landing-page-with-two-column-layout-master/)
 
 ## My process

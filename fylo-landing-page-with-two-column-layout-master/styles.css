@@ -915,7 +915,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* flex: 1; */
+  flex: 1;
   flex-wrap: wrap;
   padding: 7rem 2rem 2rem 1rem;
   /* width: 100%; */
