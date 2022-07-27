@@ -25,7 +25,7 @@ body {
 html {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 10px;
-  background-color: rgba(137, 43, 226, 0.166);
+  /* background-color: rgba(137, 43, 226, 0.166); */
 }
 
 body {
@@ -43,7 +43,7 @@ body {
 main {
   width: 100%;
   flex: 1;
-  background-color: rgba(220, 20, 60, 0.301);
+  /* background-color: rgba(220, 20, 60, 0.301); */
 }
 
 main > * {
@@ -54,6 +54,13 @@ main > * {
   text-align: center;
 }
 
+main p {
+  color: var(--custom-grayish-blue);
+}
+
+main h1, main h2, main h3 {
+  color: var(--custom-dark-grayish-blue);
+}
 /* Hero styles */
 
 .hero {
@@ -109,15 +116,26 @@ main > * {
   width: 93%;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: inset 0px -3px 0px 0px rgba(16, 16, 20, 0.429);
 }
 
 #ios-btn {
   background-color: var(--custom-strong-cyan);
+  box-shadow:inset 0px -2px 0px 0px rgba(16, 16, 20, 0.429), 0px 20px 20px -10px var(--custom-strong-cyan);
+}
+
+#ios-btn:hover,
+#ios-btn:focus {
+  background-color: #5fcbbb;
 }
 
 #mac-btn {
   background-color: var(--custom-light-blue);
+  box-shadow:inset 0px -2px 0px 0px rgba(16, 16, 20, 0.429), 0px 20px 20px -10px var(--custom-light-blue);
+}
+
+#mac-btn:hover,
+#mac-btn:focus {
+  background-color: #8896ff;
 }
 
 /* Snippets section styles */
@@ -198,7 +216,7 @@ main > * {
 /* Tools section styles */
 
 .tools-section {
-  background-color: rgba(0, 100, 0, 0.341);
+  /* background-color: rgba(0, 100, 0, 0.341); */
   padding: 9.1rem 2rem 0 2rem;
 }
 
@@ -217,7 +235,7 @@ main > * {
 }
 
 .tools-list {
-  background-color: rgba(184, 135, 11, 0.4);
+  /* background-color: rgba(184, 135, 11, 0.4); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,8 +244,6 @@ main > * {
   padding: 0 1rem;
 }
 
-.tool-icon {
-}
 
 .tool-element h3 {
   padding-top: 4rem;
@@ -243,7 +259,7 @@ main > * {
 /* Companies section styles */
 
 .companies {
-  background-color: rgba(0, 0, 255, 0.29);
+  /* background-color: rgba(0, 0, 255, 0.29); */
   padding: 11.5rem 0 5rem 0;
 }
 
@@ -310,35 +326,110 @@ main > * {
   width: 95%;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: inset 0px -3px 0px 0px rgba(16, 16, 20, 0.429);
 }
 
 #bot-ios-btn {
   background-color: var(--custom-strong-cyan);
+  box-shadow:inset 0px -2px 0px 0px rgba(16, 16, 20, 0.429), 0px 20px 20px -10px var(--custom-strong-cyan);
 }
+#bot-ios-btn:hover,
+#bot-ios-btn:focus {
+  background-color: #5fcbbb;
+}
+
 #bot-mac-btn {
   background-color: var(--custom-light-blue);
+  box-shadow:inset 0px -2px 0px 0px rgba(16, 16, 20, 0.429), 0px 20px 20px -10px var(--custom-light-blue);
 }
 
-
+#bot-mac-btn:hover,
+#bot-mac-btn:focus {
+  background-color: #8896ff;
+}
 
 /* Footer styles */
 
 footer {
-  background-color: rgb(245, 246, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f5f6f8;
   width: 100%;
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+  gap: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--custom-dark-grayish-blue);
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--custom-strong-cyan);
 }
 
 footer ul {
   list-style: none;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.foot-logo-helper {
+  /* background-color: rgba(0, 0, 139, 0.641); */
+  padding: 1rem 2rem 2rem 2rem;
 }
+
+.footer-logo-wrap {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.footer-logo-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-menu {
+  padding: 1.5rem;
+  /* background-color: rgba(139, 0, 0, 0.43); */
+}
+
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.7rem;
+  padding-bottom: 1.5rem;
+}
+.footer-menu a {
+  font-size: 1.8rem;
+}
+
+.footer-social-icons i {
+  font-size: 2.5rem;
+}
+
+.footer-social-icons ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 1rem 0;
+}
+
+.attribution {
+  font-size: 1rem;
+  width: 100%;
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--custom-strong-cyan);
+}
+
+.attribution a:hover {
+  color: var(--custom-light-blue);
 }
 
 /* Media queries */
