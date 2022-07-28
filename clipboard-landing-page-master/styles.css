@@ -19,7 +19,7 @@
 html,
 body {
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 300px;
 }
 
 html {
@@ -287,7 +287,7 @@ main h1, main h2, main h3 {
 /* Bottom download section */
 
 .bottom-download {
-  padding: 7.8rem 2.5rem 0rem 2.5rem;
+  padding: 7.8rem 2.5rem 3rem 2.5rem;
 }
 
 .bottom-download-desc {
@@ -433,3 +433,131 @@ footer ul {
 }
 
 /* Media queries */
+
+@media screen and (min-width: 380px) {
+
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+}
+
+
+
+@media screen and (min-width: 830px) {
+
+  .buttons-wrap {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .bottom-download-btn-wrap {
+    max-width: 60%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+
+  /* Hero styles */
+
+.logo-wrap {
+  width: 13rem;
+  height: 13rem;
+}
+
+.hero-content {
+  padding-top: 5.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 60%;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+}
+
+.hero-content p {
+  padding: 1.8rem 2rem 0rem 2rem;
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+
+.buttons-wrap {
+  padding-top: 5.1rem;
+  padding-bottom: 2rem;
+  flex-direction: row;
+  gap: 2rem;
+  min-width: 345px;
+}
+
+
+/* Snippets section styles */
+
+.snippets-wrap {
+  padding: 13rem 2rem 0 2rem;
+  background-color: rgba(0, 100, 0, 0.33);
+}
+
+.top {
+  width: 60%;
+}
+
+.top h2 {
+  font-size: 3.5rem;
+}
+
+.top p {
+  padding: 2.2rem 2rem 0 2rem;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+}
+
+.bot {
+  padding: 8rem 1rem 2rem 1rem;
+  display: flex;
+  background-color: rgba(0, 0, 255, 0.397);
+  gap: 4rem;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 56%;
+}
+
+.bot-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: -8%;
+}
+
+.snippets-content {
+  padding: 6.7rem 2rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6.5rem;
+  text-align: left;
+  background-color: rgba(255, 0, 0, 0.418);
+  width: 44%;
+}
+
+.snippets-content h3 {
+  font-size: 2.3rem;
+}
+
+.snippets-content p {
+  width: 75%;
+  padding-top: 1.2rem;
+  padding-right: 5rem;
+}
+
+
+
+
+
+}
