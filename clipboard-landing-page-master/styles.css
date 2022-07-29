@@ -447,6 +447,10 @@ footer ul {
 
 @media screen and (min-width: 1000px) {
 
+  main {
+    padding-bottom: 20rem;
+  }
+
 
   /* Hero styles */
 

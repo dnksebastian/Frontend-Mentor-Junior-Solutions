@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-clipboard-landing-page-A5TAX-dOQm](https://www.frontendmentor.io/solutions/html-css-clipboard-landing-page-A5TAX-dOQm)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/clipboard-landing-page-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/clipboard-landing-page-master/)
 
 ## My process
