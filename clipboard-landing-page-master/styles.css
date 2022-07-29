@@ -25,7 +25,6 @@ body {
 html {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 10px;
-  /* background-color: rgba(137, 43, 226, 0.166); */
 }
 
 body {
@@ -43,7 +42,6 @@ body {
 main {
   width: 100%;
   flex: 1;
-  /* background-color: rgba(220, 20, 60, 0.301); */
 }
 
 main > * {
@@ -64,7 +62,6 @@ main h1, main h2, main h3 {
 /* Hero styles */
 
 .hero {
-  /* background-color: rgba(0, 139, 139, 0.537); */
   padding: 12.7rem 2rem 0 2rem;
 }
 
@@ -141,7 +138,6 @@ main h1, main h2, main h3 {
 /* Snippets section styles */
 
 .snippets-wrap {
-  /* background-color: rgba(0, 100, 0, 0.33); */
   padding: 14.2rem 2rem 0 2rem;
 }
 
@@ -171,7 +167,6 @@ main h1, main h2, main h3 {
 
 .snippets-content {
   padding: 5.7rem 0rem 5rem 0rem;
-  /* background-color: rgba(0, 0, 255, 0.397); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,7 +187,6 @@ main h1, main h2, main h3 {
 /* Bottom feature section styles */
 
 .bottom-feature-img {
-  /* background-color: rgba(85, 107, 47, 0.433); */
   padding: 14rem 1rem 0 1rem;
 }
 
@@ -216,7 +210,6 @@ main h1, main h2, main h3 {
 /* Tools section styles */
 
 .tools-section {
-  /* background-color: rgba(0, 100, 0, 0.341); */
   padding: 9.1rem 2rem 0 2rem;
 }
 
@@ -235,7 +228,6 @@ main h1, main h2, main h3 {
 }
 
 .tools-list {
-  /* background-color: rgba(184, 135, 11, 0.4); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,12 +251,10 @@ main h1, main h2, main h3 {
 /* Companies section styles */
 
 .companies {
-  /* background-color: rgba(0, 0, 255, 0.29); */
   padding: 11.5rem 0 5rem 0;
 }
 
 .companies-wrap {
-  /* background-color: rgba(165, 42, 42, 0.318); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,7 +264,6 @@ main h1, main h2, main h3 {
 }
 
 .companies-wrap div {
-  /* background-color: rgba(137, 43, 226, 0.322); */
   width: 75%;
 }
 
@@ -376,7 +365,6 @@ footer ul {
 }
 
 .foot-logo-helper {
-  /* background-color: rgba(0, 0, 139, 0.641); */
   padding: 1rem 2rem 2rem 2rem;
 }
 
@@ -393,7 +381,6 @@ footer ul {
 
 .footer-menu {
   padding: 1.5rem;
-  /* background-color: rgba(139, 0, 0, 0.43); */
 }
 
 .footer-menu ul {
@@ -581,7 +568,6 @@ footer ul {
 /* Tools section styles */
 
 .tools-section {
-  /* background-color: rgba(0, 100, 0, 0.341); */
   padding: 7rem 2rem 3rem 2rem;
 }
 
@@ -628,12 +614,10 @@ footer ul {
 /* Companies section styles */
 
 .companies {
-  /* background-color: rgba(0, 0, 255, 0.29); */
   padding: 11.5rem 0 5rem 0;
 }
 
 .companies-wrap {
-  /* background-color: rgba(165, 42, 42, 0.318); */
   flex-direction: row;
   align-items: center;
   gap: 9rem;
