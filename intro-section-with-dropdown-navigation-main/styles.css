@@ -1,3 +1,5 @@
+/* Global and reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +17,61 @@ html {
     font-family: 'Epilogue', sans-serif;
 }
 
-
+html, body {
+  min-height: 100vh;
+}
 
 a {
     text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  background-color: rgba(137, 43, 226, 0.163);
+}
+
+.dropdown {
+  display: none;
+}
+
+.hamburger {
+  margin-left: auto;
+  background-image: url(./images/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  background-image: url(./images/icon-close-menu.svg);
+}
+
+
+/* Main styles */
+
+main {
+  background-color: rgba(220, 20, 60, 0.17);
+}
+
+/* Footer styles */
+
+footer {
+  margin-top: auto;
+  background-color: rgba(0, 100, 0, 0.245);
+}
+
 
 .attribution {
   font-size: 1rem;
@@ -27,4 +79,21 @@ a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 1000px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
 }
