@@ -26,8 +26,8 @@
       <img src="./images/logo.svg" alt="Snap Logo" class="logo">
     </div>
 
-    <nav>
-      <ul>
+    <nav id="nav-menu">
+      <ul class="nav-group">
         <li>
           <div><a href="#">Features</a> <div></div> </div>
           <ul class="dropdown">
@@ -49,16 +49,16 @@
         <li> <a href="#">About</a> </li>
       </ul>
 
-      <ul>
+      <ul class="nav-group">
         <li> <a href="#">Login</a></li>
         <li> <a href="#">Register</a></li>
       </ul>
 
     </nav>
 
-    <div class="hamburger"></div>
-
+    <div class="hamburger" id="open-menu"></div>
   </header>
+  <div id="side-overlay"></div>
 
 
   <main>
@@ -74,7 +74,7 @@
         <h1>Make remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
-        <button>Learn more</button>
+        <button id="btn-top">Learn more</button>
       </div>
 
       <div class="hero-logos-wrap">
