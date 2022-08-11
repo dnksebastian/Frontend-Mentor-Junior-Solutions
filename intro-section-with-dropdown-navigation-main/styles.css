@@ -35,7 +35,6 @@ body {
   flex-direction: column;
 }
 
-
 button {
   font: inherit;
   color: white;
@@ -45,12 +44,14 @@ button {
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   background-color: var(--custom-almost-white);
   color: var(--custom-almost-black);
-  border: 1px solid var(--custom-almost-black);  
+  border: 1px solid var(--custom-almost-black);
 }
 
 /* Header styles */
@@ -60,9 +61,6 @@ header {
   align-items: center;
   height: 7.5rem;
   padding: 0 1.5rem;
-}
-
-.logo-wrap {
 }
 
 .logo-wrap img {
@@ -79,7 +77,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 3;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 2rem 1.6rem 0 2.3rem;
   gap: 3.1rem;
@@ -95,10 +93,11 @@ nav a {
   font-weight: 600;
   font-size: 1.6rem;
   color: var(--custom-medium-gray);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   color: var(--custom-almost-black);
 }
 
@@ -114,12 +113,19 @@ nav a:hover, nav a:focus {
   width: 1rem;
 }
 
+a:focus + .drop-icon {
+  background-image: url(./images/icon-arrow-up.svg);
+}
+
 .dropdown {
-  display: flex;
+  display: none;
   flex-direction: column;
-  background-color: rgba(238, 130, 238, 0.353);
   gap: 2.2rem;
   padding: 3.2rem 0 1rem 2.4rem;
+}
+
+.dropdown-active {
+  display: flex;
 }
 
 .dropdown li {
@@ -130,8 +136,8 @@ nav a:hover, nav a:focus {
 }
 
 .menu-icon-helper {
-width: 2rem;
-height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .menu-icon-helper img {
@@ -142,7 +148,7 @@ height: 2rem;
 
 .control-links {
   gap: 1.7rem;
-  padding: .3rem .4rem 0 0;
+  padding: 0.3rem 0.4rem 0 0;
   text-align: center;
 }
 
@@ -151,19 +157,16 @@ height: 2rem;
   display: block;
 }
 
-
 #register-top {
   border: 1px solid var(--custom-medium-gray);
   border-radius: 1.5rem;
   padding: 1.1rem 0;
 }
 
-#register-top:hover, #register-top:focus {
+#register-top:hover,
+#register-top:focus {
   border: 1px solid var(--custom-almost-black);
 }
-
-
-
 
 .hamburger {
   margin-left: auto;
@@ -231,7 +234,6 @@ main {
 #btn-top {
   padding: 1.5rem 2.2rem;
 }
-
 
 .hero-logos-wrap {
   display: flex;

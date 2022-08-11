@@ -2,7 +2,8 @@ const sideMenuOpenElement = document.getElementById("open-menu");
 const sideMenuCloseElement = document.getElementById("close-menu");
 const overlayElement = document.getElementById("side-overlay");
 const navigationElement = document.getElementById("nav-menu");
-
+const sideMenuItems = document.querySelectorAll(".drop-helper a");
+const sideMenuItemsArr = Array.from(sideMenuItems);
 
 
 const closeMenu = () => {
@@ -15,10 +16,19 @@ overlayElement.style.display = "block"
 navigationElement.style.display = "flex"
 };
 
+const toggleDropdown = (event) => {
+    event.target.parentElement.nextElementSibling.classList.toggle('dropdown-active');
+};
+
 
 
 sideMenuCloseElement.addEventListener("click", closeMenu);
 sideMenuOpenElement.addEventListener("click", openMenu);
 overlayElement.addEventListener("click", closeMenu);
 
-console.log(sideMenuOpenElement, overlayElement, navigationElement, sideMenuCloseElement);
+sideMenuItemsArr.forEach(element => {
+    element.addEventListener("click", toggleDropdown) 
+});
+
+
+console.log(sideMenuOpenElement, overlayElement, navigationElement, sideMenuCloseElement, sideMenuItems, sideMenuItemsArr);
