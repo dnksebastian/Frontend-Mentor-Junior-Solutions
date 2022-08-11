@@ -30,5 +30,3 @@ sideMenuItemsArr.forEach(element => {
     element.addEventListener("click", toggleDropdown) 
 });
 
-
-console.log(sideMenuOpenElement, overlayElement, navigationElement, sideMenuCloseElement, sideMenuItems, sideMenuItemsArr);

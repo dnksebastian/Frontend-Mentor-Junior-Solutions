@@ -197,13 +197,11 @@ a:focus + .drop-icon {
   display: none;
 }
 
-/* .hamburger:hover {
-  background-image: url(./images/icon-close-menu.svg);
-} */
-
 /* Main styles */
 
 main {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .intro-img-wrap {
@@ -268,13 +266,87 @@ footer {
 /* Media queries */
 
 @media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(255, 127, 80, 0.49);
+  }
+
+
   header {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    /* height: 7.5rem; */
+    padding: 1.5rem 2rem 0 4rem;
+    background-color: rgba(0, 255, 255, 0.286);
+    gap: 3.5rem;
+  }
+
+  nav {
+    position: relative;
+    height: 100%;
+    width: auto;
+    top: unset;
+    right: unset;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex: 1;
+    padding: 1.8rem 1.6rem 0 2.3rem;
+    gap: 3.1rem;
+    background-color: rgba(137, 43, 226, 0.216);
+  }
+
+  .nav-group {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    background-color: rgba(0, 100, 0, 0.237);
+  }
+
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid red;
+    top: 10rem;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding: 1rem 0 1rem 2.4rem;
+  }
+
+  .dropdown-active {
+    display: flex;
+  }
+
+  .control-links {
+    gap: 1.7rem;
+    padding: 1rem 0.4rem 1rem 0;
+    text-align: center;
+    background-color: rgba(165, 42, 42, 0.229);
+  }
+
+
+  .control-links a {
+    font-size: 1.4rem;
+    display: block;
+    padding: .3rem 0 2rem 0;
+  }
+  
+  #register-top {
+    border: 1px solid var(--custom-medium-gray);
+    border-radius: 1.5rem;
+    padding: 1.1rem 0;
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .closemenu {
     display: none;
   }
 }
