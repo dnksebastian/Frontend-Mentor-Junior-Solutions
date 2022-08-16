@@ -213,6 +213,10 @@ main {
   height: 100%;
 }
 
+.intro-img-wrap .img-desk {
+  display: none;
+}
+
 .hero-content {
   padding: 5rem 1.5rem 2rem 1.5rem;
   text-align: center;
@@ -369,16 +373,27 @@ footer {
   }
   
   .intro-img-wrap {
+    border: 1px solid red;
+  }
+
+  .intro-img-wrap .img-desk {
+    display: block;
+  }
+  .intro-img-wrap .img-mob {
+    display: none;
   }
   
   
   .hero-content {
-    padding: 5rem 1.5rem 2rem 1.5rem;
+    padding: 10.5rem 1.5rem 2rem 5.5rem;
     text-align: left;
+    width: 80%;
+    border: 1px solid teal;
+
   }
   
   .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 8rem;
   }
   
   .hero-content p {
@@ -397,6 +412,7 @@ footer {
     justify-content: space-around;
     padding: 3rem 1.5rem 2rem 1.5rem;
     gap: 2.7rem;
+    width: 80%;
   }
   
   .company-logo-wrap {
