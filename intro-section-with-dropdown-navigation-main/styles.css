@@ -366,16 +366,17 @@ footer {
   main {
     margin: 0 auto;
     padding-top: 5.5rem;
-    max-width: 85%;
+    padding-bottom: 5rem;
+    max-width: 82%;
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgba(255, 127, 80, 0.49);
+    justify-content: space-between;
+    /* background-color: rgba(255, 127, 80, 0.49); */
   }
   
   .intro-img-wrap {
-    border: 1px solid red;
-    max-height: 50%;
-    object-fit: cover;
+    flex: 70%;
+    height: 100%;
   }
 
   .intro-img-wrap #img-desk {
@@ -387,34 +388,35 @@ footer {
   
   
   .hero-content {
-    padding: 10.5rem 1.5rem 2rem 5.5rem;
+    padding: 10.4rem 2rem 2rem 3.5rem;
     text-align: left;
-    width: 80%;
-    border: 1px solid teal;
-
   }
   
   .hero-content h1 {
+    padding-right: 1rem;
     font-size: 8rem;
+    width: 85%;
   }
   
   .hero-content p {
-    padding-top: 1.8rem;
-    padding-bottom: 2.5rem;
-    line-height: 2.6rem;
-    font-size: 1.6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 5.2rem;
+    padding-right: 5rem;
+    width: 85%;
+    line-height: 2.8rem;
+    font-size: 1.9rem;
   }
   
   #btn-top {
-    padding: 1.5rem 2.2rem;
+    padding: 1.8rem 3.4rem;
   }
   
   .hero-logos-wrap {
     display: flex;
     justify-content: space-around;
-    padding: 3rem 1.5rem 2rem 1.5rem;
-    gap: 2.7rem;
-    width: 80%;
+    align-items: flex-end;
+    padding: 8rem 18rem 2rem 2rem;
+    gap: 2rem;
   }
   
   .company-logo-wrap {
