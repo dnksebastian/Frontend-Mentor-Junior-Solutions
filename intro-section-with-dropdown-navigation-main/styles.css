@@ -278,7 +278,6 @@ footer {
     position: relative;
     /* height: 7.5rem; */
     padding: 1.5rem 2rem 0 4rem;
-    background-color: rgba(0, 255, 255, 0.286);
     gap: 3.5rem;
   }
 
@@ -295,7 +294,6 @@ footer {
     flex: 1;
     padding: 1.8rem 1.6rem 0 2.3rem;
     gap: 3.1rem;
-    background-color: rgba(137, 43, 226, 0.216);
   }
 
   nav a {
@@ -306,29 +304,56 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 2.8rem;
-    background-color: rgba(0, 100, 0, 0.237);
+  }
+
+  .main-menu > li {
+    position: relative;
   }
 
 
   .dropdown {
-    display: flex;
-    position: absolute;
-    border: 1px solid red;
-    top: 6rem;
+    display: none;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1rem 0 1rem 2.4rem;
+    position: absolute;
+    top: 3.6rem;
+    right: -2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 2rem -5px var(--custom-medium-gray);
+    gap: 1.5rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+  }
+
+  .nav-group:nth-child(2) > li:nth-child(1) > ul:nth-child(2) {
+    right: 1rem;
+  }
+
+  .dropdown a {
+    font-size: 1.5rem;
+    white-space: nowrap;
   }
 
   .dropdown-active {
     display: flex;
   }
 
+
+  .dropdown li {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .menu-icon-helper {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .control-links {
     gap: 2rem;
     padding: 0;
     text-align: center;
-    background-color: rgba(165, 42, 42, 0.229);
     position: relative;
     bottom: 1rem;
     right: .5rem;
