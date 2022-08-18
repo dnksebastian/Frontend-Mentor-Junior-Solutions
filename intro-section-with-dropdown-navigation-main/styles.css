@@ -113,7 +113,7 @@ nav a:focus {
   width: 1rem;
 }
 
-a:focus + .drop-icon {
+.drop-icon-active {
   background-image: url(./images/icon-arrow-up.svg);
 }
 

@@ -18,6 +18,7 @@ navigationElement.style.display = "flex"
 
 const toggleDropdown = (event) => {
     event.target.parentElement.nextElementSibling.classList.toggle('dropdown-active');
+    event.target.nextElementSibling.classList.toggle('drop-icon-active');
 };
 
 
