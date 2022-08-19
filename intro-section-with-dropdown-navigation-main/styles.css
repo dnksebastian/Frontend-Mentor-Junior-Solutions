@@ -402,9 +402,13 @@ footer {
   .intro-img-wrap {
     flex: 70%;
     height: 100%;
+    align-self: center;
+    margin-top: -2rem;
   }
-
+  
   .intro-img-wrap #img-desk {
+    max-height: 750px;
+    max-width: 550px;
     display: block;
   }
   .intro-img-wrap #img-mob {
