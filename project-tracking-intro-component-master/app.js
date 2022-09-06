@@ -8,5 +8,3 @@ navElement.classList.toggle("show-mob-menu");
 }
 
 menuIconElement.addEventListener('click', toggleMobileMenu);
-
-console.log(navElement, menuIconElement);

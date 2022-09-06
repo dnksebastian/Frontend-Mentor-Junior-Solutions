@@ -168,7 +168,6 @@ main {
   justify-content: flex-start;
   flex: 1;
   padding-top: 2.2rem;
-  /* background-color: rgba(0, 100, 0, 0.349); */
 }
 
 .hero-wrapper {
@@ -178,7 +177,6 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 7rem;
-  /* background-color: rgba(220, 20, 60, 0.195); */
   padding-bottom: 2rem;
 }
 
@@ -193,7 +191,6 @@ main {
   position: absolute;
   width: 50rem;
   right: -13.5rem;
-  /* width: 134%; */
 }
 
 .hero-content-wrapper {
@@ -204,7 +201,6 @@ main {
   width: 100%;
   padding: 1.7rem 3.2rem 1rem 3.2rem;
   gap: 1.3rem;
-  /* background-color: rgba(95, 158, 160, 0.208); */
 }
 
 .sub-cap,
@@ -288,7 +284,6 @@ h1,
 /* Footer */
 
 footer {
-  width: 100%;
   margin-top: auto;
 }
 
@@ -301,3 +296,120 @@ footer {
 }
 
 /* Media queries */
+
+
+@media screen and (min-width: 875px) {
+
+  body::after {
+    width: 49%;
+  }
+
+  header {
+    height: 12rem;
+    align-items: flex-end;
+    padding: 1rem 13rem 2.3rem 16.5rem;
+  }
+
+  .logo-wrap {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+
+  nav {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    height: 4rem;
+    width: 45rem;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: .8rem;
+    padding: 1.7rem 1rem 1.2rem 1rem;
+  }
+  
+  nav a {
+    font-size: 1.7rem;
+  }
+  
+  .divider {
+    width: .6rem;
+    height: .6rem;
+  }
+
+  .menu-control-wrap {
+    display: none;
+  }
+
+
+  /* Desktop content styles */
+
+  main {
+    justify-content: center;
+  }
+  
+  .hero-wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  .hero-image-wrapper {
+    height: 46.5rem;
+  }
+  
+  .hero-image-wrapper img {
+    width: 95.5rem;
+    right: -26.5rem;
+  }
+  
+  .hero-content-wrapper {
+    align-self: flex-start;
+    justify-content: center;
+    padding: 4.7rem 6rem 1rem 16.5rem;
+    gap: 1rem;
+  }
+  
+  .sub-cap {
+    padding-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.2rem;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+  }
+  
+  p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+    max-width: 30rem;
+  }
+  
+  .cta-wrap {
+    margin-top: 5.7rem;
+  }
+  
+  .cta-btn {
+    font-size: 1.3rem;
+    padding: 1.5rem 3.3rem;
+  }
+  
+  .cta-sub {
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+  }
+
+
+
+}
