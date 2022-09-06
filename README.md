@@ -17,7 +17,7 @@
 | Fylo Landing Page With 2 Column Layout | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-landing-page-with-two-column-layout-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/fylo-landing-page-with-two-column-layout-master" target="_blank">Repo</a>  |
 | Clipboard Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/clipboard-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/clipboard-landing-page-master" target="_blank">Repo</a>  |
 | Snap Intro Section With Dropdown Navigation | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/intro-section-with-dropdown-navigation-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/intro-section-with-dropdown-navigation-main" target="_blank">Repo</a>  |
-| 9 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Project Tracking Intro Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/project-tracking-intro-component-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/project-tracking-intro-component-master" target="_blank">Repo</a>  |
 | 10 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 11 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 12 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
