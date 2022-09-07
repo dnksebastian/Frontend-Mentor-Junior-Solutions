@@ -403,13 +403,28 @@ footer {
   .cta-btn {
     font-size: 1.3rem;
     padding: 1.5rem 3.3rem;
+    min-width: 18.5rem;
   }
   
   .cta-sub {
     font-size: 1.7rem;
     letter-spacing: 0.2rem;
+    min-width: 17.6rem;
   }
 
+}
 
+@media screen and (min-width: 875px) and (max-width: 1430px) {
+  .hero-image-wrapper {
+    height: 26.5rem;
+  }
+  
+  .hero-image-wrapper img {
+    width: 50.5rem;
+    right: -12.5rem;
+  }
 
+  .hero-content-wrapper {
+    padding: 4.7rem 6rem 1rem 5.5rem;
+  }
 }

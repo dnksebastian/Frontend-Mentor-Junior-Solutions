@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-project-tracking-intro-component-bUnA2X3Ltk](https://www.frontendmentor.io/solutions/html-css-js-project-tracking-intro-component-bUnA2X3Ltk)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/project-tracking-intro-component-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/project-tracking-intro-component-master/)
 
 ## My process
