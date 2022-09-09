@@ -156,8 +156,9 @@ header button:focus {
 
 
 .hero-image-wrapper {
-  height: 43rem;
-  width: 60rem;
+  width: 80%;
+  /* height: 43rem;
+  width: 60rem; */
 }
 
 /* Main styles */
@@ -168,7 +169,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 7rem 3rem 2rem 3rem;
+  padding: 11.6rem 3.8rem 2rem 3.8rem;
 }
 
 .main-content-wrapper {
@@ -177,16 +178,50 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 8rem;
 }
 
 .main-tile {
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 4rem;
+  padding: 11.5rem 2rem 9rem 2rem;
+  gap: 11.5rem;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  justify-content: space-between;
+  flex: 1;
+  text-align: center;
+  gap: 3rem;
+  padding: 0 5rem;
+}
+
+.content-wrapper h2 {
+  font-size: 4rem;
+}
+
+.content-wrapper p {
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  background-color: rgba(255, 0, 0, 0.252);
+  padding: 0 1rem;
+}
+
+.main-tile:last-child p {
+  padding: 0 2rem;
+}
+
+
 .tile-image-wrapper {
-  height: 1rem;
-  width: 1rem;
+  height: 50%;
+  width: 74%;
 }
 
 .cta-box {
