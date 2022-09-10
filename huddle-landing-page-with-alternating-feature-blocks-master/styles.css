@@ -178,18 +178,20 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 8.5rem;
 }
 
 .main-tile {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: white;
   border-radius: 4rem;
-  padding: 11.5rem 2rem 9rem 2rem;
-  gap: 11.5rem;
+  padding: 11.5rem 2rem 6.5rem 2rem;
+  /* gap: 11.5rem; */
+  gap: 11rem;
+  min-height: 97.5rem;
 }
 
 .content-wrapper {
@@ -197,10 +199,11 @@ main {
   flex-direction: column;
   align-items: justify;
   justify-content: space-between;
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
   gap: 3rem;
   padding: 0 5rem;
+  background-color: rgba(255, 0, 0, 0.237);
 }
 
 .content-wrapper h2 {
@@ -220,8 +223,9 @@ main {
 
 
 .tile-image-wrapper {
-  height: 50%;
+  /* height: 50%; */
   width: 74%;
+  background-color: rgba(0, 0, 255, 0.236);
 }
 
 .cta-box {
