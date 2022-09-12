@@ -408,7 +408,7 @@ footer {
   color: var(--custom-pink);
 }
 
-/* Media queries */
+/* Media queries - Small devices */
 
 @media screen and (max-width: 500px) {
 
@@ -416,7 +416,7 @@ footer {
     min-height: 100rem;
   }
 
-  /* Header styles */
+  /* Header media styles */
 
   header {
     flex-direction: column;
@@ -435,7 +435,7 @@ footer {
     min-width: 15rem;
   }
 
-  /* Hero section styles */
+  /* Hero section media styles */
 
 .hero-wrapper {
   padding-bottom: 2rem;
@@ -464,7 +464,7 @@ footer {
   width: 80%;
 }
 
-/* Main styles */
+/* Main media styles */
 
 main {
   padding: 11.6rem 3.8rem 44.8rem 3.8rem;
@@ -515,6 +515,8 @@ main {
   min-width: 20rem;
 }
 
+/* Footer media styles */
+
 footer {
   padding-top: 20rem;
   gap: 5rem;
@@ -563,4 +565,79 @@ footer {
 .attribution {
   font-size: 1.8rem;
 }
+}
+
+
+/* Media queries - Desktop */
+
+
+@media screen and (min-width: 1275px) {
+
+  
+.top-wrapper {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-position: right 0 bottom 0;
+  min-height: 72rem;
+  padding-bottom: 2rem;
+}
+
+/* Header desktop styles */
+
+header {
+  padding: 0rem 8rem;
+}
+
+.logo-wrap {
+  max-width: 20rem;
+}
+
+header button {
+  font-size: 1.4rem;
+  width: 29%;
+  max-width: 20rem;
+  padding: 1.4rem 1rem;
+}
+
+/* Hero section desktop styles */
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  text-align: left;
+  max-width: none;
+  padding: 2rem 8.5rem 2rem 1rem;
+}
+
+.hero-content-wrapper {
+  padding: 10rem 3rem 2rem 7rem;
+  flex: 47%;
+  align-items: flex-start;
+  gap: 2.2rem;
+}
+
+.hero-content-wrapper h1 {
+  font-size: 4rem;
+}
+
+.hero-content-wrapper p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding-bottom: 1rem;
+}
+
+.hero-content-wrapper button {
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+  width: 53.5%;
+}
+
+.hero-image-wrapper {
+  width: 70%;
+  flex: 53%;
+}
+
+
 }
