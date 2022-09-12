@@ -52,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   color: var(--custom-very-dark-cyan);
 }
 
@@ -64,12 +65,17 @@ h3 {
 /* Page styles */
 
 .top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--custom-very-pale-cyan);
   background-image: url(./images/bg-hero-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: right 0 bottom 40rem;
   min-height: 143.5rem;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 
 /* Header styles */
@@ -80,12 +86,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 3.2rem 0rem 3.2rem;
+  width: 100%;
 }
 
 .logo-wrap {
   height: 3.1rem;
-  /* width: 21rem; */
   width: 30%;
+  max-width: 21rem;
 }
 
 header button {
@@ -95,8 +102,8 @@ header button {
   background-color: white;
   border: 1px solid transparent;
   border-radius: 3rem;
-  /* width: 19rem; */
   width: 28%;
+  max-width: 19.3rem;
   padding: 1rem 1rem;
   box-shadow: 0px 0.2rem 1rem 0rem hsla(208, 11%, 55%, 30%);
   cursor: pointer;
@@ -117,6 +124,7 @@ header button:focus {
   justify-content: space-between;
   gap: 8.5rem;
   text-align: center;
+  max-width: 875px;
 }
 
 .hero-content-wrapper {
@@ -158,24 +166,21 @@ header button:focus {
 
 .hero-image-wrapper {
   width: 80%;
-  /* height: 43rem;
-  width: 60rem; */
 }
 
 /* Main styles */
 
 main {
-  /* background-color: rgba(255, 0, 0, 0.314); */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 11.6rem 3.8rem 44.8rem 3.8rem;
   position: relative;
+  max-width: 875px;
 }
 
 .main-content-wrapper {
-  /* background-color: rgba(0, 128, 0, 0.092); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,7 +196,6 @@ main {
   background-color: white;
   border-radius: 4rem;
   padding: 11.5rem 2rem 6.5rem 2rem;
-  /* gap: 11.5rem; */
   gap: 11rem;
   min-height: 97.5rem;
   box-shadow: 0px 0px 3rem -1rem hsla(208, 11%, 55%, 50%);
@@ -200,13 +204,10 @@ main {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: justify; */
   justify-content: space-between;
-  /* flex: 1; */
   text-align: center;
   gap: 3rem;
   padding: 0 5rem;
-  /* background-color: rgba(255, 0, 0, 0.237); */
 }
 
 .content-wrapper h2 {
@@ -216,7 +217,6 @@ main {
 .content-wrapper p {
   font-size: 2.8rem;
   line-height: 4.2rem;
-  /* background-color: rgba(255, 0, 0, 0.252); */
   padding: 0 1rem;
 }
 
@@ -225,14 +225,10 @@ main {
 }
 
 .tile-image-wrapper {
-  /* height: 50%; */
   width: 74%;
-  /* background-color: rgba(0, 0, 255, 0.236); */
 }
 
 .cta-box {
-  /* min-width: 70rem;
-  min-height: 35rem; */
   min-width: 93.5%;
   min-height: 35rem;
   display: flex;
@@ -286,18 +282,16 @@ footer {
   padding-top: 27rem;
   padding-left: 2rem;
   gap: 7.5rem;
+  width: 100%;
 }
 
 .footer-contact-wrapper {
-  /* background-color: rgba(255, 255, 0, 0.421); */
   padding-top: 1rem;
   padding-left: 1.5rem;
+  max-width: 74rem;
 }
 
 .footer-logo-wrapper {
-  /* background-color: rgba(255, 0, 0, 0.436); */
-  /* width: 33rem;
-  height: 5rem; */
   width: 46%;
 }
 
@@ -307,7 +301,6 @@ footer {
 }
 
 .contact-info-wrapper {
-  /* background-color: rgba(0, 255, 255, 0.223); */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -331,7 +324,6 @@ footer {
 
 .contact-icon-wrapper {
   width: 4rem;
-  /* height: 3.5rem; */
   margin-right: 3.5rem;
 }
 .contact-helper:first-child .contact-icon-wrapper {
