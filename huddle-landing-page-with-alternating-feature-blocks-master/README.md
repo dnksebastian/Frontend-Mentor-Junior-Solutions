@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-huddle-landing-page-with-alternating-blocks-6eGEBPvHTF](https://www.frontendmentor.io/solutions/html-css-huddle-landing-page-with-alternating-blocks-6eGEBPvHTF)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions//huddle-landing-page-with-alternating-feature-blocks-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions//huddle-landing-page-with-alternating-feature-blocks-master/)
 
 ## My process
