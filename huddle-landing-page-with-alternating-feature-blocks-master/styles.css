@@ -657,10 +657,11 @@ footer {
     padding: 5.7rem 4rem 6rem 9rem;
     gap: 3rem;
     min-height: auto;
+    max-height: 440px;
   }
 
   .main-tile:nth-of-type(2) {
-    padding: 5.7rem 2rem 6rem 9rem;
+    padding: 5.7rem 1rem 6rem 9rem;
     flex-direction: row-reverse;
   }
 
@@ -674,7 +675,7 @@ footer {
   }
 
   .main-tile:nth-of-type(2) .content-wrapper {
-    padding: 4rem 1rem 3rem 3rem;
+    padding: 4rem .5rem 3rem 12.5rem;
     flex: 58%;
   }
   
@@ -695,7 +696,7 @@ footer {
   }
 
   .main-tile:last-child p {
-    padding: 0 2rem;
+    padding: 0rem;
   }
 
   .tile-image-wrapper {
@@ -726,42 +727,33 @@ footer {
   /* Footer styles */
 
   footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: var(--custom-very-pale-cyan);
-    background-color: var(--custom-very-dark-cyan);
-    flex: 1;
-    padding-top: 27rem;
-    padding-left: 2rem;
-    gap: 7.5rem;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15rem 5rem 4rem 5rem;
+    gap: 2rem;
   }
 
   .footer-contact-wrapper {
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    max-width: 74rem;
+    background-color: rgba(255, 255, 0, 0.236);
+    padding-top: 3.5rem;
+    padding-left: 7rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+    max-width: 52rem;
   }
 
   .footer-logo-wrapper {
-    width: 46%;
-  }
-
-  .footer-logo-wrapper img {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg)
-      brightness(200%) contrast(100%);
+    width: 55%;
   }
 
   .contact-info-wrapper {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 3.5rem;
-    padding-top: 5.5rem;
-    padding-right: 4rem;
+    gap: 1rem;
+    padding-top: 3.5rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -769,66 +761,62 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 0rem;
-  }
-  .contact-helper:nth-child(2),
-  .contact-helper:nth-child(3) {
-    align-items: center;
+    padding: .5rem 1rem .5rem 0rem;
   }
 
   .contact-icon-wrapper {
-    width: 4rem;
-    margin-right: 3.5rem;
+    width: 2rem;
+    margin-right: 2rem;
   }
   .contact-helper:first-child .contact-icon-wrapper {
-    width: 2.5rem;
-    margin-right: 5rem;
+    width: 1.5rem;
+    margin-right: 2.5rem;
   }
 
   .contact-helper p {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
     flex: 1;
   }
 
   .footer-menu-wrapper {
-    font-size: 3.5rem;
-    padding: 1.5rem;
+    background-color: rgba(0, 128, 128, 0.288);
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem 4rem 3.9rem;
   }
-
+  
+  .footer-menu-wrapper li {
+    background-color: rgba(255, 255, 0, 0.248);
+  }
+  
   .footer-menu-wrapper ul {
+    background-color: rgba(255, 0, 0, 0.16);
     display: flex;
     flex-direction: column;
-    gap: 3.8rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-height: 15rem;
+    min-width: 42rem;
   }
 
-  .footer-menu-wrapper a,
-  .footer-social-wrapper a {
-    color: var(--custom-very-pale-cyan);
-  }
-
-  .footer-menu-wrapper a:hover,
-  .footer-menu-wrapper a:focus {
-    text-decoration: underline;
-  }
 
   .footer-social-wrapper {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+    align-self: flex-end;
     justify-content: space-between;
-    gap: 4.5rem;
-    padding: 2rem 2rem;
+    gap: 14rem;
+    padding: 1.2rem 2rem 2rem .5rem;
+    background-color: rgba(255, 0, 0, 0.242);
   }
 
   .footer-social-wrapper ul {
     display: flex;
-    justify-content: center;
-    font-size: 2.9rem;
-    gap: 3rem;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    gap: 1.1rem;
     width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
   }
 
   .social-icons a {
@@ -838,24 +826,14 @@ footer {
     padding: 0.5rem 0.7rem;
   }
 
-  .social-icons a:hover,
-  .social-icons a:focus {
-    border-color: var(--custom-pink);
-    color: var(--custom-pink);
-  }
-
   .attribution {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
   .fm-info {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     font-size: 1.2rem;
   }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-    transition: 0.3s;
-  }
 }
