@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+  <div class="body-helper">
+    
+    <section class="intro">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </section>
+
+    <main>
+      <div class="controls-wrapper">
+
+        <div class="pageview-wrapper">
+          <span id="pageviews-val">100K</span> <!-- delete content-->
+          <span>Pageviews</span>
+        </div>
+
+        <div class="price-wrapper">
+          <span id="price-val">$16.00</span> <!-- delete content-->
+          <span>/month</span>
+        </div>
+
+        <div class="slider-wrapper">
+          <label for="pageviews">Choose a pageview value: </label>
+          <input type="range" name="pageviews" id="pageviews" min="0" max="1000000" step="10">
+          <datalist id="pageviews">
+            <option>10</option>
+            <option>50</option>
+            <option>100</option>
+            <option>500</option>
+            <option>1000</option>
+          </datalist>
+          <!-- <output class="price-output" for="price"></output> -->
+        </div>
+
+        <div class="billing-wrapper">
+
+          <span>Monthly Billing</span>
+          <input type="checkbox" name="billing-toggle" id="billing-switch">
+          <label for="billing-switch">Billing period</label>
+          <span>Yearly Billing</span>
+          <div>
+            <span>25%</span>
+            <span>discount</span>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="bottom-wrapper">
+        <div class="bottom-helper">
+          <ul class="feature-list">
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+        </div>
+        <div class="bottom-helper">
+          <button class="btn">Start my trial</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sebastian</a>.
+  </footer>
+</body>
+
+</html>
