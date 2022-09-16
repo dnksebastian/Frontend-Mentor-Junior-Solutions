@@ -1,5 +1,14 @@
 console.log(".");
 
+const rangeSliderElement = document.getElementById("range-slider");
+console.log(rangeSliderElement);
+
+let renderProgressBar = () => {
+let sliderValue = rangeSliderElement.value;
+rangeSliderElement.style.background = `linear-gradient(to right, var(--custom-strong-cyan) 0%, var(--custom-strong-cyan) ${sliderValue}%, var(--custom-light-grayish-blue) ${sliderValue}%, var(--custom-light-grayish-blue) 100%)`
+};
+
+rangeSliderElement.addEventListener('input', renderProgressBar);
 
 
 /* 
