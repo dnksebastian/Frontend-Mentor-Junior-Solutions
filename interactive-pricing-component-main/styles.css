@@ -118,7 +118,7 @@ body {
 }
 
 main {
-  background-color: rgba(0, 0, 255, 0.244);
+  /* background-color: rgba(0, 0, 255, 0.244); */
   width: 98%;
   border-radius: 2rem;
   display: flex;
@@ -131,7 +131,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: rgba(0, 128, 0, 0.196);
+  /* background-color: rgba(0, 128, 0, 0.196); */
   flex: 50%;
   width: 100%;
   padding: 2rem 2rem 4.5rem 2rem;
@@ -159,15 +159,156 @@ main {
   background-color: blueviolet;
 }
 
+/* Slider styles */
+
 .slider-wrapper {
   grid-area: slider;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  background-color: aqua;
-  padding: 3.5rem 1rem;
+  padding: 3.5rem 3rem;
 }
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+/* Firefox styles */
+/* input[type=range]::-moz-range-thumb {
+  border: 1px solid transparent;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 100%;
+  background: var(--custom-strong-cyan);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 0rem 2rem 3rem 0rem hsla(174, 86%, 45%, 50%);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1.5rem;
+  cursor: pointer;
+  background: var(--custom-light-grayish-blue);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+input[type=range]::-moz-range-progress {
+  width: 100%;
+  height: 1.5rem;
+  cursor: pointer;
+  background: var(--custom-soft-cyan);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+} */
+
+
+/* WebKit styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 100%;
+  background: var(--custom-strong-cyan);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  margin-top: -3rem;
+  box-shadow: 0rem 2rem 3rem 0rem hsla(174, 86%, 45%, 50%);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1.5rem;
+  cursor: pointer;
+  background: var(--custom-light-grayish-blue);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+/* input[type=range]:focus::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1.5rem;
+  cursor: pointer;
+  background: var(--custom-soft-cyan);
+  background: red;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+} */
+
+
+/* IE styles */
+input[type=range]::-ms-thumb {
+  border: 1px solid transparent;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 100%;
+  background: var(--custom-strong-cyan);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 0rem 2rem 3rem 0rem hsla(174, 86%, 45%, 50%);
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border.*/
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 1.5rem;
+  cursor: pointer;
+  background: var(--custom-light-grayish-blue);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+/* End slider style */
 
 .price-wrapper {
   grid-area: price;
