@@ -56,14 +56,17 @@
         <div class="billing-wrapper">
 
           <span>Monthly Billing</span>
-          <input type="checkbox" name="billing-toggle" id="billing-switch">
-          <label for="billing-switch">Billing period</label>
-          <div class="billing-helper">
-            <span>Yearly Billing</span>
-            <div class="billing-discount-helper">
-              <span>-25%</span>
-              <span>discount</span>
-            </div>
+
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
+          <span>Yearly Billing</span>
+          
+          <div class="billing-discount-helper">
+            <span id="discount-value">-25%</span>
+            <span>discount</span>
           </div>
 
         </div>
