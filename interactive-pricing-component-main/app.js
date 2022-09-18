@@ -18,33 +18,33 @@ function renderPrice() {
   if (billingToggleElement.checked) {
     if (slider <= 20) {
       price = 8 - 0.25 * 8;
-      priceElement.textContent = `$${price}`;
+      priceElement.textContent = `$${price}.00`;
     } else if (slider > 20 && slider <= 40) {
       price = 12 - 0.25 * 12;
-      priceElement.textContent = `$${price}`;
+      priceElement.textContent = `$${price}.00`;
     } else if (slider > 40 && slider <= 60) {
       price = 16 - 0.25 * 16;
-      priceElement.textContent = `$${price}`;
+      priceElement.textContent = `$${price}.00`;
     } else if (slider > 60 && slider <= 80) {
       price = 24 - 0.25 * 24;
-      priceElement.textContent = `$${price}`;
+      priceElement.textContent = `$${price}.00`;
     } else {
       price = 36 - 0.25 * 36;
-      priceElement.textContent = `$${price}`;
+      priceElement.textContent = `$${price}.00`;
     }
   }
   else {
 
     if (slider <= 20) {
-      priceElement.textContent = "$8";
+      priceElement.textContent = "$8.00";
     } else if (slider > 20 && slider <= 40) {
-      priceElement.textContent = "$12";
+      priceElement.textContent = "$12.00";
     } else if (slider > 40 && slider <= 60) {
-      priceElement.textContent = "$16";
+      priceElement.textContent = "$16.00";
     } else if (slider > 60 && slider <= 80) {
-      priceElement.textContent = "$24";
+      priceElement.textContent = "$24.00";
     } else {
-      priceElement.textContent = "$36";
+      priceElement.textContent = "$36.00";
     }
   }
 
