@@ -31,26 +31,18 @@
       <div class="controls-wrapper">
 
         <div class="pageview-wrapper">
-          <span id="pageviews-val">100K</span> <!-- delete content-->
+          <span id="pageviews-val">100K</span>
           <span>Pageviews</span>
         </div>
 
         <div class="price-wrapper">
-          <span id="price-val">$16.00</span> <!-- delete content-->
+          <span id="price-val">$16.00</span>
           <span>/ month</span>
         </div>
 
         <div class="slider-wrapper">
-          <label for="pageviews">Choose a pageview value: </label>
+          <label for="pageviews">Choose a pageview value:</label>
           <input id="range-slider" type="range" name="pageviews" id="pageviews" min="0" max="100" step="1" value="50">
-          <datalist id="pageviews">
-            <option>10</option>
-            <option>50</option>
-            <option>100</option>
-            <option>500</option>
-            <option>1000</option>
-          </datalist>
-          <!-- <output class="price-output" for="price"></output> -->
         </div>
 
         <div class="billing-wrapper">
@@ -58,7 +50,7 @@
           <span>Monthly Billing</span>
 
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="billing-toggle">
             <span class="slider round"></span>
           </label>
 
