@@ -134,7 +134,7 @@ main {
   flex: 50%;
   width: 100%;
   padding: 2rem 2rem 4rem 2rem;
-  grid-template-areas: 
+  grid-template-areas:
     "pageviews pageviews"
     "slider slider"
     "price price"
@@ -152,7 +152,7 @@ main {
   text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 800;
-  letter-spacing: .35rem;
+  letter-spacing: 0.35rem;
   color: var(--custom-dark-desaturated-blue);
   padding: 3rem 1rem 1rem 1rem;
 }
@@ -171,11 +171,16 @@ main {
 input[type="range"] {
   width: 100%;
   -webkit-appearance: none;
-  background: linear-gradient(to right, var(--custom-strong-cyan) 0%, var(--custom-strong-cyan) 50%, var(--custom-light-grayish-blue) 50%, var(--custom-light-grayish-blue) 100%);
+  background: linear-gradient(
+    to right,
+    var(--custom-strong-cyan) 0%,
+    var(--custom-strong-cyan) 50%,
+    var(--custom-light-grayish-blue) 50%,
+    var(--custom-light-grayish-blue) 100%
+  );
   transition: background 450ms ease-in;
   border-radius: 1rem;
 }
-
 
 /* WebKit styles */
 input[type="range"]::-webkit-slider-thumb {
@@ -197,7 +202,7 @@ input[type="range"]::-webkit-slider-thumb:active {
   cursor: grabbing;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
   height: 1.5rem;
   cursor: pointer;
@@ -215,13 +220,12 @@ input[type=range]::-webkit-slider-runnable-track {
   border: 1px solid transparent;
 } */
 
-
 input[type="range"]:focus {
   outline: none; /* Removes the blue border.*/
 }
 
 /* Firefox styles */
-input[type=range]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
   border: 1px solid transparent;
   height: 7.5rem;
   width: 7.5rem;
@@ -236,11 +240,11 @@ input[type=range]::-moz-range-thumb {
   box-shadow: 0rem 2rem 3rem 0rem hsla(174, 86%, 45%, 50%);
 }
 
-input[type=range]::-moz-range-thumb:active {
+input[type="range"]::-moz-range-thumb:active {
   cursor: grabbing;
 }
 
-input[type=range]::-moz-range-track {
+input[type="range"]::-moz-range-track {
   width: 100%;
   height: 1.5rem;
   cursor: pointer;
@@ -249,7 +253,7 @@ input[type=range]::-moz-range-track {
   border: 1px solid transparent;
 }
 
-input[type=range]::-moz-range-progress {
+input[type="range"]::-moz-range-progress {
   width: 100%;
   height: 1.5rem;
   cursor: pointer;
@@ -319,8 +323,8 @@ input[type=range]::-moz-range-progress {
   right: 0;
   bottom: 0;
   background-color: var(--custom-light-grayish-blue);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -328,11 +332,11 @@ input[type=range]::-moz-range-progress {
   content: "";
   height: 2.6rem;
   width: 2.6rem;
-  left: .6rem;
-  bottom: .8rem;
+  left: 0.6rem;
+  bottom: 0.8rem;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -358,18 +362,16 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 #discount-value {
   color: var(--custom-light-red);
   background-color: var(--custom-light-grayish-red);
-  padding: .2rem 1.2rem;
+  padding: 0.2rem 1.2rem;
   border-radius: 3rem;
 }
 
 .billing-discount-helper span span {
   display: none;
 }
-
 
 .bottom-wrapper {
   display: flex;
@@ -382,7 +384,6 @@ input:checked + .slider:before {
   border-top: 1px solid var(--custom-grayish-blue);
   padding: 3rem 2rem 6.5rem 2rem;
 }
-
 
 .feature-list {
   font-size: 2.4rem;
@@ -409,7 +410,6 @@ input:checked + .slider:before {
   margin-right: 3rem;
 }
 
-
 .btn {
   font-size: 2.2rem;
   font-weight: 600;
@@ -419,10 +419,11 @@ input:checked + .slider:before {
   border-radius: 5rem;
   padding: 2.7rem 9.5rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: var(--custom-white);
 }
 
@@ -439,27 +440,26 @@ input:checked + .slider:before {
 /* Media queries */
 
 @media screen and (min-width: 1000px) {
-
   body {
     background-size: 100% 56%;
   }
-  
+
   /* Main styles */
   .body-helper {
     gap: 2rem;
   }
-  
+
   .intro {
     gap: 1.2rem;
     padding-top: 6.5rem;
     padding-bottom: 7rem;
     background-size: 30%;
   }
-  
+
   .intro h1 {
     font-size: 2.8rem;
   }
-  
+
   .intro p {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -467,152 +467,223 @@ input:checked + .slider:before {
     padding: 0 1rem;
   }
 
+  main {
+    width: 66%;
+  }
 
-  
-main {
-  width: 66%;
-}
+  .controls-wrapper {
+    grid-template-rows: 2fr 1fr 2fr;
+    padding: 2rem 2rem 1.5rem 2rem;
+    grid-template-areas:
+      "pageviews price"
+      "slider slider"
+      "billing billing";
+    gap: 1rem;
+  }
 
-.controls-wrapper {
-  grid-template-rows: 2fr 1fr 2fr;
-  padding: 2rem 2rem 1.5rem 2rem;
-  grid-template-areas: 
-    "pageviews price"
-    "slider slider"
-    "billing billing";
-  gap: 1rem;
-}
+  .pageview-wrapper {
+    justify-self: flex-start;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    padding: 2rem 1rem 1rem 2.5rem;
+  }
 
+  /* Slider styles */
 
-.pageview-wrapper {
-  justify-self: flex-start;
-  font-size: 1.3rem;
-  letter-spacing: .2rem;
-  padding: 2rem 1rem 1rem 2.5rem;
-}
+  .slider-wrapper {
+    align-items: center;
+    padding: 2rem 3rem 1rem 3rem;
+  }
 
-/* Slider styles */
+  input[type="range"] {
+    height: 0.7rem;
+  }
 
-.slider-wrapper {
-  align-items: center;
-  padding: 2rem 3rem 1rem 3rem;
-}
+  /* WebKit styles */
+  input[type="range"]::-webkit-slider-thumb {
+    height: 4rem;
+    width: 4rem;
+    margin-top: -1.6rem;
+  }
 
-input[type="range"] {
-  height: .7rem;
-}
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 1rem;
+  }
 
-/* WebKit styles */
-input[type="range"]::-webkit-slider-thumb {
-  height: 4rem;
-  width: 4rem;
-  margin-top: -1.6rem;
-}
+  /* Firefox styles */
+  input[type="range"]::-moz-range-thumb {
+    height: 4rem;
+    width: 4rem;
+    margin-top: -14px;
+  }
 
-input[type=range]::-webkit-slider-runnable-track {
-  height: 1rem;
-}
+  input[type="range"]::-moz-range-track {
+    height: 0.7rem;
+  }
 
-/* Firefox styles */
-input[type=range]::-moz-range-thumb {
-  height: 4rem;
-  width: 4rem;
-  margin-top: -14px;
-}
+  input[type="range"]::-moz-range-progress {
+    height: 0.7rem;
+  }
 
-input[type=range]::-moz-range-track {
-  height: .7rem;
-}
+  /* End slider style */
 
-input[type=range]::-moz-range-progress {
-  height: .7rem;
-}
+  .price-wrapper {
+    gap: 1.5rem;
+    padding: 2.5rem 2rem 1rem 1rem;
+  }
 
-/* End slider style */
+  #price-val {
+    font-size: 3.5rem;
+  }
 
-.price-wrapper {
-  gap: 1.5rem;
-  padding: 2.5rem 2rem 1rem 1rem;
-}
+  .price-wrapper span:last-of-type {
+    font-size: 1.5rem;
+  }
 
-#price-val {
-  font-size: 3.5rem;
-}
+  .billing-wrapper {
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: 1.5rem 4rem 1rem 1rem;
+  }
 
-.price-wrapper span:last-of-type {
-  font-size: 1.5rem;
-}
+  /* Billing toggle button styles */
 
-.billing-wrapper {
-  justify-content: flex-end;
-  gap: 1rem;
-  font-size: 1.2rem;
-  padding: 1.5rem 4rem 1rem 1rem;
-}
+  .switch {
+    width: 4.2rem;
+    height: 2.2rem;
+  }
 
-/* Billing toggle button styles */
+  .slider:before {
+    height: 1.3rem;
+    width: 1.3rem;
+    left: 0.6rem;
+    bottom: 0.4rem;
+  }
 
-.switch {
-  width: 4.2rem;
-  height: 2.2rem;
-}
+  input:checked + .slider:before {
+    -webkit-transform: translateX(1.8rem);
+    -ms-transform: translateX(1.8rem);
+    transform: translateX(1.8rem);
+  }
 
-.slider:before {
-  height: 1.3rem;
-  width: 1.3rem;
-  left: .6rem;
-  bottom: .4rem;
-}
+  #discount-value {
+    padding: 0.2rem 0.5rem;
+    font-size: 1.1rem;
+  }
 
+  .billing-discount-helper span span {
+    display: inline-block;
+  }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(1.8rem);
-  -ms-transform: translateX(1.8rem);
-  transform: translateX(1.8rem);
-}
+  .bottom-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 1rem 4.5rem 1rem 2.6rem;
+  }
 
+  .feature-list {
+    font-size: 1.2rem;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
 
-#discount-value {
-  padding: .2rem .5rem;
-  font-size: 1.1rem;
-}
+  .feature-list span::before {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1.5rem;
+  }
 
-.billing-discount-helper span span {
-  display: inline-block;
-}
-
-
-.bottom-wrapper {
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3rem;
-  padding: 1rem 4.5rem 1rem 2.6rem;
-}
-
-
-.feature-list {
-  font-size: 1.2rem;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 2rem 2rem;
-}
-
-.feature-list span::before {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 1.5rem;
-}
-
-
-.btn {
-  font-size: 1.2rem;
-  border-radius: 5rem;
-  padding: 1.1rem 4.2rem;
-}
-
+  .btn {
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    padding: 1.1rem 4.2rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .body-helper {
+    min-width: 350px;
+  }
+
+  .intro {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    background-position: top 5rem center;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .pageview-wrapper {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    height: 5rem;
+    width: 5rem;
+    margin-top: -2rem;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #price-val {
+    font-size: 4rem;
+  }
+
+  .price-wrapper span:last-of-type {
+    font-size: 1.5rem;
+  }
+
+  .billing-wrapper {
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(4rem);
+    -ms-transform: translateX(4rem);
+    transform: translateX(4rem);
+  }
+
+  .feature-list {
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    padding: 2rem 2.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 680px) {
+  .billing-wrapper {
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
 
   .body-helper {
     min-width: 475px;
@@ -670,12 +741,4 @@ input:checked + .slider:before {
     align-items: flex-start;
   }
 
-}
-
-@media screen and (min-width: 501px) and (max-width:680px) {
-  .billing-wrapper {
-    font-size: 1.5rem;
-    gap: 1rem;
-    padding: 1.5rem;
-  }
-}
+} */
