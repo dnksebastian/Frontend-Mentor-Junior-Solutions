@@ -19,7 +19,13 @@
 | Snap Intro Section With Dropdown Navigation | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/intro-section-with-dropdown-navigation-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/intro-section-with-dropdown-navigation-main" target="_blank">Repo</a>  |
 | Project Tracking Intro Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/project-tracking-intro-component-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/project-tracking-intro-component-master" target="_blank">Repo</a>  |
 | Huddle Landing Page With Alternating Feature Blocks | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions//huddle-landing-page-with-alternating-feature-blocks-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/huddle-landing-page-with-alternating-feature-blocks-master" target="_blank">Repo</a>  |
-| 11 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Interactive Pricing Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/interactive-pricing-component-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/interactive-pricing-component-main" target="_blank">Repo</a>  |
 | 12 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 13 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 14 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 15 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 16 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 17 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 18 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 
 </div>
