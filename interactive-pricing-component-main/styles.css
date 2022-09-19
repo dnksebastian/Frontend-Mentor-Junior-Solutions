@@ -85,7 +85,6 @@ body {
 }
 
 .intro {
-  background-color: rgba(255, 0, 0, 0.201);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +113,6 @@ body {
   line-height: 4.5rem;
   max-width: 38rem;
   padding: 0 2rem;
-  background-color: red;
 }
 
 main {
@@ -157,7 +155,6 @@ main {
   letter-spacing: .35rem;
   color: var(--custom-dark-desaturated-blue);
   padding: 3rem 1rem 1rem 1rem;
-  background-color: blueviolet;
 }
 
 /* Slider styles */
@@ -269,7 +266,6 @@ input[type=range]::-moz-range-progress {
   align-items: center;
   justify-content: center;
   gap: 2.3rem;
-  background-color: yellow;
   padding: 1rem 2rem;
 }
 
@@ -290,7 +286,6 @@ input[type=range]::-moz-range-progress {
   justify-content: center;
   gap: 2rem;
   grid-area: billing;
-  background-color: green;
   color: var(--custom-dark-desaturated-blue);
   font-size: 2.3rem;
   font-weight: 600;
@@ -382,16 +377,12 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   gap: 4.5rem;
-  background-color: rgba(255, 217, 0, 0.322);
   width: 100%;
   flex: 50%;
   border-top: 1px solid var(--custom-grayish-blue);
   padding: 3rem 2rem 6.5rem 2rem;
 }
 
-.bottom-helper {
-  background-color: pink;
-}
 
 .feature-list {
   font-size: 2.4rem;
@@ -679,6 +670,12 @@ input:checked + .slider:before {
     align-items: flex-start;
   }
 
+}
 
-
+@media screen and (min-width: 501px) and (max-width:680px) {
+  .billing-wrapper {
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
 }
