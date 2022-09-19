@@ -623,4 +623,62 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 500px) {
 
+  .body-helper {
+    min-width: 475px;
+  }
+
+
+  .intro {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    background-position: top 5rem center;
+  }
+
+
+  .intro h1 {
+    font-size:  3rem;
+  }
+
+
+  .intro p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+
+  .pageview-wrapper {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  #price-val {
+    font-size: 4rem;
+  }
+
+  .price-wrapper span:last-of-type {
+    font-size: 1.5rem;
+  }
+
+
+  .billing-wrapper {
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(2.5rem);
+    -ms-transform: translateX(2.5rem);
+    transform: translateX(2.5rem);
+  }
+
+
+  .feature-list {
+    font-size: 2rem;
+    align-items: flex-start;
+  }
+
+
+
 }
