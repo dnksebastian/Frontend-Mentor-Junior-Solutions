@@ -498,17 +498,16 @@ main {
 
 .controls-wrapper {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
   flex: 50%;
   width: 100%;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 2rem 1.5rem 2rem;
   grid-template-areas: 
     "pageviews price"
     "slider slider"
     "billing billing";
   justify-items: center;
   gap: 1rem;
-  /* background-color: red; */
 }
 
 
@@ -516,12 +515,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: flex-start;
   gap: 1rem;
   grid-area: pageviews;
-  font-size: 1.4rem;
-  font-weight: 800;
-  letter-spacing: .35rem;
-  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  padding: 2rem 1rem 1rem 2.5rem;
   background-color: blueviolet;
 }
 
@@ -530,20 +529,15 @@ main {
 .slider-wrapper {
   grid-area: slider;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 1rem 3rem;
 }
 
 input[type="range"] {
-  width: 100%;
-  -webkit-appearance: none;
-  background: linear-gradient(to right, var(--custom-strong-cyan) 0%, var(--custom-strong-cyan) 50%, var(--custom-light-grayish-blue) 50%, var(--custom-light-grayish-blue) 100%);
-  transition: background 450ms ease-in;
-  border-radius: 1rem;
+  height: .7rem;
 }
-
 
 /* WebKit styles */
 input[type="range"]::-webkit-slider-thumb {
@@ -558,13 +552,13 @@ input[type="range"]::-webkit-slider-thumb {
   background-position: center;
   background-size: 50%;
   cursor: pointer;
-  margin-top: -1.5rem;
+  margin-top: -1.6rem;
   box-shadow: 0rem 2rem 3rem 0rem hsla(174, 86%, 45%, 50%);
 }
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 1.5rem;
+  height: 1rem;
   cursor: pointer;
   background: transparent;
   border-radius: 1rem;
@@ -589,20 +583,12 @@ input[type=range]::-moz-range-thumb {
 
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 1.5rem;
-  cursor: pointer;
-  background: var(--custom-light-grayish-blue);
-  border-radius: 1rem;
-  border: 1px solid transparent;
+  height: .7rem;
 }
 
 input[type=range]::-moz-range-progress {
   width: 100%;
-  height: 1.5rem;
-  cursor: pointer;
-  background: var(--custom-strong-cyan);
-  border-radius: 1rem;
-  border: 1px solid transparent;
+  height: .7rem;
 }
 
 /* End slider style */
@@ -612,9 +598,9 @@ input[type=range]::-moz-range-progress {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   background-color: yellow;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem 1rem 1rem;
 }
 
 #price-val {
@@ -629,86 +615,42 @@ input[type=range]::-moz-range-progress {
 .billing-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: flex-end;
+  gap: 1rem;
   grid-area: billing;
   background-color: green;
   color: var(--custom-dark-desaturated-blue);
-  font-size: 1.3rem;
-  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  padding: 1.5rem 4rem 1rem 1rem;
   width: 100%;
 }
 
 /* Billing toggle button styles */
 
-/* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 8rem;
-  height: 4.3rem;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--custom-light-grayish-blue);
-  -webkit-transition: .4s;
-  transition: .4s;
+  width: 4.2rem;
+  height: 2.2rem;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 2.6rem;
-  width: 2.6rem;
+  height: 1.3rem;
+  width: 1.3rem;
   left: .6rem;
-  bottom: .8rem;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  bottom: .4rem;
 }
 
-input:checked + .slider {
-  background-color: var(--custom-soft-cyan);
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--custom-soft-cyan);
-}
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(4.2rem);
-  -ms-transform: translateX(4.2rem);
-  transform: translateX(4.2rem);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 3.5rem;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+  -webkit-transform: translateX(1.8rem);
+  -ms-transform: translateX(1.8rem);
+  transform: translateX(1.8rem);
 }
 
 
 #discount-value {
   color: var(--custom-light-red);
   background-color: var(--custom-light-grayish-red);
-  padding: .2rem 1.2rem;
+  padding: .2rem .5rem;
   border-radius: 3rem;
   font-size: 1.1rem;
 }
