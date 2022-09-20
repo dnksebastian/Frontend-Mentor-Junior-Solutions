@@ -1,0 +1,85 @@
+/* General styles, reset and typography */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+span {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+  /* ### Primary */
+
+  --custom-pink: hsl(322, 100%, 66%);
+  --custom-light-pink: hsl(321, 100%, 78%);
+  --custom-light-red: hsl(0, 100%, 63%);
+
+  /* ### Neutral */
+
+  --custom-very-dark-cyan: hsl(192, 100%, 9%);
+  --custom-very-pale-blue: hsl(207, 100%, 98%);
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+
+/* Page styles - mobile first */
+/* Header styles */
+
+.logo-wrap {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Main styles */
+
+.hero-img-wrapper {
+    width: 1rem;
+    height: 1rem;
+}
+
+.hero-icon-wrap {
+    width: 1rem;
+    height: 1rem;
+}
+
+.feature-img-wrap {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* Footer styles */
+
+.footer-logo-wrap {
+    width: 1rem;
+    height: 1rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
