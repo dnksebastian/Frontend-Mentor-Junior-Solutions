@@ -50,6 +50,7 @@ html {
 html,
 body {
   min-height: 100vh;
+  min-width: 26rem;
 }
 
 body {
@@ -221,6 +222,7 @@ main {
 }
 
 .feature-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,38 +244,50 @@ main {
 
 /* Curved separators*/
 .feature-wrap:first-of-type::before {
+  position: relative;
+  top: 0;
+  left: 0;
   content: "";
   background-image: url(./images/bg-section-top-mobile-1.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 11rem;
   background-color: white;
 }
 .feature-wrap:first-of-type::after {
+  position: relative;
+  bottom: 0;
+  left: 0;
   content: "";
   background-image: url(./images/bg-section-bottom-mobile-1.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 7rem;
   background-color: white;
 }
 
 .feature-wrap:last-of-type::before {
+  position: relative;
+  top: 0;
+  left: 0;
   content: "";
   background-image: url(./images/bg-section-top-mobile-2.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 10rem;
   background-color: white;
 }
 .feature-wrap:last-of-type::after {
+  position: relative;
+  bottom: 0;
+  left: 0;
   content: "";
   background-image: url(./images/bg-section-bottom-mobile-2.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 100%;
   height: 11rem;
   background-color: white;
@@ -337,16 +351,20 @@ main {
 /* Footer styles */
 
 footer::after {
+  position: relative;
+  top: 0;
+  left: 0;
   content: "";
   width: 100%;
   height: 5.3rem;
   background-color: white;
   background-image: url(./images/bg-footer-top-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 footer {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column-reverse;
@@ -367,8 +385,10 @@ footer {
 .footer-subform {
   display: flex;
   flex-direction: column;
+  /* align-self: flex-start; */
   gap: 2rem;
   padding: 3.8rem 2.7rem;
+  max-width: 60rem;
   /* background-color: rgba(255, 0, 0, 0.282); */
 }
 
@@ -451,6 +471,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* align-self: flex-start; */
   gap: 1.5rem;
   padding: 4.5rem 3rem;
 }
