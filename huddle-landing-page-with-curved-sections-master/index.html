@@ -110,7 +110,7 @@
 
 
   <footer>
-    <div class="footer-helper">
+    <div class="footer-helper footer-contact">
       <div class="footer-logo-wrap">
         <img src="./images/logo.svg" alt="Huddle logo">
       </div>
@@ -135,7 +135,7 @@
 
         <div class="contact-row">
           <div class="contact-icon-wrap">
-            <i class="fa-solid fa-kiwi-bird"></i>
+            <i class="fa-solid fa-kiwi-bird fa-fw"></i>
           </div>
           <span class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
               target="_blank">Frontend Mentor</a>.
@@ -145,9 +145,9 @@
 
       <div class="social-icon-wrap">
         <ul>
-          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-facebook fa-fw"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-twitter fa-fw"></i></a></li>
         </ul>
       </div>
 
@@ -155,11 +155,14 @@
 
     <div class="footer-helper footer-subform">
       <span>Newsletter</span>
-      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-      <div class="input-wrap">
-        <input type="email" id="foot-input">
-        <button id="foot-btn">Subscribe</button>
-      </div>
+      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or
+        pass on your email address</p>
+      <form class="contact-form">
+        <label for="foot-input">E-mail address</label>
+        <input type="email" id="foot-input" maxlength="64" placeholder="Your e-mail" required>
+        <span id="error-msg">Check your email please</span>
+        <button id="foot-btn" type="submit">Subscribe</button>
+      </form>
     </div>
 
   </footer>
