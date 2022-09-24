@@ -100,6 +100,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   /* background-color: rgba(0, 128, 0, 0.097); */
+  width: 100%;
 }
 
 #hero {
@@ -112,19 +113,6 @@ main {
   gap: 1rem;
 }
 
-/* #hero::after {
-  position: absolute;
-  bottom: -8.5rem;
-  content: "";
-  width: 100%;
-  height: 12rem;
-  background-image: url(./images/bg-section-top-mobile-1.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 bottom;
-  z-index: 999;
-} */
-
 .hero-helper-top {
   padding: 2rem 3rem 6rem 3rem;
   display: flex;
@@ -133,7 +121,6 @@ main {
   justify-content: space-between;
   text-align: center;
   gap: 3rem;
-  /* background-color: rgba(255, 255, 255, 0.33); */
 }
 
 .hero-helper-top h1 {
@@ -144,6 +131,7 @@ main {
   font-size: 1.4rem;
   line-height: 2rem;
   padding-bottom: 2rem;
+  max-width: 60rem;
 }
 
 #hero-btn {
@@ -168,6 +156,7 @@ main {
 
 .hero-img-wrapper {
   width: 100%;
+  max-width: 60rem;
 }
 
 .hero-helper-bottom {
@@ -189,6 +178,7 @@ main {
   justify-content: space-between;
   padding: 0rem 2rem 1rem 2rem;
   gap: 1.2rem;
+  max-width: 19rem;
 }
 
 .hero-icon-wrap {
@@ -206,14 +196,16 @@ main {
   font-size: 1.5rem;
 }
 
+.hero-data-wrap:last-of-type .hero-data-name {
+  word-spacing: 19rem;
+}
+
 /* End hero styles */
 /*  */
 /* Feature section styles */
 
 #features-wrapper {
-  /* margin-top: 8.5rem; */
   width: 100%;
-  /* background-color: rgba(0, 128, 0, 0.101); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,6 +221,7 @@ main {
   justify-content: space-between;
   padding: 0rem 0rem;
   gap: 2rem;
+  width: 100%;
 }
 
 .feature-wrap:nth-of-type(odd) {
@@ -294,8 +287,9 @@ main {
 }
 
 .feature-img-wrap {
-  padding: 10% 15%;
-  /* background-color: gold; */
+  /* padding: 10% 15%; */
+  padding: 4rem 6rem;
+  max-width: 80rem;
 }
 
 .feature-content-wrap {
@@ -306,6 +300,7 @@ main {
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem 4rem;
+  max-width: 60rem;
 }
 
 .feature-content-wrap h2 {
@@ -539,5 +534,99 @@ footer {
   color: var(--custom-pink);
 }
 
+/* Media queries */
+
+@media screen and (min-width: 1000px) {
+
+  /* Header desktop styles */
+  header {
+    padding: 8rem 6rem 2.5rem 8rem;
+  }
+  
+  .logo-wrap {
+    width: 24rem;
+    height: 3.5rem;
+  }
+  
+  #head-btn {
+    padding: .7rem 3.2rem;
+    font-size: 1.8rem;
+  }
 
 
+  /* Main desktop styles */
+
+
+  main {
+    padding: 13rem 0rem 12rem 0rem;
+    background-color: rgba(0, 128, 0, 0.097);
+  }
+  
+  #hero {
+    background-color: rgba(255, 0, 0, 0.162);
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-helper-top {
+    padding: 7.5rem 3rem 6rem 3rem;
+    gap: 3rem;
+  }
+  
+  .hero-helper-top h1 {
+    font-size: 4.9rem;
+  }
+  
+  .hero-helper-top p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  #hero-btn {
+    font-size: 1.9rem;
+    padding: 2.5rem 10rem;
+  }
+
+
+  
+.hero-helper-middle {
+  padding: 4.5rem 3.7rem 3.2rem 3.7rem;
+}
+
+.hero-img-wrapper {
+  max-width: 110rem;
+}
+
+.hero-helper-bottom {
+  padding: 8rem 10rem 3rem 10rem;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 3rem;
+  background-color: rgba(0, 128, 0, 0.207);
+}
+
+.hero-data-wrap {
+  max-width: 30rem;
+}
+
+.hero-icon-wrap {
+  width: 4rem;
+}
+
+.hero-data-value {
+  font-size: 9rem;
+}
+
+.hero-data-name {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.hero-data-wrap:last-of-type .hero-data-name {
+  word-spacing:normal;
+}
+
+
+
+}
