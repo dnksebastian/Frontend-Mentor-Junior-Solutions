@@ -130,6 +130,7 @@ main {
   line-height: 2rem;
   padding-bottom: 2rem;
   max-width: 60rem;
+  color: var(--custom-very-dark-cyan);
 }
 
 #hero-btn {
@@ -140,6 +141,7 @@ main {
   background-color: var(--custom-pink);
   border: 1px solid transparent;
   border-radius: 3rem;
+  box-shadow: 0rem 1rem 3rem -1rem var(--custom-very-dark-cyan);
 }
 
 #hero-btn:hover,
@@ -189,6 +191,7 @@ main {
 .hero-data-name {
   text-align: center;
   font-size: 1.5rem;
+  color: gray;
 }
 
 .hero-data-wrap:last-of-type .hero-data-name {
@@ -335,6 +338,7 @@ main {
   background-color: var(--custom-pink);
   border: 1px solid transparent;
   border-radius: 3rem;
+  box-shadow: 0rem 1rem 3rem -1rem var(--custom-very-dark-cyan);
 }
 
 #bot-cta-btn:hover,
@@ -772,8 +776,12 @@ footer::before {
   max-width: 35rem;
 }
 
+.footer-contact-helper {
+  font-size: 1.5rem;
+}
+
 .social-icon-wrap {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .social-icon-wrap ul {
