@@ -11,8 +11,12 @@ a {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: block;
+  background-color: rgba(0, 0, 255, 0.163);
+  height: 3rem;
+  width: 3rem;
 }
 
 span {
