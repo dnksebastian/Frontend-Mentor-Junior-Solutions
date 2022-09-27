@@ -11,12 +11,9 @@ a {
 }
 
 img {
-  /* width: 100%; */
-  /* height: 100%; */
+  width: 100%;
+  height: 100%;
   display: block;
-  background-color: rgba(0, 0, 255, 0.163);
-  height: 3rem;
-  width: 3rem;
 }
 
 span {
@@ -54,7 +51,15 @@ button {
 html {
   font-size: 10px;
   font-family: "Barlow", sans-serif;
-  /* font-family: 'Fraunces', serif; */
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+.client-name {
+  font-family: "Fraunces", serif;
 }
 
 body,
@@ -63,6 +68,188 @@ html {
 }
 
 /* General styles */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 2.2rem;
+  z-index: 3;
+}
+
+.logo-wrap {
+  width: 12.5rem;
+}
+
+.nav-wrap {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-wrap {
+  cursor: pointer;
+}
+
+/* Hero section styles */
+
+.hero-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 53.9rem;
+  background-image: url(./images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 25% center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 3.6rem 2rem 3rem 2rem;
+  gap: 4.5rem;
+  color: var(--custom-white);
+}
+
+.hero-content h1 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  letter-spacing: 0.65rem;
+}
+
+/* Introduction section styles */
+
+.introduction-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, minmax(31rem, max-content)) repeat(2, 60rem);
+  background-color: rgba(255, 255, 0, 0.222);
+}
+
+.introduction-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 6.2rem 2rem 5.5rem 2rem;
+  gap: 2.3rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.introduction-tile:first-of-type {
+  background-image: url(./images/mobile/image-transform.jpg);
+}
+
+.introduction-tile:nth-child(3) {
+  background-image: url(./images/mobile/image-stand-out.jpg);
+}
+
+.introduction-tile:nth-child(5) {
+  background-image: url(./images/./mobile/image-graphic-design.jpg);
+}
+.introduction-tile:nth-child(6) {
+  background-image: url(./images/mobile/image-photography.jpg);
+}
+
+.introduction-tile h2 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  color: var(--custom-very-dark-desaturated-blue);
+}
+.introduction-tile p {
+  color: var(--custom-dark-grayish-blue);
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.introduction-tile button {
+  position: relative;
+  color: var(--custom-very-dark-desaturated-blue);
+  font-weight: 900;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1rem 0.8rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  /* border-bottom: .7rem solid var(--custom-yellow); */
+  z-index: 2;
+}
+
+.introduction-tile button::after {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  content: "";
+  height: 0.8rem;
+  width: 100%;
+  border-radius: 1rem;
+  opacity: 40%;
+  background-color: var(--custom-yellow);
+  z-index: -1;
+  transition: 0.3s;
+}
+.introduction-tile:nth-child(4) button::after {
+  background-color: var(--custom-soft-red);
+}
+
+.introduction-tile button:hover::after,
+.introduction-tile button:focus::after {
+  opacity: 100%;
+}
+
+.taller-tile {
+  justify-content: flex-end;
+  padding: 6.2rem 2rem 6rem 2rem;
+  gap: 2.8rem;
+}
+
+.taller-tile h2 {
+  color: var(--custom-dark-desaturated-cyan);
+  text-transform: capitalize;
+  font-size: 2.8rem;
+}
+
+.taller-tile p {
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  color: var(--custom-dark-desaturated-cyan);
+}
+.taller-tile:last-of-type h2,
+.taller-tile:last-of-type p {
+  color: var(--custom-dark-blue);
+}
+
+.avatar-wrap {
+  width: 1rem;
+}
+
+.footer-logo-wrap {
+  width: 1rem;
+}
+
+.social-media-menu li {
+  width: 1rem;
+}
 
 /* Footer styles */
 
