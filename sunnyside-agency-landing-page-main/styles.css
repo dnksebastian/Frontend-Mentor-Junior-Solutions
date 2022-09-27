@@ -252,6 +252,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   padding: 6.2rem 0 8.5rem 0;
   gap: 1rem;
 }
@@ -318,7 +319,6 @@ header {
   height: 37.5rem;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  flex: 1;
 }
 
 .bottom-img-wrap {
@@ -350,7 +350,6 @@ footer {
   justify-content: space-between;
   gap: 2rem;
   flex: 1;
-  max-height: 40rem;
   padding: 6.5rem 2rem 2rem 2rem;
 }
 
