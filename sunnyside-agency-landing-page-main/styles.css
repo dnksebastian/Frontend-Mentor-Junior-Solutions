@@ -136,7 +136,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  /* background-color: rgba(255, 0, 0, 0.204); */
 }
 
 .nav-li {
@@ -267,7 +266,6 @@ header {
   padding: 1rem 0.8rem;
   background-color: transparent;
   border-radius: 0.5rem;
-  /* border-bottom: .7rem solid var(--custom-yellow); */
   z-index: 2;
 }
 
@@ -599,19 +597,17 @@ footer a:focus {
 }
 
 @media screen and (min-width: 1000px) {
-
-
   /* Desktop header styles */
 
   header {
     height: 12.5rem;
     padding: 0 4.3rem;
   }
-  
+
   .logo-wrap {
     min-width: 17rem;
   }
-  
+
   .nav-list {
     flex-direction: row;
     justify-content: space-between;
@@ -637,152 +633,144 @@ footer a:focus {
 
   /* Hero section desktop styles */
 
-.hero-wrap {
-  height: 80rem;
-  background-image: url(./images/desktop/image-header.jpg);
-}
+  .hero-wrap {
+    height: 80rem;
+    background-image: url(./images/desktop/image-header.jpg);
+  }
 
-.hero-content {
-  padding: 2.5rem 2rem 16rem 2rem;
-  gap: 9rem;
-  font-size: 2rem;
-}
+  .hero-content {
+    padding: 2.5rem 2rem 16rem 2rem;
+    gap: 9rem;
+    font-size: 2rem;
+  }
 
-.hero-content h1 {
-  font-size: 5.5rem;
-  letter-spacing: 1.2rem;
-}
+  .hero-content h1 {
+    font-size: 5.5rem;
+    letter-spacing: 1.2rem;
+  }
 
-/* Introduction section desktop styles */
+  /* Introduction section desktop styles */
 
-.introduction-tile {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  justify-items: flex-start;
-  text-align: left;
-  min-height: 60rem;
-}
+  .introduction-tile {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: flex-start;
+    text-align: left;
+    min-height: 60rem;
+  }
 
-.introduction-tile:first-of-type {
-background-image: url(./images/desktop/image-transform.jpg);
-}
+  .introduction-tile:first-of-type {
+    background-image: url(./images/desktop/image-transform.jpg);
+  }
 
-.introduction-tile:nth-child(3) {
-background-image: url(./images/desktop/image-stand-out.jpg);
-}
+  .introduction-tile:nth-child(3) {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+  }
 
-.introduction-tile:nth-child(5) {
-  background-image: url(./images/desktop/image-graphic-design.jpg);
-}
-.introduction-tile:nth-child(6) {
-background-image: url(./images/desktop/image-photography.jpg);
-}
+  .introduction-tile:nth-child(5) {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+  }
+  .introduction-tile:nth-child(6) {
+    background-image: url(./images/desktop/image-photography.jpg);
+  }
 
-.introduction-tile h2 {
-  font-size: 4rem;
-  max-width: 50rem;
-  padding-right: 5rem;
-}
-.introduction-tile p {
-  font-size: 1.8rem;
-  line-height: 3rem;
-  max-width: 450px;
-  padding-top: .7rem;
-  padding-bottom: 1rem;
-}
+  .introduction-tile h2 {
+    font-size: 4rem;
+    max-width: 50rem;
+    padding-right: 5rem;
+  }
+  .introduction-tile p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    max-width: 450px;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+  }
 
-.taller-tile {
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: flex-end;
-  text-align: center;
-  padding: 2rem 2rem 6rem 2rem;
-  gap: 2.8rem;
-}
+  .taller-tile {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: flex-end;
+    text-align: center;
+    padding: 2rem 2rem 6rem 2rem;
+    gap: 2.8rem;
+  }
 
-.taller-tile h2 {
-  padding: 0;
-  font-size: 2.8rem;
-}
+  .taller-tile h2 {
+    padding: 0;
+    font-size: 2.8rem;
+  }
 
-.taller-tile p {
-  font-size: 1.6rem;
-  line-height: 2.7rem;
-  max-width: 37rem;
-  padding: 0 1rem;
-}
-
-/* Testimonials desktop section styles */
-
-.testimonials-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  padding: 6.2rem 0 8.5rem 0;
-  gap: 1rem;
-}
-
-.testimonials-section h4 {
-  font-size: 1.7rem;
-  letter-spacing: 0.35rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: var(--custom-grayish-blue);
-}
-
-.testimonials-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-    gap: 1.2rem;
+  .taller-tile p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    max-width: 37rem;
     padding: 0 1rem;
+  }
+
+  /* Testimonials desktop section styles */
+
+  .testimonials-section {
+    padding: 16rem 2rem 14rem 2rem;
+    gap: 5rem;
+  }
+
+  .testimonials-section h4 {
+    font-size: 2.2rem;
+  }
+
+  .testimonials-wrapper {
+    gap: 1rem;
+  }
+
+  .testimonial-tile {
+    padding: 3rem 1rem 2.5rem 1rem;
+    gap: 1rem;
+    min-height: 40rem;
+  }
+
+  .client-quote {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Bottom gallery desktop styles */
+
+  .bottom-gallery-wrap {
+    min-height: 45rem;
+  }
+  .bottom-img-wrap:nth-child(1) {
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  }
+  .bottom-img-wrap:nth-child(2) {
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+  }
+  .bottom-img-wrap:nth-child(3) {
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+  }
+  .bottom-img-wrap:nth-child(4) {
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  }
+
+  /* Footer desktop styles */
+
+footer {
+  gap: 2rem;
+  flex: 1;
+  padding: 7rem 2rem 2rem 2rem;
+  min-height: 35rem;
 }
 
-.testimonial-tile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-    padding: 3rem 2rem 0.5rem 2rem;
-    gap: 2rem;
-    min-height: 35rem;
+.footer-logo-wrap {
+  max-width: 17rem;
 }
 
-.avatar-wrap {
-  width: 7rem;
-  border-radius: 50%;
-  overflow: hidden;
+.footer-menu {
+  max-width: 35rem;
+  padding: 0 1rem 5rem 1rem;
 }
-
-.client-quote {
-  color: var(--custom-very-dark-grayish-blue);
-  max-width: 350px;
-  font-size: 1.5rem;
-    line-height: 2.5rem;
-}
-
-.client-info-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.client-name {
-  font-size: 2rem;
-}
-
-.client-position {
-  color: var(--custom-grayish-blue);
-  font-size: 1.4rem;
-}
-
 
 }
