@@ -1,0 +1,111 @@
+/* General, typography and reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --custom-dark-blue-a: hsl(
+    217,
+    28%,
+    15%
+  ); /*(intro and email sign up background)*/
+  --custom-dark-blue-b: hsl(218, 28%, 13%); /* (main background)*/
+  --custom-dark-blue-c: hsl(216, 53%, 9%); /* (footer background)*/
+  --custom-dark-blue-d: hsl(219, 30%, 18%); /*(testimonials background)*/
+
+  /* ### Accent */
+
+  --custom-cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+  --custom-blue: hsl(198, 60%, 50%); /* (inside call-to-action gradient)*/
+  --custom-light-red: hsl(0, 100%, 63%); /* (error)*/
+
+  /* ### Neutral */
+
+  --custom-white: hsl(0, 0%, 100%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+
+span {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main styles */
+
+.logo-wrap {
+  width: 1rem;
+  height: 1rem;
+}
+
+.hero-img-wrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+.details-img-wrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+.person-avatar-wrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+.foot-logo-wrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+.contact-icon-wrapper {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Media queries */
