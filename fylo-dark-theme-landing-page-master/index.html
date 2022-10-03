@@ -163,10 +163,10 @@
         <form action="">
           <div class="input-helper">
             <label for="email">Enter your email</label>
-            <input type="email" required id="email">
+            <input type="email" required id="email" placeholder="email@example.com">
             <span class="error-msg">Please enter a valid email address</span>
           </div>
-          <button type="submit">Get Started For Free</button>
+          <button type="submit" id="contact-btn">Get Started For Free</button>
         </form>
       </div>
     </div>
@@ -177,58 +177,37 @@
         <img src="./images/logo.svg" alt="Fylo logo">
       </div>
 
-      <div class="contact-info-helper">
-        <div class="contact-icon-wrapper">
-          <img src="./images/icon-location.svg" alt="Location icon" class="contact-icon">
-        </div>
-        <p class="contact-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      <ul class="contact-information">
+        <li id="location"><p class="contact-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et
-          dolore magna aliqua</p>
-      </div>
-
-      <div class="contact-info-helper">
-        <div class="contact-icon-wrapper">
-          <img src="./images/icon-phone.svg" alt="Phone icon" class="contact-icon">
-        </div>
-        <p class="contact-info">+1-543-123-4567</p>
-      </div>
-
-      <div class="contact-info-helper">
-        <div class="contact-icon-wrapper">
-          <img src="./images/icon-email.svg" alt="Email icon" class="contact-icon">
-        </div>
-        <p class="contact-info">example@fylo.com</p>
-      </div>
-
-      <div class="contact-info-helper">
-        <div class="contact-icon-wrapper">
-          <!-- Attribution icon -->
-        </div>
-        <p class="contact-info">Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank">Frontend Mentor</a>.
-          Coded by <a href="#">Sebastian</a>.</p>
-      </div>
+          dolore magna aliqua</p></li>
+        <li id="phone"><p class="contact-info">+1-543-123-4567</p></li>
+        <li id="mail"><p class="contact-info">example@fylo.com</p></li>
+        <li id="attribution"><p class="contact-info">Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Sebastian</a>.</p></li>
+      </ul>
 
     </div>
 
     <div class="footer-menu-wrapper">
       <ul>
-        <li><a href="#" class="footer-link">About Us</a></li>
-        <li><a href="#" class="footer-link">Jobs</a></li>
-        <li><a href="#" class="footer-link">Press</a></li>
-        <li><a href="#" class="footer-link">Blog</a></li>
-        <li><a href="#" class="footer-link">Contact Us</a></li>
-        <li><a href="#" class="footer-link">Terms</a></li>
-        <li><a href="#" class="footer-link">Privacy</a></li>
+        <li class="footer-menu-element menu1"><a href="#" class="footer-link">About Us</a></li>
+        <li class="footer-menu-element menu1"><a href="#" class="footer-link">Jobs</a></li>
+        <li class="footer-menu-element menu1"><a href="#" class="footer-link">Press</a></li>
+        <li class="footer-menu-element menu1"><a href="#" class="footer-link">Blog</a></li>
+        <li class="footer-menu-element menu2"><a href="#" class="footer-link">Contact Us</a></li>
+        <li class="footer-menu-element menu2"><a href="#" class="footer-link">Terms</a></li>
+        <li class="footer-menu-element menu2"><a href="#" class="footer-link">Privacy</a></li>
       </ul>
 
     </div>
 
     <div class="footer-social-menu-wrapper">
-      <ul>
-        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <ul class="social-menu">
+        <li><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
       </ul>
     </div>
 
