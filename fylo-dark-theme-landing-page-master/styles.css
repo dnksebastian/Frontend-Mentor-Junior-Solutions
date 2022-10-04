@@ -76,6 +76,7 @@ html {
 html,
 body {
   min-height: 100vh;
+  min-width: 300px;
 }
 
 body {
@@ -278,10 +279,9 @@ header {
 
 #det-btn {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 40rem;
-  width: 41%;
+  align-items: center;
+  width: fit-content;
+  gap: 1rem;
   font-size: 2.4rem;
   border-bottom: 2px solid var(--custom-cyan);
   background-color: transparent;
@@ -638,3 +638,180 @@ footer {
 
 
 /* Media queries */
+
+@media screen and (max-width: 650px) {
+
+  header {
+    flex-direction: column;
+    padding: 2rem 4rem;
+    min-height: 25rem;
+    gap: 2rem;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .header-link {
+    font-size: 2rem;
+  }
+
+
+  .hero-content-wrapper h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content-wrapper p {
+    font-size: 2.4rem;
+    padding: 3rem 0rem 4.5rem 0rem;
+  }
+
+
+  #hero-btn {
+    font-size: 2.2rem;
+    padding: 2rem 2rem;
+    width: 70%;
+    max-width: 32rem;
+  }
+
+  .feature-tile p {
+    font-size: 2rem;
+    line-height: 4.2rem;
+  }
+
+  .details-section {
+    padding: 7rem 2rem;
+    text-align: center;
+  }
+
+  .details-content-wrapper p {
+    font-size: 2rem;
+  }
+
+
+  #det-btn {
+    gap: .5rem;
+    font-size: 2rem;
+  }
+
+  #det-btn img {
+    width: 2rem;
+  }
+
+
+  .team-quotes-section {
+    padding: 10rem 2rem 40rem 2rem;
+  }
+
+
+  .quote-tile {
+    padding: 2rem 2rem;
+    width: 85%;
+    gap: 2rem;
+  }
+
+  .quote-tile p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .person-wrap {
+    width: 100%;
+  }
+  
+  .person-avatar-wrapper {
+    min-width: 3rem;
+  }
+  
+  
+  .person-name {
+    font-size: 1.5rem;
+  }
+  
+  .person-info {
+    font-size: 1.3rem;
+  }
+
+  .contact-box {
+    gap: 4rem;
+    padding: 3rem 2rem;
+    align-items: space-between;
+    min-height: 40rem;
+  }
+
+
+  .contact-box h4 {
+    font-size: 2.8rem;
+  }
+  
+  .contact-box p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+
+  .input-helper input {
+    padding: 2rem 2rem;
+    padding-left: 5.5rem;
+    font-size: 1.8rem;
+  }
+  .input-helper input::placeholder {
+    font-size: 1.8rem;
+  }
+
+  .error-msg, .valid-msg {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #contact-btn {
+    padding: 2rem 1rem;
+    font-size: 1.8rem;
+    min-width: 19rem;
+  }
+
+  footer {
+    padding: 47rem 1rem 2rem 1rem;
+    gap: 4rem;
+  }
+
+  .foot-logo-wrapper {
+    margin-left: 0;
+    max-width: 35rem;
+  }
+
+  .contact-wrapper {
+    gap: 4rem;
+    padding: 2.7rem 2rem 2.7rem 2rem;
+  }
+
+  .contact-information li::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1.5rem;
+  }
+
+  #location .contact-info {
+    line-height: 2.7rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-menu-wrapper {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  .footer-link {
+    font-size: 1.8rem;
+  }
+
+  .social-menu a {
+    font-size: 2.2rem;
+  }
+
+
+}
