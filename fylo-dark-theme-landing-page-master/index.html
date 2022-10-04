@@ -160,11 +160,12 @@
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.</p>
       <div class="form-wrap">
-        <form action="">
+        <form action="" onsubmit="event.preventDefault()">
           <div class="input-helper">
             <label for="email">Enter your email</label>
             <input type="email" required id="email" placeholder="email@example.com">
             <span class="error-msg">Please enter a valid email address</span>
+            <span class="valid-msg">Email is valid</span>
           </div>
           <button type="submit" id="contact-btn">Get Started For Free</button>
         </form>

@@ -205,7 +205,6 @@ header {
   grid-template-rows: repeat(4, 25%);
   gap: 4rem;
   padding: 11rem 1rem;
-  background-color: gold;
 }
 
 .feature-tile {
@@ -216,7 +215,6 @@ header {
   text-align: center;
   gap: 2rem;
   color: var(--custom-white);
-  background-color: green;
   padding: 9rem 3rem 6.5rem 3rem;
   max-width: 70rem;
   min-height: 40rem;
@@ -405,7 +403,6 @@ header {
 
 .form-wrap {
   padding: 2rem 1rem 1rem 1rem;
-  background-color: rgba(255, 217, 0, 0.368);
   width: 100%;
 }
 
@@ -419,15 +416,19 @@ header {
   display: none;
 }
 
-.error-msg {
+.error-msg, .valid-msg {
   padding-left: 5.5rem;
   padding-top: 1.5rem;
   font-size: 1.4rem;
   color: var(--custom-light-red);
   text-align: left;
-  /* display: block; */
   display: none;
 }
+
+.valid-msg {
+  color: lightgreen;
+}
+
 
 .input-helper input,
 #contact-btn {
@@ -448,6 +449,21 @@ header {
 
 .input-helper input:focus {
   outline: none;
+}
+
+.input-helper input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--custom-light-red);
+}
+
+.input-helper input:not(:focus):not(:placeholder-shown):invalid ~ .error-msg {
+  display: block; 
+}
+
+.input-helper input:not(:focus):not(:placeholder-shown):valid {
+  border-color: lightgreen;
+}
+.input-helper input:not(:focus):not(:placeholder-shown):valid ~ .valid-msg {
+  display: block; 
 }
 
 #contact-btn {
@@ -481,7 +497,6 @@ footer {
   flex-direction: column;
   gap: 6rem;
   padding: 2.7rem 3rem 2.7rem 3rem;
-  background-color: rgba(255, 217, 0, 0.323);
 }
 
 .foot-logo-wrapper {
@@ -493,13 +508,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: rgba(255, 0, 0, 0.258);
   list-style: none;
   padding: 2rem 2rem 2rem 2rem;
 }
 
 .contact-info {
-  background-color: green;
   font-size: 2.9rem;
 }
 
@@ -551,12 +564,10 @@ footer {
 /* Footer menu */
 
 .footer-menu-wrapper {
-  background-color: rgba(102, 51, 153, 0.714);
   padding: 3rem 3.5rem 3rem 3.5rem;
 }
 
 .footer-menu-wrapper ul {
-  background-color: gold;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-areas:
@@ -586,7 +597,6 @@ footer {
 .footer-menu-element {
   width: fit-content;
   padding: 0 1rem;
-  background-color: green;
 }
 
 .footer-link {
@@ -594,8 +604,11 @@ footer {
   color: var(--custom-white);
 }
 
+.footer-link:hover {
+  font-weight: bold;
+}
+
 .footer-social-menu-wrapper {
-  background-color: orange;
   width: 35%;
   max-width: 40rem;
   align-self: center;
