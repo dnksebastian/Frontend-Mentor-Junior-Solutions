@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-fylo-dark-theme-landing-page-MVU3Th1HuU](https://www.frontendmentor.io/solutions/html-css-fylo-dark-theme-landing-page-MVU3Th1HuU)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-dark-theme-landing-page-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-dark-theme-landing-page-master/)
 
 ## My process
