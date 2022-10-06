@@ -1,0 +1,80 @@
+/* Reset, typography and general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 3rem;
+}
+
+button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+:root {
+  /* ### Primary */
+
+  --custom-dark-violet: hsl(256, 26%, 20%);
+  --custom-grayish-blue: hsl(216, 30%, 68%);
+
+  /* ### Neutral */
+
+  --custom-very-dark-violet: hsl(270, 9%, 17%);
+  --custom-dark-grayish-violet: hsl(273, 4%, 51%);
+  --custom-very-light-gray: hsl(0, 0%, 98%);
+}
+
+html {
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Mobile styles */
+
+/* Header and navigation */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */

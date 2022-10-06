@@ -23,7 +23,7 @@
 | Huddle Landing Page With Curved Sections | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/huddle-landing-page-with-curved-sections-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/huddle-landing-page-with-curved-sections-master/" target="_blank">Repo</a>  |
 | Sunnyside Agency Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/sunnyside-agency-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/sunnyside-agency-landing-page-main/" target="_blank">Repo</a>  |
 | Fylo Dark Theme Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-dark-theme-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/fylo-dark-theme-landing-page-master/" target="_blank">Repo</a>  |
-| 15 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Insure Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/insure-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/insure-landing-page-master/" target="_blank">Repo</a>  |
 | 16 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 17 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 18 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
