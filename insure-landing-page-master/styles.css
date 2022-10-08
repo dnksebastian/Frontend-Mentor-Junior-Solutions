@@ -71,6 +71,7 @@ body {
 /* Header mobile styles */
 
 header {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -86,11 +87,70 @@ header {
 
 nav {
   display: none;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 1.5rem;
+  background-color: var(--custom-very-dark-violet);
+  z-index: 2;
+  background-image: url(./images/bg-pattern-mobile-nav.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% 30rem;
 }
 
+.show-nav {
+  display: flex;
+}
+
+
+#nav-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 2.7rem;
+  /* background-color: gold; */
+  padding: 1.5rem 1rem;
+}
+
+#nav-menu li {
+  /* background-color: green; */
+  padding: .5rem 1rem;
+}
+
+#nav-menu li:last-of-type {
+  width: 100%;
+  border: 2px solid white;
+  padding: 1.3rem 2rem;
+}
+
+#nav-menu a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+
 .menu-icon-wrapper {
-  width: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
   cursor: pointer;
+  background-image: url(./images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-toggle {
+  background-image: url(./images/icon-close.svg);
 }
 
 /* Main mobile styles */
