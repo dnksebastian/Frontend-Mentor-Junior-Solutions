@@ -10,6 +10,13 @@ const showNavbar = () => {
     navbarTopElement.classList.toggle('show-nav');
 };
 
+
+const hideMenu = () => {
+    navbarTopElement.classList.remove('show-nav');
+    menuIconElement.classList.remove('icon-toggle');
+}
+
 // Event listeners
 
 menuIconElement.addEventListener('click', showNavbar);
+navbarTopElement.addEventListener('click', hideMenu);
