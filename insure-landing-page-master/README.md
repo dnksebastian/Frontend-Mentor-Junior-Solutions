@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-insure-landing-page-9wW-hYkgqP](https://www.frontendmentor.io/solutions/html-css-js-insure-landing-page-9wW-hYkgqP)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/insure-landing-page-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/insure-landing-page-master/)
 
 ## My process

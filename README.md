@@ -24,8 +24,14 @@
 | Sunnyside Agency Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/sunnyside-agency-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/sunnyside-agency-landing-page-main/" target="_blank">Repo</a>  |
 | Fylo Dark Theme Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/fylo-dark-theme-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/fylo-dark-theme-landing-page-master/" target="_blank">Repo</a>  |
 | Insure Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/insure-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/insure-landing-page-master/" target="_blank">Repo</a>  |
-| 16 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Social Media Dashboard With Theme Switcher | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/social-media-dashboard-with-theme-switcher-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/social-media-dashboard-with-theme-switcher-master/" target="_blank">Repo</a>  |
 | 17 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 18 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 19 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 20 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 21 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 22 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 23 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| 24 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 
 </div>

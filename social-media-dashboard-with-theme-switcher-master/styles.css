@@ -1,0 +1,79 @@
+/* General, reset and typography */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+:root {
+  --custom-lime-green: hsl(163, 72%, 41%);
+  --custom-bright-red: hsl(356, 69%, 56%);
+  --custom-facebook: hsl(208, 92%, 53%);
+  --custom-twitter: hsl(203, 89%, 53%);
+  /* --custom-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%) */
+  --custom-youtube: hsl(348, 97%, 39%);
+
+
+  /* Dark mode (default) */
+
+  --custom-background: hsl(230, 17%, 14%); /* (BG)*/
+  --custom-bg-pattern: hsl(232, 19%, 15%); /* (Top BG Pattern)*/
+  --custom-card-bg: hsl(228, 28%, 20%); /* (Card BG)*/
+  --custom-text: hsl(228, 34%, 66%); /* (Text)*/
+  --custom-text-secondary: hsl(0, 0%, 100%); /* (Text)*/
+
+  /* --custom-dark-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%); */
+}
+
+:root:has(.light) {
+  /* #### Light Theme */
+
+  --custom-background: hsl(0, 0%, 100%); /* (BG)*/
+  --custom-bg-pattern: hsl(225, 100%, 98%); /* (Top BG Pattern)*/
+  --custom-card-bg: hsl(227, 47%, 96%); /* (Card BG)*/
+  --custom-text: hsl(228, 12%, 44%); /* (Text)*/
+  --custom-text-secondary: hsl(230, 17%, 14%); /* (Text)*/
+
+  --custom-toggle: hsl(230, 22%, 74%); /* Toggle*/
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Mobile styles */
+
+/* Media queries */
