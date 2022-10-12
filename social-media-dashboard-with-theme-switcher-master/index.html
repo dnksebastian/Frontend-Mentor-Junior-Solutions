@@ -26,14 +26,17 @@
   <header>
     <div class="header-helper-top">
       <h1>Social Media Dashboard</h1>
-      <span>Total Followers: 23,004</span>
+      <span class="total-flw">Total Followers: 23,004</span>
     </div>
 
     <div class="header-helper-bottom">
       <span>Dark Mode</span>
 
       <div class="switch-wrapper">
-        <input type="checkbox" name="" id="">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </div>
 
     </div>
@@ -48,55 +51,262 @@
 
         <div class="tile-icon-helper">
           <div class="tile-icon-wrapper">
-            <img src="" alt="" class="tile-icon">
+            <img src="./images/icon-facebook.svg" alt="" class="tile-icon">
           </div>
-          <span class="tile-username"></span>
+          <span class="tile-username">@nathanf</span>
         </div>
 
         <div class="tile-followers-helper">
-          <span class="followers-value"></span>
-          <span class="followers-label"></span>
+          <span class="followers-value">1987</span>
+          <span class="followers-label">Followers</span>
         </div>
 
         <div class="tile-change-helper">
-          <span class="followers-change"></span>
+          <div class="arrow-wrapper">
+            <img src="./images/icon-up.svg" alt="">
+          </div>
+          <span class="followers-change">12 Today</span>
         </div>
 
       </div>
 
-      @nathanf
-      1987
-      Followers
-      12 Today
+      <div class="top-tile-wrapper">
 
-      @nathanf
-      1044
-      Followers
-      99 Today
+        <div class="tile-icon-helper">
+          <div class="tile-icon-wrapper">
+            <img src="./images/icon-twitter.svg" alt="" class="tile-icon">
+          </div>
+          <span class="tile-username">@nathanf</span>
+        </div>
 
-      @realnathanf
-      11k
-      Followers
-      1099 Today
+        <div class="tile-followers-helper">
+          <span class="followers-value">1044</span>
+          <span class="followers-label">Followers</span>
+        </div>
 
-      Nathan F.
-      8239
-      Subscribers
-      144 Today
+        <div class="tile-change-helper">
+          <div class="arrow-wrapper">
+            <img src="./images/icon-up.svg" alt="">
+          </div>
+          <span class="followers-change">99 Today
+          </span>
+        </div>
+
+      </div>
+
+      <div class="top-tile-wrapper">
+
+        <div class="tile-icon-helper">
+          <div class="tile-icon-wrapper">
+            <img src="./images/icon-instagram.svg" alt="" class="tile-icon">
+          </div>
+          <span class="tile-username">@realnathanf</span>
+        </div>
+
+        <div class="tile-followers-helper">
+          <span class="followers-value">11k</span>
+          <span class="followers-label">Followers</span>
+        </div>
+
+        <div class="tile-change-helper">
+          <div class="arrow-wrapper">
+            <img src="./images/icon-up.svg" alt="">
+          </div>
+          <span class="followers-change">1099 Today</span>
+        </div>
+
+      </div>
+
+      <div class="top-tile-wrapper">
+
+        <div class="tile-icon-helper">
+          <div class="tile-icon-wrapper">
+            <img src="./images/icon-youtube.svg" alt="" class="tile-icon">
+          </div>
+          <span class="tile-username">Nathan F.</span>
+        </div>
+
+        <div class="tile-followers-helper">
+          <span class="followers-value">8239</span>
+          <span class="followers-label">Subscribers</span>
+        </div>
+
+        <div class="tile-change-helper">
+          <div class="arrow-wrapper">
+            <img src="./images/icon-down.svg" alt="">
+          </div>
+          <span class="followers-change">144 Today</span>
+        </div>
+
+      </div>
+
+
     </div>
 
     <div class="main-helper-bottom">
 
-      <h2 class="overview-heading"></h2>
+      <h2 class="overview-heading">Overview - Today</h2>
 
       <div class="overview-grid">
 
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Page Views</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-facebook.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">87</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-up.svg" alt="" class="arrow">
+                <span class="change-value">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Likes</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-facebook.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">52</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-down.svg" alt="" class="arrow">
+                <span class="change-value">2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Likes</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-instagram.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">5462</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-up.svg" alt="" class="arrow">
+                <span class="change-value">2257%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Profile Views</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-instagram.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">52k</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-up.svg" alt="" class="arrow">
+                <span class="change-value">1375%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Retweets</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-twitter.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">117</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-up.svg" alt="" class="arrow">
+                <span class="change-value">303%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Likes</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-twitter.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">507</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-up.svg" alt="" class="arrow">
+                <span class="change-value">553%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Likes</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-youtube.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">107</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-down.svg" alt="" class="arrow">
+                <span class="change-value">19%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-tile-wrapper">
+          <div class="bottom-tile-helper-a">
+            <span class="data-name">Total Views</span>
+            <div class="sm-icon-wrapper">
+              <img src="./images/icon-youtube.svg" alt="" class="sm-icon">
+            </div>
+          </div>
+
+          <div class="bottom-tile-helper-b">
+            <span class="data-value">1407</span>
+            <div class="value-change-wrapper">
+              <div class="value-change-icon-wrapper">
+                <img src="./images/icon-down.svg" alt="" class="arrow">
+                <span class="change-value">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="bottom-tile-wrapper">
+      <!-- <div class="bottom-tile-wrapper">
         <div class="botom-tile-helper-left">
-          <span class="data-name"></span>
-          <span class="data-value"></span>
+          <span class="data-name">Page Views</span>
+          <span class="data-value">87</span>
         </div>
 
         <div class="bottom-tile-helper-right">
@@ -105,48 +315,146 @@
           </div>
 
           <div class="overview-change-helper">
-            <span class="overview-change-value"></span>
+            <span class="overview-change-value">3%</span>
           </div>
 
         </div>
 
       </div>
 
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Likes</span>
+          <span class="data-value">52</span>
+        </div>
 
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
 
-      Overview - Today
+          <div class="overview-change-helper">
+            <span class="overview-change-value">2%</span>
+          </div>
 
-      Page Views
-      87
-      3%
+        </div>
 
-      Likes
-      52
-      2%
+      </div>
 
-      Likes
-      5462
-      2257%
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Likes</span>
+          <span class="data-value">5462</span>
+        </div>
 
-      Profile Views
-      52k
-      1375%
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
 
-      Retweets
-      117
-      303%
+          <div class="overview-change-helper">
+            <span class="overview-change-value">2257%</span>
+          </div>
 
-      Likes
-      507
-      553%
+        </div>
 
-      Likes
-      107
-      19%
+      </div>
 
-      Total Views
-      1407
-      12%
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Profile Views</span>
+          <span class="data-value">52k</span>
+        </div>
+
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
+
+          <div class="overview-change-helper">
+            <span class="overview-change-value">1375%</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Retweets</span>
+          <span class="data-value">117</span>
+        </div>
+
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
+
+          <div class="overview-change-helper">
+            <span class="overview-change-value">303%</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Likes</span>
+          <span class="data-value">507</span>
+        </div>
+
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
+
+          <div class="overview-change-helper">
+            <span class="overview-change-value">553%</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Likes</span>
+          <span class="data-value">107</span>
+        </div>
+
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
+
+          <div class="overview-change-helper">
+            <span class="overview-change-value">19%</span>
+          </div>
+
+        </div>
+
+      </div> -->
+
+      <!-- <div class="bottom-tile-wrapper">
+        <div class="botom-tile-helper-left">
+          <span class="data-name">Total Views</span>
+          <span class="data-value">1407</span>
+        </div>
+
+        <div class="bottom-tile-helper-right">
+          <div class="bottom-tile-icon-wrapper">
+            <img src="" alt="" class="sm-icon">
+          </div>
+
+          <div class="overview-change-helper">
+            <span class="overview-change-value">12%</span>
+          </div>
+
+        </div>
+
+      </div> -->
+
     </div>
 
   </main>

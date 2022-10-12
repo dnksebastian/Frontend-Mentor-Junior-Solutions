@@ -28,7 +28,6 @@ img {
   /* --custom-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%) */
   --custom-youtube: hsl(348, 97%, 39%);
 
-
   /* Dark mode (default) */
 
   --custom-background: hsl(230, 17%, 14%); /* (BG)*/
@@ -38,6 +37,8 @@ img {
   --custom-text-secondary: hsl(0, 0%, 100%); /* (Text)*/
 
   /* --custom-dark-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%); */
+
+  --custom-toggle-background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
 }
 
 :root:has(.light) {
@@ -58,10 +59,24 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: var(--custom-background);
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border-radius: 2rem;
+  background-color: var(--custom-bg-pattern);
+  height: 23.5rem;
+  width: 100%;
+  z-index: -1;
 }
 
 html,
@@ -69,11 +84,170 @@ body {
   min-height: 100vh;
 }
 
+/* Mobile styles */
+
+/* Mobile header styles */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(255, 217, 0, 0.4);
+  padding: 1.5rem 1.5rem;
+}
+
+.header-helper-top {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: rgba(0, 128, 128, 0.26);
+  padding-bottom: 2.3rem;
+  border-bottom: 1px solid var(--custom-text);
+}
+
+h1 {
+  color: var(--custom-text-secondary);
+  font-size: 2.4rem;
+}
+
+.total-flw {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--custom-text);
+}
+
+.header-helper-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7rem 0 .5rem 0;
+  background-color: rgba(255, 0, 0, 0.242);
+}
+
+.header-helper-bottom span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--custom-text); 
+}
+
+.switch-wrapper {
+  width: 4.5rem;
+}
+
+/* Color mode toggle styles */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 2.3rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(55, 143, 230, 1);
+  background-image: var(--custom-toggle-background);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.7rem;
+  width: 1.7rem;
+  left: .3rem;
+  bottom: .3rem;
+  background-color: var(--custom-card-bg);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+} */
+
+input:checked + .slider:before {
+  background-color: var(--custom-text-secondary);
+  -webkit-transform: translateX(2.2rem);
+  -ms-transform: translateX(2.2rem);
+  transform: translateX(2.2rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Mobile main styles */
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem .5rem 1rem .5rem;
+  background-color: rgba(0, 128, 0, 0.503);
+}
+
+.main-helper-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: rgba(255, 0, 0, 0.352);
+}
+
+.top-tile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: var(--custom-card-bg);
+  width: 33rem;
+  border-radius: .7rem;
+}
+
+.main-helper-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 128, 128, 0.445);
+}
+
+
+
+
+/* Mobile footer styles */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
-/* Mobile styles */
-
 /* Media queries */
