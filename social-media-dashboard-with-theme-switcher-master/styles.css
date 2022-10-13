@@ -91,6 +91,7 @@ body::before {
 html,
 body {
   min-height: 100vh;
+  min-width: 350px;
 }
 
 /* Mobile styles */
@@ -104,13 +105,14 @@ header {
   gap: 1rem;
   background-color: rgba(255, 217, 0, 0.4);
   padding: 1.5rem 1.5rem;
+  max-width: 42rem;
 }
 
 .header-helper-top {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: rgba(0, 128, 128, 0.26);
+  /* background-color: rgba(0, 128, 128, 0.26); */
   padding-bottom: 2.3rem;
   border-bottom: 1px solid var(--custom-text);
 }
@@ -131,7 +133,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 0 0.5rem 0;
-  background-color: rgba(255, 0, 0, 0.242);
+  /* background-color: rgba(255, 0, 0, 0.242); */
 }
 
 .header-helper-bottom span {
@@ -245,6 +247,12 @@ main {
   min-height: 21.7rem;
   border-radius: 0.7rem;
   overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.top-tile-wrapper:hover {
+  filter: brightness(120%);
 }
 
 .top-tile-wrapper::before {
@@ -340,11 +348,12 @@ main {
 
 .main-helper-bottom {
   width: 100%;
+  max-width: 42rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  background-color: rgba(0, 128, 128, 0.445);
+  /* background-color: rgba(0, 128, 128, 0.445); */
   padding: 2rem 1rem 1rem 1rem;
 }
 
@@ -357,7 +366,7 @@ main {
   display: grid;
   gap: 1.7rem;
   padding: 1.7rem 0;
-  background-color: rgba(255, 217, 0, 0.371);
+  /* background-color: rgba(255, 217, 0, 0.371); */
 }
 
 .bottom-tile-wrapper {
@@ -369,7 +378,15 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 3rem 2rem 2.3rem;
+  cursor: pointer;
+  transition: .3s;
 }
+
+.bottom-tile-wrapper:hover {
+  filter: brightness(120%);
+}
+
+
 
 .bottom-tile-helper-a,
 .bottom-tile-helper-b {
@@ -380,10 +397,10 @@ main {
 }
 
 .bottom-tile-helper-a {
-  background-color: rgba(255, 0, 0, 0.362);
+  /* background-color: rgba(255, 0, 0, 0.362); */
 }
 .bottom-tile-helper-b {
-  background-color: rgba(0, 128, 128, 0.277);
+  /* background-color: rgba(0, 128, 128, 0.277); */
 }
 
 .data-name {
@@ -427,8 +444,116 @@ main {
 }
 
 /* Mobile footer styles */
+
 .attribution {
-  font-size: 11px;
+  color: var(--custom-text);
   text-align: center;
 }
+
+
 /* Media queries */
+
+@media screen and (min-width: 920px) {
+
+  .main-helper-top {
+    /* background-color: rgba(255, 0, 0, 0.371);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: red;
+    max-width: 110rem;
+  }
+
+  .top-tile-wrapper {
+    min-width: 375px;
+  }
+
+  .main-helper-bottom {
+    max-width: 110rem;
+    background-color: green;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: gold;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  .bottom-tile-wrapper {
+    min-width: 35rem;
+  }
+
+}
+
+@media screen and (min-width:1375px) {
+
+
+  header {
+    flex-direction: row;
+    background-color: rgba(0, 128, 128, 0.325);
+    padding: 1.5rem 15.5rem;
+    max-width: none;
+    justify-content: space-between;
+  }
+  
+  .header-helper-top {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  .header-helper-bottom {
+    padding: 0 0 .5rem 0;
+    gap: 1.5rem;
+  }
+
+
+
+  .main-helper-top {
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: red;
+    max-width: none;
+  }
+
+  .top-tile-wrapper {
+    min-width: auto;
+  }
+
+
+  .main-helper-bottom {
+    max-width: none;
+    background-color: green;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: gold;
+    padding: 2rem;
+    justify-items: center;
+  }
+
+  .bottom-tile-wrapper {
+    min-width: auto;
+  }
+
+
+
+}
+
+
