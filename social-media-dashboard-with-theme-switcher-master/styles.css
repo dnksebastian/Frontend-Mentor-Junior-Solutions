@@ -16,8 +16,8 @@ a {
 
 img {
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 :root {
@@ -25,6 +25,11 @@ img {
   --custom-bright-red: hsl(356, 69%, 56%);
   --custom-facebook: hsl(208, 92%, 53%);
   --custom-twitter: hsl(203, 89%, 53%);
+  --custom-instagram: linear-gradient(
+    90deg,
+    hsl(37, 97%, 70%) 0%,
+    hsl(329, 70%, 39%) 100%
+  );
   /* --custom-instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%) */
   --custom-youtube: hsl(348, 97%, 39%);
 
@@ -38,7 +43,11 @@ img {
 
   /* --custom-dark-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%); */
 
-  --custom-toggle-background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+  --custom-toggle-background: linear-gradient(
+    90deg,
+    rgba(55, 143, 230, 1) 0%,
+    rgba(62, 218, 130, 1) 100%
+  );
 }
 
 :root:has(.light) {
@@ -100,7 +109,7 @@ header {
 .header-helper-top {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   background-color: rgba(0, 128, 128, 0.26);
   padding-bottom: 2.3rem;
   border-bottom: 1px solid var(--custom-text);
@@ -121,14 +130,14 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .7rem 0 .5rem 0;
+  padding: 0.7rem 0 0.5rem 0;
   background-color: rgba(255, 0, 0, 0.242);
 }
 
 .header-helper-bottom span {
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--custom-text); 
+  color: var(--custom-text);
 }
 
 .switch-wrapper {
@@ -161,8 +170,8 @@ h1 {
   bottom: 0;
   background-color: rgba(55, 143, 230, 1);
   background-image: var(--custom-toggle-background);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -170,11 +179,11 @@ h1 {
   content: "";
   height: 1.7rem;
   width: 1.7rem;
-  left: .3rem;
-  bottom: .3rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
   background-color: var(--custom-card-bg);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* input:checked + .slider {
@@ -208,9 +217,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem .5rem 1rem .5rem;
-  background-color: rgba(0, 128, 0, 0.503);
+  gap: 1.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  /* background-color: rgba(0, 128, 0, 0.503); */
 }
 
 .main-helper-top {
@@ -219,31 +228,203 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2.3rem;
   padding: 1rem 1rem 1rem 1rem;
-  background-color: rgba(255, 0, 0, 0.352);
+  /* background-color: rgba(255, 0, 0, 0.352); */
 }
 
 .top-tile-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 3.2rem 1rem 2.5rem 1rem;
   background-color: var(--custom-card-bg);
-  width: 33rem;
-  border-radius: .7rem;
+  width: 32.5rem;
+  min-height: 21.7rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
 }
+
+.top-tile-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 0.5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top-tile-wrapper:nth-child(1)::before {
+  background-color: var(--custom-facebook);
+}
+
+.top-tile-wrapper:nth-child(2)::before {
+  background-color: var(--custom-twitter);
+}
+
+.top-tile-wrapper:nth-child(3)::before {
+  background-image: var(--custom-instagram);
+}
+
+.top-tile-wrapper:nth-child(4)::before {
+  background-color: var(--custom-youtube);
+}
+
+.tile-icon-helper {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  /* background-color: green; */
+}
+
+.tile-icon-wrapper {
+  width: 2rem;
+}
+
+.tile-username {
+  color: var(--custom-text);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tile-followers-helper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.followers-value {
+  font-size: 5.3rem;
+  color: var(--custom-text-secondary);
+  font-weight: bold;
+}
+
+.followers-label {
+  color: var(--custom-text);
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  letter-spacing: 0.4rem;
+}
+
+.tile-change-helper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.arrow-wrapper {
+  width: 0.8rem;
+}
+
+.followers-change {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--custom-text-secondary);
+}
+
+.top-tile-wrapper:nth-child(2) .followers-change,
+.top-tile-wrapper:nth-child(3) .followers-change {
+  color: var(--custom-lime-green);
+}
+
+.top-tile-wrapper:nth-child(4) .followers-change {
+  color: var(--custom-bright-red);
+}
+
+/* Bottom tiles mobile styles */
 
 .main-helper-bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   background-color: rgba(0, 128, 128, 0.445);
+  padding: 2rem 1rem 1rem 1rem;
 }
 
+.overview-heading {
+  color: var(--custom-text-secondary);
+  font-size: 2.4rem;
+}
 
+.overview-grid {
+  display: grid;
+  gap: 1.7rem;
+  padding: 1.7rem 0;
+  background-color: rgba(255, 217, 0, 0.371);
+}
 
+.bottom-tile-wrapper {
+  background-color: var(--custom-card-bg);
+  border-radius: 0.7rem;
+  min-height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem 2rem 2.3rem;
+}
+
+.bottom-tile-helper-a,
+.bottom-tile-helper-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom-tile-helper-a {
+  background-color: rgba(255, 0, 0, 0.362);
+}
+.bottom-tile-helper-b {
+  background-color: rgba(0, 128, 128, 0.277);
+}
+
+.data-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--custom-text);
+}
+
+.sm-icon-wrapper {
+  width: 2rem;
+}
+
+.data-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--custom-text-secondary);
+}
+
+.value-change-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  align-self: flex-end;
+  padding: 0 0 .3rem 0;
+}
+
+.bottom-tile-wrapper:nth-child(2) .change-value,
+.bottom-tile-wrapper:nth-child(7) .change-value,
+.bottom-tile-wrapper:nth-child(8) .change-value {
+  color: var(--custom-bright-red);
+}
+
+.value-change-icon-wrapper {
+  width: 1rem;
+}
+
+.change-value {
+  color: var(--custom-lime-green);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
 /* Mobile footer styles */
 .attribution {
