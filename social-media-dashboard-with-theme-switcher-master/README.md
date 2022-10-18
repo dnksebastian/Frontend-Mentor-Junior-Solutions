@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-social-media-dashboard-with-theme-switcher-jzknZ8fTqb](https://www.frontendmentor.io/solutions/html-css-js-social-media-dashboard-with-theme-switcher-jzknZ8fTqb)
+- Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/social-media-dashboard-with-theme-switcher-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/social-media-dashboard-with-theme-switcher-master/)
 
 ## My process
 
