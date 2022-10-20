@@ -11,46 +11,110 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles.css">
+
+  <script src="./app.js" defer></script>
 </head>
 
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
+  <header>
+    <h1>Our Pricing</h1>
+    <div class="toggle-wrapper">
+      <span class="pricing-option">Annually</span>
+      <label for=""></label>
+      <button id="pricing-toggle-btn"></button>
+      <span class="pricing-option">Monthly</span>
+    </div>
+  </header>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+  <main>
+    <div class="pricing-tiles-wrapper">
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+      <div class="pricing-tile-wrap">
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+        <div class="tile-top-helper">
+          <span class="plan-name">Basic</span>
+          <div class="price-helper">&dollar;
+            <span class="price">19.99</span>
+            <!-- &dollar;199.99 -->
+          </div>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Sebastian</a>.
-  </div>
+        <div class="tile-mid-helper">
+          <ul>
+            <li><span class="plan-feature">500 GB Storage</span></li>
+            <li><span class="plan-feature">2 Users Allowed</span></li>
+            <li><span class="plan-feature">Send up to 3 GB</span></li>
+          </ul>
+        </div>
+
+        <div class="tile-bottom-helper">
+          <button class="tile-details-btn">Learn More</button>
+        </div>
+
+      </div>
+      <div class="pricing-tile-wrap">
+
+        <div class="tile-top-helper">
+          <span class="plan-name">Professional</span>
+          <div class="price-helper">
+            &dollar;
+            <span class="price">24.99</span>
+            <!-- &dollar;249.99 -->
+          </div>
+        </div>
+
+        <div class="tile-mid-helper">
+          <ul>
+            <li><span class="plan-feature">1 TB Storage</span></li>
+            <li><span class="plan-feature">5 Users Allowed</span></li>
+            <li><span class="plan-feature">Send up to 10 GB</span></li>
+          </ul>
+        </div>
+
+        <div class="tile-bottom-helper">
+          <button class="tile-details-btn">Learn More</button>
+        </div>
+
+      </div>
+      <div class="pricing-tile-wrap">
+
+        <div class="tile-top-helper">
+          <span class="plan-name">Master</span>
+          <div class="price-helper">
+            &dollar;
+            <span class="price">39.99</span>
+            <!-- &dollar;399.99 -->
+          </div>
+        </div>
+
+        <div class="tile-mid-helper">
+          <ul>
+            <li><span class="plan-feature">2 TB Storage</span></li>
+            <li><span class="plan-feature">10 Users Allowed</span></li>
+            <li><span class="plan-feature">Send up to 20 GB</span></li>
+          </ul>
+        </div>
+
+        <div class="tile-bottom-helper">
+          <button class="tile-details-btn">Learn More</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Sebastian</a>.
+    </p>
+  </footer>
 </body>
 
 </html>

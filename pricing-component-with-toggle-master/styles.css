@@ -1,21 +1,62 @@
 /* General, reset and typography */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+:root {
+  /* ### Primary */
+
+/* --custom-gradient: #a3a8f0 to #696fdd; */
+--custom-gradient: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+
+  /* ### Neutral */
+
+--custom-very-light-grayish-blue: hsl(240, 78%, 98%);
+--custom-light-grayish-blue: hsl(234, 14%, 74%);
+--custom-grayish-blue: hsl(233, 13%, 49%);
+--custom-dark-grayish-blue: hsl(232, 13%, 33%);
+
+}
+
 
 html {
   font-family: "Montserrat", sans-serif;
 }
 
-
 /* Mobile styles */
-
 
 /* Footer styles */
 .attribution {
-  font-size: 11px;
+  font-size: 1rem;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 /* Media queries */
