@@ -105,17 +105,17 @@ header {
   justify-content: space-between;
   gap: 3rem;
   padding: 1.5rem 1rem;
-  background-color: rgba(0, 128, 128, 0.251);
+  /* background-color: rgba(0, 128, 128, 0.251); */
 }
 
 h1 {
   font-size: 3.2rem;
-  color: var(--custom-dark-grayish-blue);
+  color: var(--custom-grayish-blue);
 }
 
 .toggle-wrapper {
   position: relative;
-  background-color: rgba(255, 0, 0, 0.14);
+  /* background-color: rgba(255, 0, 0, 0.14); */
   display: flex;
   align-items: center;
   gap: 2.5rem;
@@ -125,7 +125,7 @@ h1 {
 .pricing-option {
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--custom-grayish-blue);
+  color: var(--custom-light-grayish-blue);
 }
 
 .switch {
@@ -152,6 +152,10 @@ h1 {
   bottom: 0;
   background-image: var(--custom-gradient);
   transition: .3s;
+}
+
+.slider:hover {
+  filter: opacity(60%);
 }
 
 .slider:before {
@@ -193,7 +197,7 @@ input:checked + .slider:before {
 
 main {
   width: 100%;
-  background-color: rgba(255, 217, 0, 0.263);
+  /* background-color: rgba(255, 217, 0, 0.263); */
   padding: 2.2rem .5rem 1rem .5rem;
 }
 
@@ -204,7 +208,7 @@ main {
   justify-content: space-between;
   gap: 3.2rem;
   padding: 1.2rem 1rem 1rem 1rem;
-  background-color: rgba(0, 128, 0, 0.323);
+  /* background-color: rgba(0, 128, 0, 0.323); */
 }
 
 .pricing-tile-wrap {
@@ -215,8 +219,20 @@ main {
   justify-content: space-between;
   padding: 3.5rem 2rem 2rem 2rem;
   gap: 2rem;
-  background-color: rgba(0, 0, 255, 0.201);
+  background-color: white;
+  /* background-color: rgba(0, 0, 255, 0.201); */
   border-radius: 1rem;
+  color: var(--custom-dark-grayish-blue);
+  box-shadow: 0px 20px 35px -10px hsla(234, 14%, 74%, 80%);
+}
+
+.pricing-tile-wrap:nth-of-type(2) {
+  color: white;
+  background-image: linear-gradient(
+    180deg,
+    rgba(163, 168, 240, 1) 0%,
+    rgba(105, 111, 221, 1) 100%
+  );
 }
 
 .tile-top-helper {
@@ -225,7 +241,7 @@ main {
   align-items: center;
   text-align: center;
   gap: 1.7rem;
-  background-color: gold;
+  /* background-color: gold; */
   padding: 0 1rem;
 }
 
@@ -247,7 +263,7 @@ main {
 }
 
 .tile-mid-helper {
-  background-color: rgba(0, 128, 0, 0.371);
+  /* background-color: rgba(0, 128, 0, 0.371); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,17 +280,21 @@ main {
 
 .tile-features li {
   padding: 1.6rem 1rem;
-  border-bottom: 1px solid var(--custom-grayish-blue);
+  border-bottom: 1px solid var(--custom-light-grayish-blue);
 }
 
 .tile-features li:first-of-type {
-  border-top: 1px solid var(--custom-grayish-blue);
+  border-top: 1px solid var(--custom-light-grayish-blue);
 }
 
 .plan-feature {
   color: var(--custom-dark-grayish-blue);
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.pricing-tile-wrap:nth-of-type(2) .plan-feature {
+  color: white;
 }
 
 /* Tile button styles */
@@ -286,7 +306,7 @@ main {
   justify-content: center;
   padding: .7rem 1rem 1rem 1rem;
   width: 29rem;
-  background-color: rgba(255, 217, 0, 0.351);
+  /* background-color: rgba(255, 217, 0, 0.351); */
 
 }
 
@@ -303,6 +323,25 @@ main {
   padding: 1.3rem 2rem;
   border-radius: .7rem;
   width: 100%;
+}
+
+.tile-details-btn:hover {
+  background-image: none;
+  background-color: white;
+  color: #7B7FE3;
+  border-color: #7B7FE3;
+}
+
+.pricing-tile-wrap:nth-of-type(2) .tile-details-btn {
+  color: #7B7FE3;
+  background-color: white;
+  background-image: none;
+}
+
+.pricing-tile-wrap:nth-of-type(2) .tile-details-btn:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
 }
 
 

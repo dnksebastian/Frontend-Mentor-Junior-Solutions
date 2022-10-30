@@ -26,7 +26,7 @@
     <div class="toggle-wrapper">
       <span class="pricing-option">Annually</span>
       <label class="switch">
-        <input type="checkbox" aria-label="Toggle between billing options">
+        <input type="checkbox" aria-label="Toggle between billing options" id="toggle-checkbox" checked>
         <span class="slider round"></span>
       </label>
       <span class="pricing-option">Monthly</span>
@@ -41,7 +41,7 @@
         <div class="tile-top-helper">
           <span class="plan-name">Basic</span>
           <div class="price-helper">&dollar;
-            <span class="price">19.99</span>
+            <span class="price" id="basic-price">19.99</span>
             <!-- &dollar;199.99 -->
           </div>
         </div>
@@ -65,7 +65,7 @@
           <span class="plan-name">Professional</span>
           <div class="price-helper">
             &dollar;
-            <span class="price">24.99</span>
+            <span class="price" id="professional-price">24.99</span>
             <!-- &dollar;249.99 -->
           </div>
         </div>
@@ -89,7 +89,7 @@
           <span class="plan-name">Master</span>
           <div class="price-helper">
             &dollar;
-            <span class="price">39.99</span>
+            <span class="price" id="master-price">39.99</span>
             <!-- &dollar;399.99 -->
           </div>
         </div>
