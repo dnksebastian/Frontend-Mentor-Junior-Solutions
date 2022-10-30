@@ -94,7 +94,7 @@ body::after {
 
 body {
   padding: 5rem 1rem 1rem 1rem;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 header {
@@ -117,8 +117,9 @@ h1 {
   position: relative;
   background-color: rgba(255, 0, 0, 0.14);
   display: flex;
-  gap: 2rem;
-  padding: 1.6rem 1rem 1rem 1rem;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .pricing-option {
@@ -127,14 +128,66 @@ h1 {
   color: var(--custom-grayish-blue);
 }
 
-.toggle-wrapper label {
-  position: absolute;
-  background-color: green;
-  top: -.5rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  opacity: 10%;
+.switch {
+  position: relative;
+  display: block;
+  width: 5.5rem;
+  height: 3.2rem;
 }
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--custom-gradient);
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  left: .4rem;
+  bottom: .4rem;
+  background-color: white;
+  transition: .3s;
+}
+
+input:checked + .slider {
+  background-image: var(--custom-gradient);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.2rem);
+  -ms-transform: translateX(2.2rem);
+  transform: translateX(2.2rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3.5rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 /* Mobile main styles */
 
@@ -149,19 +202,107 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 1rem 1rem 1rem 1rem;
+  gap: 3.2rem;
+  padding: 1.2rem 1rem 1rem 1rem;
   background-color: rgba(0, 128, 0, 0.323);
 }
 
 .pricing-tile-wrap {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3.5rem 2rem 2rem 2rem;
+  gap: 2rem;
   background-color: rgba(0, 0, 255, 0.201);
+  border-radius: 1rem;
+}
+
+.tile-top-helper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.7rem;
+  background-color: gold;
+  padding: 0 1rem;
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.price-helper {
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  gap: .4rem;
+}
+
+.price {
+  font-size: 7rem;
+}
+
+.tile-mid-helper {
+  background-color: rgba(0, 128, 0, 0.371);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: .7rem;
+  text-align: center;
+}
+
+.tile-features {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tile-features li {
+  padding: 1.6rem 1rem;
+  border-bottom: 1px solid var(--custom-grayish-blue);
+}
+
+.tile-features li:first-of-type {
+  border-top: 1px solid var(--custom-grayish-blue);
+}
+
+.plan-feature {
+  color: var(--custom-dark-grayish-blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Tile button styles */
+
+.tile-bottom-helper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: .7rem 1rem 1rem 1rem;
+  width: 29rem;
+  background-color: rgba(255, 217, 0, 0.351);
+
+}
+
+.tile-details-btn {
+  color: white;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: .15rem;
+  background: var(--custom-gradient);
+  background-repeat: no-repeat;
+  background-color: rgba(163, 168, 240, 1);
+  padding: 1.3rem 2rem;
+  border-radius: .7rem;
+  width: 100%;
 }
 
 

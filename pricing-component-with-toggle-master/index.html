@@ -25,8 +25,10 @@
     <h1>Our Pricing</h1>
     <div class="toggle-wrapper">
       <span class="pricing-option">Annually</span>
-      <label for="billing">Billing options</label>
-      <button id="pricing-toggle-btn" id="billing"></button>
+      <label class="switch">
+        <input type="checkbox" aria-label="Toggle between billing options">
+        <span class="slider round"></span>
+      </label>
       <span class="pricing-option">Monthly</span>
     </div>
   </header>
@@ -45,7 +47,7 @@
         </div>
 
         <div class="tile-mid-helper">
-          <ul>
+          <ul class="tile-features">
             <li><span class="plan-feature">500 GB Storage</span></li>
             <li><span class="plan-feature">2 Users Allowed</span></li>
             <li><span class="plan-feature">Send up to 3 GB</span></li>
@@ -69,7 +71,7 @@
         </div>
 
         <div class="tile-mid-helper">
-          <ul>
+          <ul class="tile-features">
             <li><span class="plan-feature">1 TB Storage</span></li>
             <li><span class="plan-feature">5 Users Allowed</span></li>
             <li><span class="plan-feature">Send up to 10 GB</span></li>
@@ -93,7 +95,7 @@
         </div>
 
         <div class="tile-mid-helper">
-          <ul>
+          <ul class="tile-features">
             <li><span class="plan-feature">2 TB Storage</span></li>
             <li><span class="plan-feature">10 Users Allowed</span></li>
             <li><span class="plan-feature">Send up to 20 GB</span></li>
