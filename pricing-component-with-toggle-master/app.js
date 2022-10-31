@@ -5,8 +5,6 @@ const basicPriceValue = document.getElementById('basic-price');
 const professionalPriceValue = document.getElementById('professional-price');
 const masterPriceValue = document.getElementById('master-price');
 
-console.log(toggleCheckboxElement, basicPriceValue, professionalPriceValue, masterPriceValue);
-
 
 // Functions
 
@@ -22,6 +20,8 @@ const togglePrices = () => {
         masterPriceValue.textContent = "399.99"
     };
 };
+
+togglePrices();
 
 
 
