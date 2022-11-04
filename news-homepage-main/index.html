@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-wrapper">
+      <img src="./assets/images/logo.svg" alt="Logo" class="logo">
+    </div>
+
+    <nav>
+      <ul id="nav-menu">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">New</a></li>
+        <li><a class="nav-link" href="#">Popular</a></li>
+        <li><a class="nav-link" href="#">Trending</a></li>
+        <li><a class="nav-link" href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="news-main-section">
+      <div class="news-img-wrap">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="news-illustration-mob">
+        <!-- <img src="" alt="" class="news-illustration-deskt"> -->
+      </div>
+      <div class="news-content-wrap">
+        <h1>The Bright Future of Web 3.0?</h1>
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
+          people.
+          But is it really fulfilling its promise?</p>
+        <button>Read more</button>
+      </div>
+    </section>
+
+    <section id="side-newslist">
+      <span>New</span>
+
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Hydrogen VS Electric Cars</h3>
+          </a>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+        <li>
+          <a href="#">
+            <h3>The Downsides of AI Artistry</h3>
+          </a>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+        <li>
+          <a href="#">
+            <h3>Is VC Funding Drying Up?</h3>
+          </a>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section id="bottom-news">
+      <ul>
+        <li>
+          <div class="bot-illu-wrapper">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" class="bot-illu">
+          </div>
+          <div class="bot-content-wrap">
+            <span>01</span>
+            <a href="">
+              <h3>Reviving Retro PCs</h3>
+            </a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="bot-illu-wrapper">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" class="bot-illu">
+          </div>
+          <div class="bot-content-wrap">
+            <span>02</span>
+            <a href="">
+              <h3>Top 10 Laptops of 2022</h3>
+            </a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="bot-illu-wrapper">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" class="bot-illu">
+          </div>
+          <div class="bot-content-wrap">
+            <span>03</span>
+            <a href="">
+              <h3>The Growth of Gaming</h3>
+            </a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

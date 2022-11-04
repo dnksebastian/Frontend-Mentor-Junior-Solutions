@@ -26,7 +26,7 @@
 | Insure Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/insure-landing-page-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/insure-landing-page-master/" target="_blank">Repo</a>  |
 | Social Media Dashboard With Theme Switcher | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/social-media-dashboard-with-theme-switcher-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/social-media-dashboard-with-theme-switcher-master/" target="_blank">Repo</a>  |
 | Pricing Component With Toggle | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/pricing-component-with-toggle-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/pricing-component-with-toggle-master/" target="_blank">Repo</a>  |
-| 18 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| News homepage | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/news-homepage-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/news-homepage-main/" target="_blank">Repo</a>  |
 | 19 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 20 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 21 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |

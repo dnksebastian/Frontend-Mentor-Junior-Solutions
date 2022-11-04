@@ -1,0 +1,68 @@
+/* General styles, reset and typography */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* img {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+
+span {
+  display: block;
+}
+
+button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  /* ### Primary */
+
+  --custom-soft-orange: hsl(35, 77%, 62%);
+  --custom-soft-red: hsl(5, 85%, 63%);
+
+  /* ### Neutral */
+
+  --custom-off-white: hsl(36, 100%, 99%);
+  --custom-grayish-blue: hsl(233, 8%, 79%);
+  --custom-dark-grayish-blue: hsl(236, 13%, 42%);
+  --custom-very-dark-blue: hsl(240, 100%, 5%);
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Mobile styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
