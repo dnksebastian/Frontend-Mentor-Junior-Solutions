@@ -90,29 +90,41 @@ nav {
   background-color: white;
   height: 100vh;
   width: 25.5rem;
-  /* opacity: 70%; */
-  padding: 2.7rem 2rem 1rem 2rem;
-  z-index: 10;
+  padding: 2.7rem 2rem 1rem 2.3rem;
+  touch-action: none;
 }
 
 nav::before {
   position: fixed;
-  top: 15rem;
-  left: 15rem;
+  top: 0rem;
+  left: 0;
   content: "";
-  width: 100vw;
-  height: 10px;
+  width: calc(100vw - 25.5rem);
+  height: 100vh;
   background-color: var(--custom-dark-grayish-blue);
-  z-index: -999;
+  opacity: 50%;
 }
 
 #nav-menu {
   background-color: rgba(0, 128, 128, 0.355);
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2.7rem;
 }
+
+.nav-link {
+  font-size: 1.8rem;
+  transition: .3s;
+}
+
+.nav-link:hover, .nav-link:focus-visible {
+  color: var(--custom-soft-orange);
+}
+
+
 
 .close-icon-wrapper {
   width: 3.2rem;
-  background-color: rgba(255, 0, 0, 0.381);
   justify-self: end;
   cursor: pointer;
 }
@@ -181,6 +193,10 @@ main {
   padding: 1.5rem 3rem;
 }
 
+#btn-news:hover, #btn-news:focus-visible {
+  background-color: var(--custom-very-dark-blue);
+}
+
 /* Side section mobile styles */
 
 #side-newslist {
@@ -219,9 +235,14 @@ main {
   color: var(--custom-grayish-blue);
 }
 
+#side-news-ul h3:hover, #side-news-ul h3:focus-visible {
+  color: var(--custom-soft-orange);
+}
+
 #side-news-ul h3 {
   font-size: 2rem;
   color: var(--custom-off-white);
+  transition: .3s;
 }
 
 #side-news-ul p {
@@ -265,6 +286,11 @@ main {
   padding-top: 1rem;
   font-size: 1.85rem;
   color: var(--custom-very-dark-blue);
+  transition: .3s;
+}
+
+.bot-content-wrap h3:hover, .bot-content-wrap h3:focus-visible {
+color: var(--custom-soft-orange);
 }
 
 .bot-content-wrap p {
