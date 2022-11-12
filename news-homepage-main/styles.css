@@ -53,6 +53,7 @@ html {
 html,
 body {
   min-height: 100vh;
+  min-width: 275px;
 }
 
 /* Mobile styles */
@@ -162,16 +163,19 @@ main {
   padding: 0 0 2.7rem 0;
 }
 
-/* .news-img-wrap {
-  max-height: 30rem;
-} */
+.news-img-wrap {
+  justify-self: center;
+  max-width: 47rem;
+}
 
 .news-illustration-deskt {
   display: none;
 }
 
 .news-content-wrap {
-  /* background-color: rgba(255, 0, 0, 0.326); */
+  background-color: rgba(255, 0, 0, 0.326);
+  max-width: 50rem;
+  justify-self: center;
   padding: 1rem 0;
 }
 
@@ -208,6 +212,8 @@ main {
   background-color: var(--custom-very-dark-blue);
   padding: 2rem 2.2rem 0.5rem 2.2rem;
   gap: 0rem;
+  max-width: 80rem;
+  justify-self: center;
 }
 
 #side-head {
@@ -261,6 +267,8 @@ main {
 #bottom-news {
   background-color: rgba(0, 128, 128, 0.389);
   padding: 3rem 0;
+  max-width: 50rem;
+  justify-self: center;
 }
 
 #bottom-news-ul {
@@ -319,11 +327,11 @@ footer {
 
 @media screen and (min-width: 1000px) {
   body {
-    display: grid;
-    grid-template-columns: 100%;
+    /* display: grid; */
+    /* grid-template-columns: 100%; */
     grid-template-rows: 10rem 1fr 5rem;
     padding: 4rem;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   /* Header desktop styles */
@@ -364,7 +372,6 @@ footer {
     display: none;
   }
 
-  /* !!!!!!!!! TODO: make menu items even width */
 
   #nav-menu {
     grid-template-rows: 1fr;
@@ -393,8 +400,8 @@ footer {
       "main side"
       "bottom bottom";
     background-color: rgba(95, 158, 160, 0.281);
-    padding: 1.2rem 0;
-    gap: 2.5rem;
+    /* padding: 1.2rem 0; */
+    /* gap: 2.5rem; */
     width: 85%;
     justify-self: center;
   }
@@ -402,12 +409,17 @@ footer {
   /* Top section desktop styles */
 
   #news-main-section {
-    display: grid;
+    /* display: grid; */
     grid-area: main;
-    justify-items: start;
+    /* justify-items: start; */
     gap: 2rem;
     background-color: rgba(255, 0, 0, 0.303);
     padding: 2rem .5rem 1rem 2rem;
+  }
+
+  .news-img-wrap {
+    justify-self: stretch;
+    max-width: none;
   }
 
   .news-illustration-mob {
@@ -419,11 +431,13 @@ footer {
 
   .news-content-wrap {
     background-color: rgba(255, 0, 0, 0.326);
-    padding: 1rem 0 1rem 0;
+    /* padding: 1rem 0 1rem 0; */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     gap: 1.5rem;
+    max-width: none;
+  justify-self: start;
   }
 
   .news-content-wrap h1 {
@@ -449,6 +463,8 @@ footer {
     grid-area: side;
     padding: 3rem 2rem 2rem 2rem;
     margin: 2rem 2rem 2.5rem 0;
+    max-width: none;
+    justify-self: stretch;
   }
 
   #side-head {
@@ -460,10 +476,12 @@ footer {
   #bottom-news {
     grid-area: bottom;
     padding: 0 2rem;
+    max-width: none;
+    justify-self: stretch;
   }
 
   #bottom-news-ul {
-    display: grid;
+    /* display: grid; */
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -472,4 +490,51 @@ footer {
     width: 85%;
     justify-self: center;
   }
+}
+
+/* Very small screen styles */
+
+@media screen and (max-width: 375px) {
+
+  .bot-content-wrap span {
+    font-size: 2rem;
+  }
+  
+  .bot-content-wrap h3 {
+    /* padding-top: 1rem; */
+    font-size: 1.2rem;
+  }
+  
+  .bot-content-wrap p {
+    /* padding-top: 1rem; */
+    font-size: 1rem;
+    /* line-height: 1.5rem; */
+  }
+  
+  
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+  
+  
+  #bottom-news-ul li {
+    gap: 1rem;
+    grid-template-columns: 4fr 6fr;
+  }
+  
+  .bot-content-wrap span {
+    font-size: 2rem;
+  }
+  
+  .bot-content-wrap h3 {
+    font-size: 1.5rem;
+  }
+  
+  .bot-content-wrap p {
+    font-size: 1.2rem;
+  }
+
+
+
+
 }
