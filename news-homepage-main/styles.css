@@ -71,7 +71,6 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.249);
   padding: 1.2rem 0rem;
 }
 
@@ -107,7 +106,6 @@ nav::before {
 }
 
 #nav-menu {
-  background-color: rgba(0, 128, 128, 0.355);
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   gap: 2.7rem;
@@ -139,16 +137,10 @@ nav::before {
   display: grid;
 }
 
-/* #nav-menu {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-} */
-
 main {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, min-content);
-  background-color: rgba(95, 158, 160, 0.281);
   padding: 1.2rem 0;
   gap: 2.5rem;
 }
@@ -159,7 +151,6 @@ main {
   display: grid;
   justify-items: start;
   gap: 1.5rem;
-  background-color: rgba(255, 0, 0, 0.303);
   padding: 0 0 2.7rem 0;
 }
 
@@ -173,7 +164,6 @@ main {
 }
 
 .news-content-wrap {
-  background-color: rgba(255, 0, 0, 0.326);
   max-width: 50rem;
   justify-self: center;
   padding: 1rem 0;
@@ -265,7 +255,6 @@ main {
 /* Bottom section mobile styles */
 
 #bottom-news {
-  background-color: rgba(0, 128, 128, 0.389);
   padding: 3rem 0;
   max-width: 50rem;
   justify-self: center;
@@ -281,12 +270,10 @@ main {
   gap: 2rem;
   grid-template-columns: 3fr 7fr;
   padding: 1rem 0;
-  background-color: rgba(0, 128, 0, 0.303);
 }
 
 .bot-content-wrap {
   padding: 0 0 0 0.5rem;
-  background-color: rgba(255, 166, 0, 0.397);
 }
 
 .bot-content-wrap span {
@@ -320,28 +307,20 @@ footer {
   display: grid;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 128, 0, 0.222);
 }
 
 /* Media queries */
 
 @media screen and (min-width: 1000px) {
   body {
-    /* display: grid; */
-    /* grid-template-columns: 100%; */
     grid-template-rows: 10rem 1fr 5rem;
     padding: 4rem;
-    /* gap: 1rem; */
   }
 
   /* Header desktop styles */
 
   header {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 1fr; */
     align-items: end;
-    /* background-color: rgba(255, 0, 0, 0.249); */
     padding: 1.2rem 2.3rem 1rem 2.3rem;
     gap: 9rem;
     width: 85%;
@@ -381,8 +360,6 @@ footer {
   }
 
   #nav-menu li {
-    background-color: rgba(0, 0, 255, 0.3);
-    /* min-width: 9rem; */
     text-align: center;
   }
   
@@ -393,15 +370,11 @@ footer {
   /* Main dekstop styles */
 
   main {
-    /* display: grid; */
     grid-template-columns: 67fr 33fr;
     grid-template-rows: repeat(2, min-content);
     grid-template-areas:
       "main side"
       "bottom bottom";
-    background-color: rgba(95, 158, 160, 0.281);
-    /* padding: 1.2rem 0; */
-    /* gap: 2.5rem; */
     width: 85%;
     justify-self: center;
   }
@@ -409,11 +382,8 @@ footer {
   /* Top section desktop styles */
 
   #news-main-section {
-    /* display: grid; */
     grid-area: main;
-    /* justify-items: start; */
     gap: 2rem;
-    background-color: rgba(255, 0, 0, 0.303);
     padding: 2rem .5rem 1rem 2rem;
   }
 
@@ -430,8 +400,6 @@ footer {
   }
 
   .news-content-wrap {
-    background-color: rgba(255, 0, 0, 0.326);
-    /* padding: 1rem 0 1rem 0; */
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -452,11 +420,9 @@ footer {
   }
 
   #btn-news {
-    /* grid-column: 2; */
     width: 19rem;
     height: 5rem;
     align-self: center;
-    /* padding: 1rem 2rem; */
   }
 
   #side-newslist {
@@ -481,7 +447,6 @@ footer {
   }
 
   #bottom-news-ul {
-    /* display: grid; */
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -501,14 +466,11 @@ footer {
   }
   
   .bot-content-wrap h3 {
-    /* padding-top: 1rem; */
     font-size: 1.2rem;
   }
   
   .bot-content-wrap p {
-    /* padding-top: 1rem; */
     font-size: 1rem;
-    /* line-height: 1.5rem; */
   }
   
   
