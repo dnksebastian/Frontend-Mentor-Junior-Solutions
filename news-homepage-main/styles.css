@@ -334,8 +334,10 @@ footer {
     /* grid-template-rows: 1fr; */
     align-items: end;
     /* background-color: rgba(255, 0, 0, 0.249); */
-    padding: 1.2rem 0rem 1rem 12.5rem;
+    padding: 1.2rem 2.3rem 1rem 2.3rem;
     gap: 9rem;
+    width: 85%;
+    justify-self: center;
   }
 
   .logo-wrapper {
@@ -353,9 +355,9 @@ footer {
     height: auto;
     width: auto;
     grid-template-rows: 1fr;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem .5rem 1rem .5rem;
     gap: 0;
-    justify-self: start;
+    justify-self: end;
   }
 
   nav::before {
@@ -367,12 +369,17 @@ footer {
   #nav-menu {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0rem;
-    justify-items: center;
+    gap: .7rem;
+    justify-items: stretch;
   }
 
+  #nav-menu li {
+    background-color: rgba(0, 0, 255, 0.3);
+    /* min-width: 9rem; */
+    text-align: center;
+  }
+  
   .nav-link {
-    border: 1px solid red;
     font-size: 1.7rem;
   }
 
@@ -380,7 +387,7 @@ footer {
 
   main {
     /* display: grid; */
-    grid-template-columns: 65fr 35fr;
+    grid-template-columns: 67fr 33fr;
     grid-template-rows: repeat(2, min-content);
     grid-template-areas:
       "main side"
@@ -398,9 +405,9 @@ footer {
     display: grid;
     grid-area: main;
     justify-items: start;
-    gap: 1.5rem;
+    gap: 2rem;
     background-color: rgba(255, 0, 0, 0.303);
-    padding: 0 0 2.7rem 0;
+    padding: 2rem .5rem 1rem 2rem;
   }
 
   .news-illustration-mob {
@@ -410,28 +417,59 @@ footer {
     display: block;
   }
 
-  
-
   .news-content-wrap {
-    /* background-color: rgba(255, 0, 0, 0.326); */
-    padding: 1rem 0;
+    background-color: rgba(255, 0, 0, 0.326);
+    padding: 1rem 0 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 1.5rem;
+  }
+
+  .news-content-wrap h1 {
+    font-size: 5.7rem;
+    line-height: 5.5rem;
+    grid-row: 1/3;
+  }
+
+  .news-content-wrap p {
+    padding: 0 2rem 2.5rem 0rem;
+    line-height: 2.5rem;
+  }
+
+  #btn-news {
+    /* grid-column: 2; */
+    width: 19rem;
+    height: 5rem;
+    align-self: center;
+    /* padding: 1rem 2rem; */
   }
 
   #side-newslist {
     grid-area: side;
+    padding: 3rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 2.5rem 0;
+  }
+
+  #side-head {
+    font-size: 4rem;
   }
 
   /* Bottom section desktop styles */
 
   #bottom-news {
     grid-area: bottom;
+    padding: 0 2rem;
   }
 
   #bottom-news-ul {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    width: 85%;
+    justify-self: center;
   }
 }
