@@ -64,6 +64,7 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   padding: 1.5rem;
   gap: 1rem;
+  background-color: var(--custom-off-white);
 }
 
 header {
@@ -87,7 +88,7 @@ nav {
   gap: 7rem;
   right: 0;
   top: 0;
-  background-color: white;
+  background-color: var(--custom-off-white);
   height: 100vh;
   width: 25.5rem;
   padding: 2.7rem 2rem 1rem 2.3rem;
@@ -114,6 +115,7 @@ nav::before {
 .nav-link {
   font-size: 1.8rem;
   transition: 0.3s;
+  color: var(--custom-very-dark-blue);
 }
 
 .nav-link:hover,
@@ -188,6 +190,7 @@ main {
   letter-spacing: 0.45rem;
   text-transform: uppercase;
   padding: 1.5rem 3rem;
+  white-space: nowrap;
 }
 
 #btn-news:hover,
@@ -420,7 +423,7 @@ footer {
   }
 
   #btn-news {
-    width: 19rem;
+    width: 22rem;
     height: 5rem;
     align-self: center;
   }

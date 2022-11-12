@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-news-homepage-mbXqz473BO](https://www.frontendmentor.io/solutions/html-css-js-news-homepage-mbXqz473BO)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/news-homepage-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/news-homepage-main/)
 
 ## My process
