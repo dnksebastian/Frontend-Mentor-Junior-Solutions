@@ -27,7 +27,8 @@ img {
 
 html,
 body {
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 250px;
 }
 
 html {
@@ -50,12 +51,12 @@ body::after {
   bottom: 0;
   left: 0;
   height: 7rem;
-  width: 100%;
+  width: 30rem;
   background-image: url(./images/pattern-curve.svg);
   background-repeat: no-repeat;
-  background-size: 80% 100%;
+  background-size: 100% 100%;
   z-index: -1;
-  /* background-color: red; */
+  background-color: red;
 }
 
 /* Mobile styles */
@@ -71,14 +72,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
   /* padding: 1rem; */
   width: 85%;
   max-width: 80rem;
   max-height: 90rem;
-  gap: 2rem;
+  /* gap: 2rem; */
+  gap: 3rem;
   background-color: rgba(0, 128, 128, 0.396);
-  padding: .2rem 0 2rem 0;
+  /* padding: .2rem 0 2rem 0; */
+  padding: 1.5rem 0 2rem 0;
 }
 
 .component-top {
@@ -184,7 +188,23 @@ footer {
 
 /* Media queries */
 
+/* Very small devices */
+
+@media screen and (max-width: 374px) {
+
+  body::after {
+    width: 100%;
+  }
+
+}
+
+
 @media screen and (min-width: 1300px) {
+
+  body::after {
+    height: 15.5rem;
+    width: 60rem;
+  }
 
 
   #component-wrapper {
