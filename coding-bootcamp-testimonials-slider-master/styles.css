@@ -112,6 +112,18 @@ main {
   overflow: hidden;
 }
 
+
+@keyframes showPic {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.showPic {
+  animation-name: showPic;
+  animation-duration: 3s;
+}
+
+
 .slide-control {
   position: absolute;
   display: flex;
@@ -134,7 +146,44 @@ main {
   border: 1px solid transparent;
   width: 1.2rem;
   height: 1.5rem;
+  cursor: pointer;
 }
+
+@keyframes moveSlider{
+  0% {transform: translate(-50%, 0);}
+  50% {transform: translate(-30%, 0);}
+  100% {transform: translate(-50%, 0);}
+}
+
+.moveSlider {
+  animation-name: moveSlider;
+  animation-duration: 2s;
+}
+
+@keyframes moveLeft{
+  0% {transform: translate(-50%, 0);}
+  50% {transform: translate(-70%, 0);}
+  100% {transform: translate(-50%, 0);}
+}
+
+.moveLeft {
+  animation-name: moveLeft;
+  animation-duration: 2s;
+}
+
+@keyframes moveRight{
+  0% {transform: translate(-50%, 0);}
+  50% {transform: translate(-30%, 0);}
+  100% {transform: translate(-50%, 0);}
+}
+
+.moveRight {
+  animation-name: moveRight;
+  animation-duration: 2s;
+}
+
+
+
 
 .component-bottom {
   display: flex;
@@ -151,6 +200,18 @@ main {
   padding: 2.5rem 0;
   gap: 2rem;
 }
+
+@keyframes showElement {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.showElement {
+  animation-name: showElement;
+  animation-duration: 3s;
+}
+
+
 
 .customer-quote {
   font-size: 1.8rem;
