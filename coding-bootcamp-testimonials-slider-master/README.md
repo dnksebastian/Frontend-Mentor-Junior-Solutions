@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-coding-bootcamp-testimonials-slider-rRHn-Rbfvr](https://www.frontendmentor.io/solutions/html-css-js-coding-bootcamp-testimonials-slider-rRHn-Rbfvr)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/coding-bootcamp-testimonials-slider-master/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/coding-bootcamp-testimonials-slider-master/)
 
 ## My process
