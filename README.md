@@ -28,7 +28,7 @@
 | Pricing Component With Toggle | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/pricing-component-with-toggle-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/pricing-component-with-toggle-master/" target="_blank">Repo</a>  |
 | News homepage | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/news-homepage-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/news-homepage-main/" target="_blank">Repo</a>  |
 | Coding Bootcamp Testimonials Slider | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/coding-bootcamp-testimonials-slider-master/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/coding-bootcamp-testimonials-slider-master/" target="_blank">Repo</a>  |
-| 20 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Interactive Card Details Form | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/interactive-card-details-form-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/interactive-card-details-form-main/" target="_blank">Repo</a>  |
 | 21 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 22 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 | 23 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
