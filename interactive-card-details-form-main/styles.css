@@ -88,44 +88,55 @@ main {
   z-index: 1;
 }
 
-.cards-container {
+/* .cards-container {
   position: relative;
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(0, 128, 0, 0.41);
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1.2rem 1rem .5rem 1rem;
+} */
+
+.cards-container {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  background-color: rgba(0, 128, 0, 0.41);
+  width: 100%;
+  min-height: 27rem;
+  padding: 1.2rem .5rem;
 }
 
 .card-back-wrapper,
 .card-front-wrapper {
-  width: 20rem;
-  height: 10rem;
+  width: 28.5rem;
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;  
 }
 
 .card-back-wrapper {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  border: 1px solid red;
-  margin-left: auto;
-}
-
-.back-img-wrap {
-  position: relative;
+  transform: translate(2.7rem, -4.5rem);
+  /* justify-self: end; */
+  /* right: -1rem; */
 }
 
 .cvc-display {
-  top: 48%;
-  right: 10%;
   position: absolute;
+  top: 45%;
+  right: 13%;
 }
 
 .card-front-wrapper {
   position: relative;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 20, 145, 0.416);
+  transform: translate(-2.7rem, 5rem);
+  /* align-self: flex-end; */
+  /* left: -1rem;
+  bottom: -.5rem; */
 }
 
 .front-img-wrap {
@@ -134,23 +145,100 @@ main {
 
 .card-logo-wrap {
   position: absolute;
-  width: 1rem;
-  height: 1rem;
-  top: 0;
-  left: 0;
+  width: 5.2rem;
+  top: 12%;
+  left: 7%;
 }
 
 .card-data-helper {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 100%;
+  padding: 2rem 2rem;
+  color: var(--custom-white);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "cardn cardn"
+  "cardhold cardexp";
 }
+
+.cardnum-display {
+  grid-area: cardn;
+  justify-self: center;
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+}
+
+.cardholder-display {
+  grid-area: cardhold;
+  justify-self: start;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+}
+
+.expdate-display {
+  display: flex;
+  gap: .2rem;
+  grid-area: cardexp;
+  justify-self: end;
+}
+
+/* Form styles */
 
 .form-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem .5rem;
     background-color: rgba(255, 0, 0, 0.34);
 }
+
+.ccard-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  gap: 1.6rem;
+  background-color: rgba(0, 0, 255, 0.14);
+}
+
+.ccard-form label {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+.ccard-form input {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row:last-of-type {
+  flex-direction: row;
+}
+
+.form-helper {
+  display: flex;
+}
+
+.helper-inner {
+  display: flex;
+}
+
+
+.sub-btn {
+  font-size: 1.7rem;
+  color: var(--custom-white);
+  background-color: var(--custom-very-dark-violet);
+}
+
 
 .confirm-info {
   display: none;
