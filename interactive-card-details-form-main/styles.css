@@ -9,7 +9,9 @@
 :root {
   /* ### Primary */
 
-  --custom-linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%); /*(active input border)*/
+  /* linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);  */
+
+  --custom-gradient: linear-gradient(90deg, rgba(99, 72, 254, 1) 0%, rgba(102, 0, 153, 1) 100%); /*(active input border)*/
 
   --custom-red: hsl(0, 100%, 66%); /* (input errors) */
 
@@ -37,7 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 a {
@@ -83,20 +85,9 @@ main {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
-  /* flex: 1; */
   background-color: rgba(255, 217, 0, 0.251);
   z-index: 1;
 }
-
-/* .cards-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 128, 0, 0.41);
-  width: 100%;
-  padding: 1.2rem 1rem .5rem 1rem;
-} */
 
 .cards-container {
   position: relative;
@@ -121,11 +112,10 @@ main {
 
 .card-back-wrapper {
   transform: translate(2.7rem, -4.5rem);
-  /* justify-self: end; */
-  /* right: -1rem; */
 }
 
 .cvc-display {
+  color: var(--custom-white);
   position: absolute;
   top: 45%;
   right: 13%;
@@ -134,9 +124,6 @@ main {
 .card-front-wrapper {
   position: relative;
   transform: translate(-2.7rem, 5rem);
-  /* align-self: flex-end; */
-  /* left: -1rem;
-  bottom: -.5rem; */
 }
 
 .front-img-wrap {
@@ -203,7 +190,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem 0rem .5rem 0rem;
-  gap: 1.8rem;
+  gap: 2rem;
   background-color: rgba(0, 0, 255, 0.14);
 }
 
@@ -213,8 +200,11 @@ main {
   letter-spacing: 0.1rem;
   color: var(--custom-very-dark-violet);
   font-weight: 500;
-  /* padding-bottom: .8rem; */
 }
+
+/* Form input styles */
+
+
 .ccard-form input {
   font: inherit;
   width: 100%;
@@ -223,7 +213,31 @@ main {
   padding: .9rem 1.5rem;
   border-radius: .5rem;
   margin-top: .8rem;
+  border: 1px solid var(--custom-dark-grayish-violet);
+  color: var(--custom-very-dark-violet);
+  outline: none;
 }
+
+.ccard-form input:focus {
+  border: 1px solid var(--custom-very-dark-violet);
+  /* border-image: var(--custom-gradient);   */
+}
+
+.errormsg {
+  font-size: 1.1rem;
+  color: var(--custom-red);
+  padding: .5rem 0rem 0rem 0rem;
+  display: none;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--custom-red);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .errormsg {
+  display: block; 
+}
+
 
 .form-row {
   display: flex;
@@ -279,12 +293,103 @@ footer {
 /* Media queries */
 
 @media screen and (min-width: 1000px) {
+
   body::before {
-    top: 0;
-    left: 0;
-    width: 20rem;
+    width: 33.6%;
     height: 100%;
     background-image: url(./images/bg-main-desktop.png);
-    z-index: 0;
   }
+
+
+
+  main {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: auto;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto;
+    min-height: auto;
+    min-width: auto;
+    gap: 3.5rem;
+    padding: 4.5rem 18rem 3rem 2rem;
+  }
+  
+  .card-back-wrapper,
+  .card-front-wrapper {
+    width: 45rem;
+  }
+
+  .card-back-wrapper {
+    margin-left: 21%;
+    transform: translate(0rem, 0rem);
+  }
+
+  .cvc-display {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+  }
+
+  .card-front-wrapper {
+    transform: translate(0rem, 0rem);
+  }
+
+  .card-logo-wrap {
+    width: 8.5rem;
+    top: 11%;
+  }
+
+  .card-data-helper {
+    padding: 2rem 3.2rem 2.8rem 3.2rem;
+    gap: 2.5rem;
+  }
+  
+  .cardnum-display {
+    justify-self: start;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+  }
+  
+  .cardholder-display {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+  }
+  
+  .expdate-display {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+  }
+
+  /* Form styles */
+
+.form-container {
+  padding: 1rem 5rem 1rem 2rem;
+  max-width: 45rem;
+  margin-right: 3.5rem;
+}
+
+.ccard-form {
+  padding: 2rem 0rem .5rem 0rem;
+  gap: 2.5rem;
+}
+
+.sub-btn {
+  margin-top: 1.8rem;
+}
+
+
+.errormsg {
+  font-size: 1.2rem;
+  /* padding: .5rem 0rem 0rem 0rem; */
+  /* display: block; */
+}
+
+
 }
