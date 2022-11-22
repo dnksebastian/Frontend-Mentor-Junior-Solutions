@@ -31,6 +31,7 @@ html {
 html,
 body {
   min-height: 100vh;
+  min-width: 375px;
 }
 
 body {
@@ -85,7 +86,7 @@ main {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
-  background-color: rgba(255, 217, 0, 0.251);
+  /* background-color: rgba(255, 217, 0, 0.251); */
   z-index: 1;
 }
 
@@ -96,7 +97,7 @@ main {
   align-items: center;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-  background-color: rgba(0, 128, 0, 0.41);
+  /* background-color: rgba(0, 128, 0, 0.41); */
   width: 100%;
   min-height: 27rem;
   padding: 1.2rem 0.5rem;
@@ -182,7 +183,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
-  background-color: rgba(255, 0, 0, 0.34);
+  /* background-color: rgba(255, 0, 0, 0.34); */
   max-width: 35rem;
 }
 
@@ -191,7 +192,7 @@ main {
   flex-direction: column;
   padding: 1rem 0rem .5rem 0rem;
   gap: 2rem;
-  background-color: rgba(0, 0, 255, 0.14);
+  /* background-color: rgba(0, 0, 255, 0.14); */
 }
 
 .ccard-form label {
@@ -246,7 +247,7 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .errormsg {
 
 .form-row:last-of-type {
   flex-direction: row;
-  background-color: green;
+  /* background-color: green; */
   gap: 1rem;
 }
 
@@ -261,7 +262,7 @@ flex: 50%;
 .helper-inner {
   display: flex;
   gap: .5rem;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .sub-btn {
@@ -305,6 +306,7 @@ footer {
   main {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
     padding: 2rem 2rem 2rem 2rem;
     margin-top: auto;
@@ -370,7 +372,7 @@ footer {
   /* Form styles */
 
 .form-container {
-  padding: 1rem 5rem 1rem 2rem;
+  padding: 11.5rem 5rem 1rem 2rem;
   max-width: 45rem;
   margin-right: 3.5rem;
 }
@@ -387,9 +389,40 @@ footer {
 
 .errormsg {
   font-size: 1.2rem;
-  /* padding: .5rem 0rem 0rem 0rem; */
-  /* display: block; */
 }
 
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+  .cards-container {
+    padding: 4.5rem 10rem 3rem 2rem;
+  }
+
+  .card-back-wrapper,
+  .card-front-wrapper {
+    width: 38rem;
+  }
+
+  .card-logo-wrap {
+    width: 6rem;
+  }
+
+  .cardnum-display {
+    font-size: 1.8rem;
+  }
+
+  .cardholder-display {
+    font-size: 1.2rem;
+  }
+
+  .expdate-display {
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    padding: 11.5rem 2rem 1rem 2rem;
+  }
 
 }
