@@ -108,7 +108,7 @@ main {
   background-color: rgba(0, 128, 0, 0.41);
   width: 100%;
   min-height: 27rem;
-  padding: 1.2rem .5rem;
+  padding: 1.2rem 0.5rem;
 }
 
 .card-back-wrapper,
@@ -116,7 +116,7 @@ main {
   width: 28.5rem;
   position: relative;
   grid-column: 1;
-  grid-row: 1;  
+  grid-row: 1;
 }
 
 .card-back-wrapper {
@@ -162,15 +162,15 @@ main {
   grid-template-rows: 50% 50%;
   grid-template-columns: auto;
   grid-template-areas:
-  "cardn cardn"
-  "cardhold cardexp";
+    "cardn cardn"
+    "cardhold cardexp";
 }
 
 .cardnum-display {
   grid-area: cardn;
   justify-self: center;
   font-size: 1.8rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 .cardholder-display {
@@ -178,12 +178,12 @@ main {
   justify-self: start;
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 .expdate-display {
   display: flex;
-  gap: .2rem;
+  gap: 0.2rem;
   grid-area: cardexp;
   justify-self: end;
 }
@@ -191,28 +191,38 @@ main {
 /* Form styles */
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem .5rem;
-    background-color: rgba(255, 0, 0, 0.34);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  background-color: rgba(255, 0, 0, 0.34);
+  max-width: 35rem;
 }
 
 .ccard-form {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0rem;
-  gap: 1.6rem;
+  padding: 1rem 0rem .5rem 0rem;
+  gap: 1.8rem;
   background-color: rgba(0, 0, 255, 0.14);
 }
 
 .ccard-form label {
   text-transform: uppercase;
   font-size: 1.3rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
+  color: var(--custom-very-dark-violet);
+  font-weight: 500;
+  /* padding-bottom: .8rem; */
 }
 .ccard-form input {
+  font: inherit;
   width: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: .9rem 1.5rem;
+  border-radius: .5rem;
+  margin-top: .8rem;
 }
 
 .form-row {
@@ -222,23 +232,39 @@ main {
 
 .form-row:last-of-type {
   flex-direction: row;
+  background-color: green;
+  gap: 1rem;
 }
 
-.form-helper {
-  display: flex;
+.form-row:last-of-type .helper-col:first-of-type {
+flex: 50%;  
+}
+
+.form-row:last-of-type .helper-col:nth-of-type(2) {
+  flex: 50%;
 }
 
 .helper-inner {
   display: flex;
+  gap: .5rem;
+  background-color: yellow;
 }
-
 
 .sub-btn {
-  font-size: 1.7rem;
+  font: inherit;
+  font-size: 1.8rem;
   color: var(--custom-white);
   background-color: var(--custom-very-dark-violet);
+  font-weight: 500;
+  padding: 1.55rem 1.5rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
 }
 
+.sub-btn:hover,
+.sub-btn:focus {
+  filter: brightness(140%);
+}
 
 .confirm-info {
   display: none;
