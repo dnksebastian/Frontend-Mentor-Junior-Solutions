@@ -60,33 +60,43 @@
         <div class="form-row">
 
           <label for="cardholder-name">Cardholder Name</label>
-          <input type="text" id="cardholder-name" name="cardholder" placeholder="e.g. Jane Appleseed" maxlength="30" required>
-          <p class="errormsg" id="nameerror">Can't be blank</p>
+          <input class="forminput" type="text" id="cardholder-name" name="cardholder" placeholder="e.g. Jane Appleseed" maxlength="20" required>
+          <p class="errormsg" id="nameerror"></p>
 
         </div>
 
         <div class="form-row">
-          
+
           <label for="cardnumber">Card Number</label>
-          <input type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" required>
+          <input class="forminput" type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="19"
+            required>
           <p class="errormsg" id="numerror">Wrong format, numbers only</p>
         </div>
 
         <div class="form-row">
 
-          <div class="helper-col"> 
+          <div class="helper-col">
             <label for="expdate">Exp. Date (MM/YY)</label>
+
             <div class="helper-inner">
-              <input type="text" id="expdate-m" name="month" placeholder="MM" maxlength="2" required>
-              <input type="text" name="year" id="expdate-y" placeholder="YY" maxlength="2" required>
+
+              <div>
+                <input class="forminput" type="text" id="expdate-m" name="month" placeholder="MM" maxlength="2" required>
+                <p class="errormsg" id="montherror">Can't be blank</p>
+              </div>
+
+              <div>
+                <input class="forminput" type="text" name="year" id="expdate-y" placeholder="YY" maxlength="2" required>
+                <p class="errormsg" id="yearerror">Can't be blank</p>
+              </div>
+
             </div>
-            <p class="errormsg">Can't be blank</p>
           </div>
 
           <div class="helper-col">
             <label for="cvc">CVC</label>
-            <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" maxlength="3" required>
-            <p class="errormsg">Can't be blank</p>
+            <input class="forminput" type="text" id="cvc" name="cvc" placeholder="e.g. 123" maxlength="3" required>
+            <p class="errormsg" id="cvcerror">Can't be blank</p>
           </div>
 
         </div>
@@ -107,7 +117,7 @@
 
 
   </main>
-  
+
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

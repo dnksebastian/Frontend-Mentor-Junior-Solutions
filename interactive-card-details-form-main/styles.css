@@ -206,7 +206,7 @@ main {
 /* Form input styles */
 
 
-.ccard-form input {
+.forminput {
   font: inherit;
   width: 100%;
   font-size: 1.8rem;
@@ -219,10 +219,11 @@ main {
   outline: none;
 }
 
-.ccard-form input:focus {
+.forminput:focus {
   border: 1px solid var(--custom-very-dark-violet);
   /* border-image: var(--custom-gradient);   */
 }
+
 
 .errormsg {
   font-size: 1.1rem;
@@ -231,13 +232,38 @@ main {
   display: none;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid {
-  border-color: var(--custom-red);
+.invalid {
+  border: 1px solid var(--custom-red)!important;
 }
 
-input:not(:focus):not(:placeholder-shown):invalid ~ .errormsg {
-  display: block; 
+.active-err {
+  display: block;
 }
+
+
+/* input:focus:is(:placeholder-shown):invalid {
+  border-color: var(--custom-red);
+} */
+
+/* input:not(:focus):invalid {
+  border-color: var(--custom-red);
+} */
+
+/* input:invalid {
+  border-color: var(--custom-red);
+} */
+
+/* input:focus:is(:placeholder-shown):invalid ~ .errormsg {
+  display: block; 
+} */
+
+/* input:not(:focus):invalid ~ .errormsg {
+  display: block; 
+} */
+
+/* input:focus:invalid ~ .errormsg {
+  display: block; 
+} */
 
 
 .form-row {
@@ -252,11 +278,11 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .errormsg {
 }
 
 .form-row:last-of-type .helper-col:first-of-type {
-flex: 50%;  
+flex: 1;  
 }
 
 .form-row:last-of-type .helper-col:nth-of-type(2) {
-  flex: 50%;
+  flex: 1;
 }
 
 .helper-inner {
