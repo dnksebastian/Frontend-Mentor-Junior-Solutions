@@ -86,7 +86,6 @@ main {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem;
-  /* background-color: rgba(255, 217, 0, 0.251); */
   z-index: 1;
 }
 
@@ -97,7 +96,6 @@ main {
   align-items: center;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-  /* background-color: rgba(0, 128, 0, 0.41); */
   width: 100%;
   min-height: 27rem;
   padding: 1.2rem 0.5rem;
@@ -183,7 +181,6 @@ main {
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
-  /* background-color: rgba(255, 0, 0, 0.34); */
   max-width: 35rem;
 }
 
@@ -192,7 +189,6 @@ main {
   flex-direction: column;
   padding: 1rem 0rem .5rem 0rem;
   gap: 2rem;
-  /* background-color: rgba(0, 0, 255, 0.14); */
 }
 
 .ccard-form label {
@@ -240,32 +236,6 @@ main {
   display: block;
 }
 
-
-/* input:focus:is(:placeholder-shown):invalid {
-  border-color: var(--custom-red);
-} */
-
-/* input:not(:focus):invalid {
-  border-color: var(--custom-red);
-} */
-
-/* input:invalid {
-  border-color: var(--custom-red);
-} */
-
-/* input:focus:is(:placeholder-shown):invalid ~ .errormsg {
-  display: block; 
-} */
-
-/* input:not(:focus):invalid ~ .errormsg {
-  display: block; 
-} */
-
-/* input:focus:invalid ~ .errormsg {
-  display: block; 
-} */
-
-
 .form-row {
   display: flex;
   flex-direction: column;
@@ -273,7 +243,6 @@ main {
 
 .form-row:last-of-type {
   flex-direction: row;
-  /* background-color: green; */
   gap: 1rem;
 }
 
@@ -288,7 +257,6 @@ flex: 1;
 .helper-inner {
   display: flex;
   gap: .5rem;
-  /* background-color: yellow; */
 }
 
 .sub-btn {
