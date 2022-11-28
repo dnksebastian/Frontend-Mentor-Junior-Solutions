@@ -178,7 +178,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 5rem;
     padding: 15rem 2rem;
 }
 
@@ -210,17 +210,31 @@ h2 {
     line-height: 1.7;
 }
 
-
+/* Grid showcase styles */
 
 
 #main-helper-bottom {
     background-color: orange;
     display: grid;
     justify-items: center;
-    gap: 1rem;
-    padding: 2rem 2.5rem;
+    gap: 3rem;
+    padding: 5rem 2.5rem 4rem 2.5rem;
 }
 
+#creations-label {
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  background-color: rgba(0, 0, 255, 0.459);
+}
+
+#creations-grid {
+  border: 3px solid red;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 100%;
+  padding: 5.5rem 0rem 3rem 0rem;
+  gap: 5rem;
+}
 
 .creation-link {
     position: relative;
@@ -230,9 +244,34 @@ h2 {
 .creation-el span {
     position: absolute;
     color: var(--custom-white);
-    bottom: 1rem;
-    left: 1rem;
+    text-transform: uppercase;
+    font-size: 4.7rem;
+    line-height: 1;
+    bottom: 4rem;
+    left: 4rem;
     z-index: 5;
+    max-width: 24rem;
+    background-color: rgba(95, 158, 160, 0.596);
+}
+
+.creation-el:nth-of-type(4) span {
+  max-width: 20rem;
+}
+
+
+#creations-btn {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: .9rem;
+  padding: 2rem 2rem;
+  min-width: 32rem;
+  border: 2px solid var(--custom-black);
+  background-color: transparent;
+}
+
+#creations-btn:hover {
+  color: var(--custom-white);
+  background-color: var(--custom-black);
 }
 
 
@@ -241,6 +280,7 @@ h2 {
 footer {
     width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
