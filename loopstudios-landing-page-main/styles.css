@@ -166,6 +166,10 @@ nav {
   display: none !important;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 /* Mobile main section styles */
 
 main {
@@ -190,6 +194,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  filter: brightness(80%);
 }
 
 h1 {

@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-loopstudios-landing-page-wlIis8x2iA](https://www.frontendmentor.io/solutions/html-css-js-loopstudios-landing-page-wlIis8x2iA)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/loopstudios-landing-page-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/loopstudios-landing-page-main/)
 
 ## My process
