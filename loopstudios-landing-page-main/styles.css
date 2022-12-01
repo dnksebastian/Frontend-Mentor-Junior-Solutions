@@ -800,7 +800,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 2rem 15.5rem;
   background-color: var(--custom-black);
   color: var(--custom-dark-gray);
   text-align: center;
@@ -822,16 +822,17 @@ footer {
 }
 
 #foot-logo-wrapper {
-  width: 15rem;
+  width: 14.5rem;
+  background-color: red;
 }
 
 #footer-menu {
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 1rem 0rem;
   background-color: rgba(255, 217, 0, 0.397);
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  gap: 3.2rem;
 }
 
 .foot-menu-el {
@@ -847,7 +848,7 @@ footer {
 }
 
 .foot-menu-link {
-  padding: 1rem 1rem;
+  padding: .5rem 0rem;
   display: block;
   color: var(--custom-white);
   font-size: 1.5rem;
@@ -864,7 +865,7 @@ footer {
   flex-direction: column;
   align-items: flex-end;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   background-color: rgba(255, 192, 203, 0.492);
 }
 
