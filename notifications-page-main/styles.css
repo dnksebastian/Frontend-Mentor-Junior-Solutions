@@ -65,6 +65,7 @@ html {
 html,
 body {
   min-height: 100vh;
+  min-width: 250px;
 }
 
 body {
@@ -187,6 +188,18 @@ body {
   gap: .2rem;
 }
 
+.notification-action::after {
+  /* display: inline-block; */
+  display: none;
+  content: "";
+  background-color: var(--custom-red);
+  border-radius: 50%;
+  width: .7rem;
+  height: .7rem;
+  vertical-align: middle;
+  margin-left: .5rem;
+}
+
 .user-name {
   font-size: 1.4rem;
   font-weight: bold;
@@ -201,10 +214,11 @@ body {
 .notification-link {
   margin-left: .5rem;
   margin-right: .5rem;
+  font-weight: bold;
 }
 
 .content-img-wrap {
-  width: 4rem;
+  max-width: 4.5rem;
   flex: 17;
 }
 
@@ -231,15 +245,66 @@ footer {
   }
 
   #component-wrapper {
-    display: flex;
     flex: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--custom-white);
     border-radius: 1.5rem;
-    padding: 3rem;
+    padding: 3.5rem 3rem 1rem 3rem;
     gap: 3rem;
-    /* margin-top: auto; */
-    max-width: 73rem;
   }
+
+  #notification-label {
+    font-size: 2.45rem;
+  }
+
+  #notification-counter {
+    font-size: 1.8rem;
+  }
+
+  #clear-btn {
+    font-size: 1.4rem;
+    letter-spacing: .03rem;
+  }
+  
+  .notification-el {
+    gap: 2rem;
+    padding: 1.7rem 1.7rem 1.2rem 1.7rem;
+  }
+
+  .notification-content-wrap {
+    font-size: 1.6rem;
+  }
+
+  .user-name {
+    font-size: 1.6rem;
+  }
+
+}
+
+
+@media screen and (max-width: 310px) {
+
+  #notification-label {
+    font-size: 1rem;
+  }
+
+  #notification-counter {
+    font-size: 1rem;
+  }
+
+  #clear-btn {
+    font-size: 1rem;
+  }
+
+  .notification-content-wrap {
+    font-size: 1.2rem;
+  }
+
+  .user-name {
+    font-size: 1.3rem;
+  }
+
+  .notification-content {
+    padding: 1.2rem;
+  }
+
+
 }
