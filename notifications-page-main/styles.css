@@ -91,7 +91,6 @@ body {
   max-width: 73rem;
 }
 
-
 #controls-box {
   width: 100%;
   display: flex;
@@ -119,36 +118,36 @@ body {
   font-size: 1.5rem;
   background-color: var(--custom-blue);
   color: var(--custom-white);
-  padding: .2rem 1rem;
-  border-radius: .5rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
 }
 
 #clear-btn {
   color: var(--custom-grayish-blue);
   font-size: 1.2rem;
-  letter-spacing: .02rem;
+  letter-spacing: 0.02rem;
   font-weight: bold;
-  padding: .4rem .2rem;
+  padding: 0.4rem 0.2rem;
   background-color: transparent;
 }
 
-#clear-btn:hover, #clear-btn:focus-visible {
+#clear-btn:hover,
+#clear-btn:focus-visible {
   color: var(--custom-blue);
 }
 
 /* Notification list styles */
-
 
 #notifications-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  background-color: rgba(0, 128, 0, 0.196);
+  /* background-color: rgba(0, 128, 0, 0.196); */
 }
 
 .notification-el {
-  background-color: rgba(0, 0, 255, 0.163);
+  /* background-color: rgba(0, 0, 255, 0.163); */
   width: 100%;
   border-radius: 1rem;
   display: flex;
@@ -158,11 +157,15 @@ body {
   padding: 1.2rem 1.2rem 1.5rem 1.5rem;
 }
 
+.unread {
+  background-color: var(--custom-very-light-grayish-blue);
+}
+
 .avatar-wrapper {
   /* width: 4rem; */
   flex: 13;
   max-width: 4.5rem;
-  background-color: rgba(255, 0, 0, 0.347);
+  /* background-color: rgba(255, 0, 0, 0.347); */
 }
 
 .notification-helper {
@@ -176,7 +179,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 87;
-  background-color: rgba(0, 128, 0, 0.477);
+  /* background-color: rgba(0, 128, 0, 0.477); */
   font-size: 1.4rem;
   gap: 1.5rem;
   color: var(--custom-dark-grayish-blue);
@@ -185,47 +188,97 @@ body {
 .notification-head {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
+  gap: 0.2rem;
 }
 
 .notification-action::after {
-  /* display: inline-block; */
   display: none;
   content: "";
   background-color: var(--custom-red);
   border-radius: 50%;
-  width: .7rem;
-  height: .7rem;
+  width: 0.7rem;
+  height: 0.7rem;
   vertical-align: middle;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
+}
+
+.unread .notification-action::after {
+  display: inline-block;
 }
 
 .user-name {
   font-size: 1.4rem;
-  font-weight: bold;
   color: var(--custom-very-dark-blue);
-  margin-right: .5rem;
+  margin-right: 0.4rem;
 }
 
-.user-name:hover {
+.group-name {
+  color: var(--custom-blue);
+  margin-left: 0.3rem;
+}
+
+.post-name {
+  color: var(--custom-dark-grayish-blue);
+  margin-left: 0.3rem;
+}
+
+.user-name,
+.group-name,
+.post-name {
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.user-name:hover,
+.group-name:hover,
+.post-name:hover {
   color: var(--custom-blue);
 }
 
-.notification-link {
+.user-name:visited,
+.group-name:visited,
+.post-name:visited {
+  color: var(--custom-dark-grayish-blue);
+}
+
+/* .notification-link {
   margin-left: .5rem;
   margin-right: .5rem;
   font-weight: bold;
+  color: var(--custom-blue);
+}
+.notification-link:visited {
+  color: var(--custom-dark-grayish-blue);
+} */
+
+.notification-time {
+  color: var(--custom-grayish-blue);
 }
 
 .content-img-wrap {
   max-width: 4.5rem;
   flex: 17;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: 3px solid transparent;
+}
+
+.content-img-wrap:hover {
+  outline: 3px solid var(--custom-light-grayish-blue-1);
+  border-radius: 0.5rem;
 }
 
 .notification-content {
   padding: 1.5rem;
-  border: 1px solid var(--custom-grayish-blue);
-  border-radius: .5rem;
+  border: 1px solid var(--custom-light-grayish-blue-2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.notification-content:hover {
+  background-color: var(--custom-light-grayish-blue-1);
 }
 
 /* Footer styles */
@@ -261,9 +314,9 @@ footer {
 
   #clear-btn {
     font-size: 1.4rem;
-    letter-spacing: .03rem;
+    letter-spacing: 0.03rem;
   }
-  
+
   .notification-el {
     gap: 2rem;
     padding: 1.7rem 1.7rem 1.2rem 1.7rem;
@@ -276,12 +329,9 @@ footer {
   .user-name {
     font-size: 1.6rem;
   }
-
 }
 
-
 @media screen and (max-width: 310px) {
-
   #notification-label {
     font-size: 1rem;
   }
@@ -305,6 +355,4 @@ footer {
   .notification-content {
     padding: 1.2rem;
   }
-
-
 }
