@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-notifications-page-u-Vo5JS0BG](https://www.frontendmentor.io/solutions/html-css-js-notifications-page-u-Vo5JS0BG)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/notifications-page-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/notifications-page-main/)
 
 ## My process
