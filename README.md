@@ -31,7 +31,7 @@
 | Interactive Card Details Form | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/interactive-card-details-form-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/interactive-card-details-form-main/" target="_blank">Repo</a>  |
 | Loopstudios Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/loopstudios-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/loopstudios-landing-page-main/" target="_blank">Repo</a>  |
 | Notifications page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/notifications-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/notifications-page-main/" target="_blank">Repo</a>  |
-| 23 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
+| Blogr Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/blogr-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/blogr-landing-page-main/" target="_blank">Repo</a>  |
 | 24 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 
 </div>

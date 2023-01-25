@@ -1,0 +1,99 @@
+/* General, typography and reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+    /* width: 100%;
+    height: 100%; */
+}
+
+:root {
+  /* ### Primary */
+
+  --custom-light-red: hsl(356, 100%, 66%); /* (CTA text)*/
+  --custom-very-light-red: hsl(355, 100%, 74%); /* (CTA hover background) */
+  --custom-very-dark-blue: hsl(208, 49%, 24%); /* (headings) */
+
+  /* ### Neutral */
+
+  --custom-white: hsl(0, 0%, 100%); /*  (text) */
+  --custom-grayish-blue: hsl(240, 2%, 79%); /*   (footer text) */
+  --custom-very-dark-grayish-blue: hsl(207, 13%, 34%); /* (body copy) */
+  --custom-very-dark-black-blue: hsl(240, 10%, 16%); /*  (footer background) */
+
+  /* ### Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+
+  --custom-very-light-red: hsl(13, 100%, 72%);
+  --custom-light-red: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --custom-very-dark-gray-blue: hsl(237, 17%, 21%);
+  --custom-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+html {
+  /* font-family: "Overpass", sans-serif; */
+  font-size: 10px;
+}
+
+body {
+  /* font-family: 'Ubuntu', sans-serif; */
+  min-height: 100vh;
+}
+
+/* Mobile styles */
+
+header {
+    display: flex;
+}
+
+#top-nav {
+    display: flex;
+}
+
+#top-nav ul {
+    display: flex;
+}
+
+.menu-hover-box {
+    display: none;
+}
+
+/* Mobile hero styles */
+
+#hero-wrap {
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 128, 128, 0.39);
+    border-radius: 0 0 0 2rem;
+    padding: 1rem;
+    min-height: 30rem;
+}
+
+/* Media queries */
