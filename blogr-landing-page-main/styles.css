@@ -14,7 +14,7 @@ button {
   font: inherit;
   cursor: pointer;
   border: 1px solid transparent;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 ul,
@@ -24,8 +24,16 @@ ol {
 
 img {
   display: block;
-    /* width: 100%;
-    height: 100%; */
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Overpass", sans-serif;
 }
 
 :root {
@@ -46,8 +54,8 @@ img {
 
   /* Background gradient - Intro/CTA mobile nav: */
 
-  --custom-very-light-red: hsl(13, 100%, 72%);
-  --custom-light-red: hsl(353, 100%, 62%);
+  --custom-very-light-red: #ff8f70;
+  --custom-light-red: #ff3d54;
 
   /* Background gradient - body: */
 
@@ -56,44 +64,139 @@ img {
 }
 
 html {
-  /* font-family: "Overpass", sans-serif; */
   font-size: 10px;
 }
 
 body {
-  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
   min-height: 100vh;
 }
 
 /* Mobile styles */
 
 header {
-    display: flex;
+  width: 100%;
+  min-height: 10rem;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.5rem 2.5rem 1rem 2.5rem;
+  /* background-color: rgba(0, 128, 0, 0.368); */
+}
+
+.logo-wrapper {
+  /* background-color: pink; */
+  max-width: 8rem;
 }
 
 #top-nav {
-    display: flex;
+  display: none;
+  background-color: yellow;
 }
 
 #top-nav ul {
-    display: flex;
+  display: flex;
 }
 
 .menu-hover-box {
-    display: none;
+  display: none;
+}
+
+#menu-icon {
+  /* background-color: blue; */
+  cursor: pointer;
 }
 
 /* Mobile hero styles */
 
 #hero-wrap {
-    background-image: url(./images/bg-pattern-intro-mobile.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 128, 128, 0.39);
-    border-radius: 0 0 0 2rem;
-    padding: 1rem;
-    min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255,143,112);
+  background: url(./images/bg-pattern-intro-mobile.svg) no-repeat 35% 33%, linear-gradient(to bottom, var(--custom-very-light-red), var(--custom-light-red));
+  border-radius: 0 0 0 10rem;
+  padding: 1rem 1rem;
+  min-height: 60rem;
+}
+
+#hero-content {
+  color: var(--custom-white);
+  /* background-color: rgba(0, 128, 128, 0.381); */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  padding: 7rem 2rem 1.5rem 2rem;
+  max-width: 35rem;
+}
+
+h1 {
+  font-size: 3.3rem;
+  /* background-color: rgba(255, 255, 0, 0.185); */
+}
+
+
+#hero-content span {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+#hero-buttons {
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 1rem;
+}
+
+#hero-buttons button {
+  font-size: 1.6rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  min-width: 14rem;
+}
+
+#hero-start-btn {
+  color: var(--custom-light-red);
+  background-color: var(--custom-white);
+}
+
+#hero-start-btn:hover, #hero-start-btn:focus {
+  color: var(--custom-white);
+  background-color: var(--custom-very-light-red);
+}
+
+#hero-learn-btn {
+  background-color: transparent;
+  color: var(--custom-white);
+  border-color: var(--custom-white);
+}
+
+#hero-learn-btn:hover, #hero-learn-btn:focus {
+  background-color: var(--custom-white);
+  color: var(--custom-light-red);
+}
+
+/* Mobile main section styles */
+
+
+#top-section-img-wrap {
+  max-width: 10rem;
+}
+
+#mid-section-img-wrap {
+  max-width: 10rem;
+}
+
+#bot-section-img-wrap {
+  max-width: 10rem;
 }
 
 /* Media queries */
