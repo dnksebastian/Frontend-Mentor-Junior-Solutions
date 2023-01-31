@@ -30,9 +30,14 @@
     </div>
 
     <nav id="top-nav">
-      <ul>
+      <ul id="top-main-ul">
         <li class="nav-li">
-          <span>Product</span>
+          <div class="label-helper">
+            <span class="topnav-label">Product</span>
+            <div class="arrow-wrapper">
+              <img src="./images/icon-arrow-dark.svg">
+            </div>
+          </div>
           <div class="menu-hover-box">
             <ul class="hover-ul">
               <li class="hover-li">
@@ -54,51 +59,57 @@
           </div>
         </li>
         <li class="nav-li">
-          <span>Company</span>
+          <div class="label-helper">
+            <span class="topnav-label">Company</span>
+            <div class="arrow-wrapper">
+              <img src="./images/icon-arrow-dark.svg">
+            </div>
+          </div>
           <div class="menu-hover-box">
-          <ul class="hover-ul">
-            <li class="hover-li">
-              <a href="" class="nav-link">About</a>
-            </li>
-            <li class="hover-li">
-              <a href="" class="nav-link">Team</a>
-            </li>
-            <li class="hover-li">
-              <a href="" class="nav-link">Blog</a>
-            </li>
-            <li class="hover-li">
-              <a href="" class="nav-link">Careers</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="hover-ul">
+              <li class="hover-li">
+                <a href="" class="nav-link">About</a>
+              </li>
+              <li class="hover-li">
+                <a href="" class="nav-link">Team</a>
+              </li>
+              <li class="hover-li">
+                <a href="" class="nav-link">Blog</a>
+              </li>
+              <li class="hover-li">
+                <a href="" class="nav-link">Careers</a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-li">
-          <span>Connect</span>
+          <div class="label-helper">
+            <span class="topnav-label">Connect</span>
+            <div class="arrow-wrapper">
+              <img src="./images/icon-arrow-dark.svg">
+            </div>
+          </div>
           <div class="menu-hover-box">
-          <ul class="hover-ul">
-            <li class="hover-li">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-            <li class="hover-li">
-              <a href="" class="nav-link">Newsletter</a>
-            </li>
-            <li class="hover-li">
-              <a href="" class="nav-link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+            <ul class="hover-ul">
+              <li class="hover-li">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+              <li class="hover-li">
+                <a href="" class="nav-link">Newsletter</a>
+              </li>
+              <li class="hover-li">
+                <a href="" class="nav-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
       <div id="menu-buttons-box">
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button id="top-login-btn">Login</button>
+        <button id="top-signup-btn">Sign Up</button>
       </div>
     </nav>
     <div id="menu-icon">
-      <div class="hamburger-wrap">
-        <img src="./images/icon-hamburger.svg">
-        <!-- <img src="./images/icon-close.svg"> -->
-      </div>
     </div>
   </header>
 
@@ -129,12 +140,13 @@
           The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
           videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
           change the looks of a blog.</p>
-        
+
         <h3>Robust content management</h3>
         <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
-          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
       </div>
-  
+
     </section>
     <section id="mid-section">
       <div id="mid-section-img-wrap">
@@ -143,7 +155,8 @@
       <div class="section-content">
         <h2>State of the Art Infrastructure</h2>
         <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
       </div>
     </section>
     <section id="bot-section">
@@ -156,11 +169,12 @@
         <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports
           features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
           and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-    
-    <h3>Powerful tooling</h3>
-    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-      but
-      capable of producing even the most complicated sites.</p>
+
+        <h3>Powerful tooling</h3>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          breeze,
+          but
+          capable of producing even the most complicated sites.</p>
       </div>
     </section>
   </main>
@@ -200,7 +214,7 @@
     </div>
   </footer>
 
-  
+
 </body>
 
 </html>
