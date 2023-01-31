@@ -115,6 +115,7 @@ header {
   left: 50%;
   transform: translate(-50%, 0);
   width: 86.5%;
+  max-width: 35rem;
   min-height: 76.5vh;
   border-radius: .5rem;
   padding: 2rem;
@@ -146,8 +147,21 @@ header {
   color: var(--custom-very-dark-blue);
 }
 
+.topnav-label:hover, .topnav-label:focus-visible {
+  text-decoration: underline;
+}
+
 .arrow-wrapper {
+  transition: .3s;
   transform: translate(0, .2rem);
+}
+
+.arrow-light {
+  display: none;
+}
+
+.arrow-active {
+  transform: rotate(180deg);
 }
 
 .menu-hover-box {
@@ -157,6 +171,10 @@ header {
   border-radius: .5rem;
   padding: 1rem;
   margin-top: 2.2rem;
+}
+
+.dropdown-visible {
+  display: flex;
 }
 
 .hover-ul {
@@ -171,6 +189,11 @@ header {
   color: var(--custom-very-dark-blue);
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.hover-ul .nav-link:hover, .hover-ul .nav-link:focus-visible {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 #menu-buttons-box {
