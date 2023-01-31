@@ -76,6 +76,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   min-height: 100vh;
   width: 100%;
+  min-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,3 +553,58 @@ li:last-of-type .nav-link{
 
 
 /* Media queries */
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (min-width: 675px) {
+
+  #top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    position: static;
+    transform: none;
+    width: auto;
+    max-width: none;
+    min-height: auto;
+    /* border-radius: .5rem; */
+    padding: 1rem;
+    background-color: var(--custom-white);
+    box-shadow: none;
+    /* z-index: 5; */
+  }
+
+  #top-main-ul {
+    /* display: flex; */
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    /* background-color: rgba(0, 128, 0, 0.277); */
+    width: 100%;
+  }
+
+  #menu-buttons-box {
+    width: 100%;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid transparent;
+    border-top: 1px solid var(--custom-grayish-blue);
+    padding: 1rem;
+  }
+
+  #menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(./images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
