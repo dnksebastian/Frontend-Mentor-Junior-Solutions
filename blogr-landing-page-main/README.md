@@ -9,7 +9,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -22,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-blogr-landing-page-RFXWWGIdjQ](https://www.frontendmentor.io/solutions/html-css-js-blogr-landing-page-RFXWWGIdjQ)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/blogr-landing-page-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/blogr-landing-page-main/)
 
 ## My process
@@ -34,9 +33,3 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
