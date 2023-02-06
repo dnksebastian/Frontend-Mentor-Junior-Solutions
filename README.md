@@ -32,7 +32,7 @@
 | Loopstudios Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/loopstudios-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/loopstudios-landing-page-main/" target="_blank">Repo</a>  |
 | Notifications page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/notifications-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/notifications-page-main/" target="_blank">Repo</a>  |
 | Blogr Landing Page | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/blogr-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/blogr-landing-page-main/" target="_blank">Repo</a>  |
-| Expenses chart component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/blogr-landing-page-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/expenses-chart-component-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/expenses-chart-component-main/" target="_blank">Repo</a>  |
+| Expenses Chart Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/expenses-chart-component-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/expenses-chart-component-main/" target="_blank">Repo</a>  |
 | 25 | <a href="#" target="_blank">Live</a>  | <a href="#" target="_blank">Repo</a>  |
 
 </div>
