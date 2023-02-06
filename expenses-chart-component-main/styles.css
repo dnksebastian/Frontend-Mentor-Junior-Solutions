@@ -139,6 +139,7 @@ body {
 }
 
 .bar-value {
+  display: none;
   background-color: var(--custom-dark-brown);
   color: var(--custom-cream);
   font-weight: bold;
