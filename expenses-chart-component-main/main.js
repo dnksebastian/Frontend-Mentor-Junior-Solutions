@@ -1,8 +1,11 @@
 // DOM Elements & global variables
 
 const chartElement = document.getElementById('graph');
+const totalValueElement = document.getElementById('total-value');
 
 const currentDay = new Date().getDay();
+
+let totalValue = null;
 
 // Functions
 async function fetchData() {
@@ -35,6 +38,8 @@ function createLiEleement(day, amount, index) {
         barElement.dataset.day = 'current';
     }
 
+    totalValue += amount;
+
     // liItem.appendChild(valueElement);
     liItem.appendChild(barElement);
     liItem.appendChild(labelElement);
@@ -54,6 +59,8 @@ async function populateChart() {
 
         createLiEleement(day, amount, index);
     });
+
+    totalValueElement.textContent = `$${totalValue}`
 };
 
 populateChart();
