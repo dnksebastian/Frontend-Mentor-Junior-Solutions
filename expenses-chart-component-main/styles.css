@@ -254,8 +254,8 @@ body {
     max-width: 54rem;
     gap: 2.2rem;
     /* margin-top: 18rem; */
-    margin-top: 12.5%;
-    /* margin-top: auto; */
+    /* margin-top: 12.5%; */
+    margin-top: auto;
     margin-bottom: auto;
   }
 
