@@ -4,6 +4,7 @@ const chartElement = document.getElementById('graph');
 const totalValueElement = document.getElementById('total-value');
 
 const currentDay = new Date().getDay();
+const shiftedDayCount = (currentDay + 6) % 7;
 
 let totalValue = null;
 
@@ -34,7 +35,7 @@ function createLiEleement(day, amount, index) {
 
     barElement.dataset.value = `$${amount}`;
 
-    if (currentDay === index + 1) {
+    if (shiftedDayCount === index ) {
         barElement.dataset.day = 'current';
     }
 
