@@ -1,0 +1,75 @@
+/* General styles, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /* width: 100%;
+    height: 100%; */
+}
+
+button {
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+
+:root {
+  /* ### Primary */
+
+  --custom-moderate-cyan: hsla(176, 50%, 47%, 100%);
+  --custom-dark-cyan: hsla(176, 72%, 28%, 100%);
+
+  /* ### Neutral */
+
+  --custom-black: hsla(0, 0%, 0%, 100%);
+  --custom-dark-gray: hsla(0, 0%, 48%, 100%);
+}
+
+html {
+  font-family: "Commissioner", sans-serif;
+  font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mobile styles */
+
+
+
+
+
+#modals {
+  display: none;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 750px) {
+  .mobile-menu-control {
+    display: none;
+  }
+}
