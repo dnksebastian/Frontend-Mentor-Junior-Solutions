@@ -31,6 +31,11 @@ button {
   border: 1px solid transparent;
 }
 
+button:disabled {
+  background-color: #cbcbcb;
+  cursor: default;
+}
+
 :root {
   /* ### Primary */
 
@@ -403,10 +408,90 @@ main {
   min-width: 16rem;
 }
 
-
-
-
 /* Modals styles mobile */
+
+#selection-modal {
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 3.4rem 2.3rem;
+  border-radius: 1rem;
+  width: 87.5%;
+  border: none;
+  /* align-items: flex-start; */
+}
+
+/* #selection-modal::backdrop {
+} */
+
+.modal-helper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.3rem;
+}
+
+.modal-helper h2 {
+  font-size: 1.8rem;
+}
+
+#close-modal {
+  font-size: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  background-image: url(./images/icon-close-modal.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-info {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  padding-bottom: 2.2rem;
+}
+
+#pledges-form {
+  background-color: rgba(255, 192, 203, 0.593);
+}
+
+#pledges-form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.pledge-li {
+  align-items: flex-start;
+  padding: 3rem 2.5rem;
+  gap: 4.7rem;
+  background-color: rgba(0, 128, 0, 0.329);
+}
+
+.pledge-li label {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(255, 192, 203, 0.589);
+}
+
+.pledge-li p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.pledge-options {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 #modals {
