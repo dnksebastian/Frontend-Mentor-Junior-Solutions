@@ -66,6 +66,15 @@ body {
   position: relative;
 }
 
+.body-no-scroll {
+  min-height: 100vh;
+  width: 100vw;
+  touch-action: none;
+  /* -webkit-overflow-scrolling: none; */
+  /* overflow: hidden; */
+  overscroll-behavior: none;
+}
+
 #hero {
   grid-area: hero;
   background-image: url(./images/image-hero-mobile.jpg);
@@ -411,6 +420,7 @@ main {
 /* Modals styles mobile */
 
 #selection-modal {
+  position: relative;
   top: 12rem;
   left: 50%;
   transform: translate(-50%, 0);
@@ -418,10 +428,42 @@ main {
   border-radius: 1rem;
   width: 87.5%;
   border: none;
-  /* align-items: flex-start; */
 }
 
-/* #selection-modal::backdrop {
+#success-modal {
+  position: fixed;
+  width: 87.5%;
+  top: 14.2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* dialog::backdrop {
+  margin-bottom: 20rem;
+} */
+
+.modal-wrap {
+  padding: 3.2rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+#success-modal h2 {
+  font-size: 1.8rem;
+}
+
+#success-modal p {
+  line-height: 1.7;
+}
+
+/* dialog::backdrop {
+  border: 1px solid red;
 } */
 
 .modal-helper {
@@ -560,12 +602,7 @@ input[type="radio"]:checked::before {
 .pledge-bot {
   display: none;
   width: 100%;
-}
-
-.pledge-li:nth-of-type(2) .pledge-bot {
-  display: flex;
   border-top: 1px solid #f3f3f3;
-  /* background-color: rgba(0, 128, 0, 0.329); */
 }
 
 .pledge-options {
@@ -616,21 +653,15 @@ input[type="radio"]:checked::before {
   min-width: unset;
 }
 
+/* Active pledge option styles */
 
+.option-picked {
+  border: 1px solid var(--custom-moderate-cyan);
+}
 
-
-
-/* input[type="radio"]:checked .pledge-options {
-} */
-
-
-
-
-
-
-
-
-
+.option-picked .pledge-bot {
+  display: flex;
+}
 
 
 

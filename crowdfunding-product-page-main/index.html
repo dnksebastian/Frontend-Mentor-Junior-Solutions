@@ -231,7 +231,9 @@
             <div class="pledge-options">
               <span>Enter your pledge</span>
               <div class="pledge-helper">
-                <input type="number">
+                <span class="input-wrap">
+                  <input type="text" inputmode="numeric" pattern="[0-9]*">
+                </span>
                 <button class="btn">Continue</button>
               </div>
             </div>
@@ -263,7 +265,9 @@
               <div class="pledge-options">
                 <span>Enter your pledge</span>
                 <div class="pledge-helper">
-                  <input type="number">
+                  <span class="input-wrap">
+                    <input type="text" inputmode="numeric" pattern="[0-9]*">
+                  </span>
                   <button class="btn">Continue</button>
                 </div>
               </div>
@@ -273,6 +277,17 @@
         </ul>
       </form>
 
+    </dialog>
+
+    <dialog id="success-modal">
+      <div class="modal-wrap">
+      <div class="icon-wrapper">
+        <img src="./images/icon-check.svg" alt="Success icon">
+      </div>
+      <h2>Thanks for your support!</h2>
+      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+      <button class="btn">Got it!</button>
+    </div>
     </dialog>
 
     
