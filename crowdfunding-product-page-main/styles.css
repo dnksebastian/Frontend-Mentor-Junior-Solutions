@@ -239,7 +239,7 @@ main {
 
 #project-intro {
   position: relative;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   padding: 5rem 2rem 3.5rem 2rem;
   text-align: center;
 }
@@ -388,6 +388,12 @@ main {
   font-size: 1.4rem;
 }
 
+.reward-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
 .helper-bot {
   display: flex;
   align-items: center;
@@ -500,14 +506,14 @@ main {
   gap: 2.5rem;
 }
 
-#pledges-form .pledge-li {
+#selection-modal .pledge-li {
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.pledge-top {
+#selection-modal .pledge-top {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -517,12 +523,12 @@ main {
   /* background-color: rgba(0, 128, 0, 0.329); */
 }
 
-.pledge-li:first-of-type .pledge-top {
+#selection-modal .pledge-li:first-of-type .pledge-top {
   padding: 3.5rem 2.5rem 3.2rem 2.5rem;
   gap: 3.5rem;
 }
 
-.pledge-li label {
+#selection-modal .pledge-li label {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -557,45 +563,45 @@ input[type="radio"]:checked::before {
   transform: scale(1);
 }
 
-.pledge-label-wrap {
+#selection-modal .pledge-label-wrap {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.pledge-name {
+#selection-modal .pledge-name {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--custom-black);
 }
 
-.pledge-cost {
+#selection-modal .pledge-cost {
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--custom-moderate-cyan);
 }
 
-.pledge-li p {
+#selection-modal .pledge-li p {
   font-size: 1.4rem;
   line-height: 1.7;
 }
 
-.pledge-items-left {
+#selection-modal .pledge-items-left {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.items-left-value {
+#selection-modal .items-left-value {
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-.items-left-label {
+#selection-modal .items-left-label {
   font-size: 1.5rem;
 }
 
-.pledge-bot {
+#selection-modal .pledge-bot {
   display: none;
   width: 100%;
   border-top: 1px solid #f3f3f3;
@@ -655,7 +661,7 @@ input[type="radio"]:checked::before {
   border: 1px solid var(--custom-moderate-cyan);
 }
 
-.option-picked .pledge-bot {
+#selection-modal .option-picked .pledge-bot {
   display: flex;
 }
 
@@ -778,6 +784,141 @@ footer a:active {
     transform: translate(-50%, 0);
     max-width: 73rem;
   }
+
+  /* Project intro section desktop styles */
+
+  #project-intro {
+    padding: 5.5rem 2rem 3.5rem 2rem;
+  }
+
+  #project-intro h1 {
+    padding: 0 1rem;
+    font-size: 2.8rem;
+  }
+
+  #project-intro p {
+    padding-top: 1.3rem;
+    font-size: 1.6rem;
+  }
+
+  .controls {
+    /* background-color: pink; */
+    padding: 3.5rem 2.5rem 1rem 2.5rem;
+  }
+
+  #back-project-btn {
+    flex: unset;
+    padding: 1.9rem 3.9rem;
+  }
+
+  #bookmark-btn {
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    background-position: left;
+    padding: 1.9rem 2.5rem;
+    min-width: 17.5rem;
+    background-color: var(--custom-light-gray);
+    color: var(--custom-dark-gray);
+    text-align: right;
+    border: 1px solid transparent;
+  }
+
+  /* Project stats section styles desktop */
+
+#project-stats {
+  padding: 3.6rem 3rem 4.9rem 3rem;
+}
+
+#project-stats ul {
+  flex-direction: row;
+  width: 100%;
+  /* align-items: center; */
+  gap: 3rem;
+  /* padding-bottom: 1rem; */
+  /* background-color: rgba(0, 128, 0, 0.377); */
+  padding-bottom: 1.4rem; 
+}
+
+.stat-el {
+  min-width: 19.5rem;
+  align-items: flex-start;
+  padding: 1rem 5rem 2.5rem 2rem;
+  /* background-color: rgba(0, 0, 255, 0.114); */
+  box-shadow: 1.1rem 0rem 0 -1rem #d8d8d8;
+
+}
+
+/* .stat-el:last-of-type {
+  box-shadow: none;
+} */
+
+#progress-wrap {
+  width: 95%;
+}
+
+/* About section desktop styles */
+
+#project-about {
+  gap: 3.5rem;
+  padding: 4.7rem 4.8rem 3.5rem 4.8rem;
+  /* align-items: flex-start; */
+}
+
+#project-about h2 {
+  font-size: 2rem;
+}
+
+#project-about p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.pledge-li {
+  /* align-items: flex-start; */
+  padding: 3.5rem 2.9rem 3.6rem 2.9rem;
+  gap: 2.3rem;
+}
+
+.helper-top {
+  width: 100%;
+  /* background-color: teal; */
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 1rem; */
+}
+
+.helper-top span {
+  font-size: 1.5rem;
+}
+
+.pledge-li h3 {
+  font-size: 1.8rem;
+}
+
+/* .helper-bot {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: blue;
+} */
+
+.items-left-value {
+  font-size: 3.3rem;
+}
+
+.items-left-label {
+  font-size: 1.5rem;
+}
+
+.reward-wrap {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 
 
 }
