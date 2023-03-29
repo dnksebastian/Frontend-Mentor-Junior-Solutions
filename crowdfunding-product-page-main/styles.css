@@ -86,6 +86,10 @@ body {
   padding: 1.9rem 3rem;
 }
 
+.btn:hover, .btn:focus {
+  background-color: var(--custom-dark-cyan);
+}
+
 p,
 span {
   color: var(--custom-dark-gray);
@@ -282,6 +286,11 @@ main {
   background-image: url(./images/icon-bookmark.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.bookmarked {
+  color: var(--custom-dark-cyan);
+  filter: invert(37%) sepia(30%) saturate(1134%) hue-rotate(129deg) brightness(92%) contrast(84%);
 }
 
 /* Project stats section styles mobile */
@@ -573,6 +582,12 @@ input[type="radio"]:checked::before {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--custom-black);
+  cursor: pointer;
+  transition: .3s;
+}
+
+#selection-modal .pledge-name:hover {
+  color: var(--custom-moderate-cyan);
 }
 
 #selection-modal .pledge-cost {
@@ -638,6 +653,11 @@ input[type="radio"]:checked::before {
   font-weight: 700;
   outline: 1px solid transparent;
   border: 1px solid #f3f3f3;
+  cursor: pointer;
+}
+
+.pledge-helper input:hover, .pledge-helper input:focus {
+  border: 1px solid var(--custom-moderate-cyan);
 }
 
 .input-wrap::before {
@@ -693,6 +713,10 @@ input[type="radio"]:checked::before {
 button:disabled {
   background-color: #cbcbcb;
   cursor: default;
+}
+
+.btn:disabled:hover, .btn:disabled:focus {
+  background-color: #cbcbcb;
 }
 
 /* Footer styles mobile */
