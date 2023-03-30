@@ -15,6 +15,8 @@ const bookmarkBtn = document.getElementById("bookmark-btn");
 const moneyRaisedEl = document.getElementById("money-raised");
 const totalBackersEl = document.getElementById("total-backers");
 
+const progressBarEl = document.getElementById("progress-value");
+
 const bambooCountEl = document.getElementById("bamboo-count");
 const blackEditionCount = document.getElementById("black-edition-count");
 const mahoganyCount = document.getElementById("mahogany-count");
@@ -32,6 +34,10 @@ const modalOptionsElements = [
   ...pledgesDialogEl.querySelectorAll(".pledge-li"),
 ];
 //   console.log(modalOptionsElements);
+
+const radioElements = [
+  ...pledgesDialogEl.querySelectorAll('input[type="radio"]'),
+];
 
 // Variables
 
@@ -69,7 +75,7 @@ function closeModal() {
 
 // Style and control pledge pick
 
-function pickedOption() {
+function stylePickedOption() {
   modalOptionsElements.forEach((el) => {
     if (el.querySelector("input").checked) {
       // console.log(el.querySelector('.pledge-name').textContent);
@@ -91,8 +97,13 @@ function checkBookmark() {
 // Project stats control
 
 function updateProjectStats() {
-  moneyRaisedEl.textContent = `$${totalMoneyRaised}`;
-  totalBackersEl.textContent = totalBackers;
+  moneyRaisedEl.textContent = `$${totalMoneyRaised.toLocaleString()}`;
+  if (totalMoneyRaised >= 100000) {
+    moneyRaisedEl.textContent = "More than $100.000";
+    moneyRaisedEl.style.fontSize = "1.5rem";
+  }
+
+  totalBackersEl.textContent = totalBackers.toLocaleString();
 
   bambooCountEl.textContent = bambooOptionItemsLeft;
   bambooItemsModalEl.textContent = bambooOptionItemsLeft;
@@ -102,28 +113,79 @@ function updateProjectStats() {
 
   mahoganyCount.textContent = mahoganyItemsLeft;
   mahoganyItemsModalEl.textContent = mahoganyItemsLeft;
+
+  let projectProgress = ((totalMoneyRaised / 100000) * 100).toFixed(0);
+  if (totalMoneyRaised >= 100000) {
+    projectProgress = 100;
+  }
+  progressBarEl.style.width = `${projectProgress}%`;
 }
 
-function validatePledge() {
+function validatePledge(e) {
+  console.log(pledgeValue);
   let isValid = false;
+  let errorMsg = "Please check entered values.";
+  const errMsg = document.createElement("span");
+  errMsg.classList.add("error-msg");
 
-  if (pickedPledge === "bamboo-stand") {
+  const pledgeEl = e.target.closest(".pledge-options");
+
+  if (!pledgeEl.querySelector(".error-msg")) {
+    pledgeEl.appendChild(errMsg);
+    errMsg.textContent = errorMsg;
+  } else {
+    pledgeEl.lastChild.remove();
+    pledgeEl.appendChild(errMsg);
+    errMsg.textContent = errorMsg;
+  }
+
+  if (isNaN(pledgeValue)) {
+    errorMsg = "Please use only numbers."
+    errMsg.textContent = errorMsg;
+    return;
+  }
+
+  if (pledgeValue > 10000) {
+    errorMsg = "Maximum pledge amount is $10,000.";
+    errMsg.textContent = errorMsg;
+    return;
+  }
+
+  if (pickedPledge === "bamboo") {
     if (pledgeValue < 25) {
-      console.log("Pledge must be at least $25.");
+      errorMsg = "Pledge must be at least $25.";
+      errMsg.textContent = errorMsg;
+      return;
     }
+    isValid = true;
   } else if (pickedPledge === "black-edition") {
     if (pledgeValue < 75) {
-      console.log("Pledge must be at least $75.");
+      errorMsg = "Pledge must be at least $75.";
+      errMsg.textContent = errorMsg;
+      return;
     }
+    isValid = true;
   } else if (pickedPledge === "mahogany") {
     if (pledgeValue < 200) {
-      console.log("Pledge must be at least $200.");
+      errorMsg = "Pledge must be at least $200.";
+      errMsg.textContent = errorMsg;
+      return;
     }
+    isValid = true;
   } else if (pickedPledge === "no-reward") {
     isValid = true;
   } else {
     isValid = false;
   }
+
+  if (isValid === true) {
+    const errMsgs = document.querySelectorAll(".error-msg");
+    errMsgs.forEach((msg) => {
+      msg.remove();
+    });
+  }
+
+  return isValid;
 }
 
 // Control disabled elements
@@ -157,36 +219,75 @@ function checkIfDisable() {
 
 checkIfDisable();
 
-// function checkItemStock() {
-//     if(bambooOptionItemsLeft <= 0) {
-//         // ...
-//     }
-//     if(blackEditionItemsLeft <= 0){
-//         // ...
-//     }
-//     if(mahoganyItemsLeft <= 0 ) {
-//         // ...
-//     }
-// }
-
-// updateProjectStats();
-
-function backProject() {
-  totalBackers--;
-  totalMoneyRaised = totalMoneyRaised + pledgeValue;
-
-  updateProjectStats();
+function pickPledge(e) {
+  pickedPledge = e.target.value;
 }
 
-// updateProjectStats()
+function updatePledgeValue(e) {
+  pledgeValue = +e.target.value.trim();
+}
+
+function backProject(e) {
+  e.preventDefault();
+
+  let isValid = validatePledge(e);
+
+  if (isValid) {
+    totalBackers++;
+    totalMoneyRaised = totalMoneyRaised + pledgeValue;
+
+    if (e.target.closest(".pledge-li").id === "bamboo-p") {
+      bambooOptionItemsLeft--;
+    } else if (e.target.closest(".pledge-li").id === "black-edition-p") {
+      blackEditionItemsLeft--;
+    } else if (e.target.closest(".pledge-li").id === "mahogany-p") {
+      mahoganyItemsLeft--;
+    }
+
+    updateProjectStats();
+    closeModal();
+  }
+}
 
 // Event listeners
 
 mobMenuIconEl.addEventListener("click", toggleMenu);
 backProjectBtn.addEventListener("click", showModal);
 closeModalBtn.addEventListener("click", closeModal);
+
+pledgeOptionsElements.forEach((el) => {
+  btnEl = el.querySelector("button");
+  btnEl.addEventListener("click", () => {
+    pledgesDialogEl.showModal();
+    if (el.closest(".pledge-li").id === "bamboo-option") {
+      option = radioElements.find((el) => el.id === "pledge2");
+      option.checked = true;
+      option.click();
+    } else if (el.closest(".pledge-li").id === "black-edition-option") {
+      option = radioElements.find((el) => el.id === "pledge3");
+      option.checked = true;
+      option.click();
+    } else if (el.closest(".pledge-li").id === "mahogany-option") {
+      option = radioElements.find((el) => el.id === "pledge4");
+      option.checked = true;
+      option.click();
+    }
+    stylePickedOption();
+  });
+});
+
 modalOptionsElements.forEach((el) => {
-  el.addEventListener("click", pickedOption);
+  el.addEventListener("click", stylePickedOption);
+  el.querySelector('input[type="radio"]').addEventListener("click", pickPledge);
+
+  if (el.id !== "no-reward-p") {
+    el.querySelector('input[type="text"]').addEventListener(
+      "input",
+      updatePledgeValue
+    );
+  }
+
+  el.querySelector("button").addEventListener("click", backProject);
 });
 
 bookmarkBtn.addEventListener("click", checkBookmark);
