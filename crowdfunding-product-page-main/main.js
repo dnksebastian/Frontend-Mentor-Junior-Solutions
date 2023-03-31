@@ -5,13 +5,16 @@ const mobMenuIconEl = document.getElementById("mobile-menu-control");
 const mobNavEl = document.getElementById("top-nav");
 const backdropEl = document.getElementById("backdrop");
 
-// Main control buttons
+// Main control
 const backProjectBtn = document.getElementById("back-project-btn");
 const closeModalBtn = document.getElementById("close-modal");
 const pledgesDialogEl = document.getElementById("selection-modal");
+const successModalEl = document.getElementById('success-modal');
+const closeSuccessBtn = document.getElementById('close-success');
 
 // Stats value elements
 const bookmarkBtn = document.getElementById("bookmark-btn");
+const bookmarkBox = document.querySelector('.bookmark-helper');
 const moneyRaisedEl = document.getElementById("money-raised");
 const totalBackersEl = document.getElementById("total-backers");
 
@@ -63,13 +66,19 @@ function toggleMenu() {
   document.body.classList.toggle("body-no-scroll");
 }
 
-function showModal() {
+function showOptionsModal() {
   pledgesDialogEl.showModal();
+  document.body.classList.add("body-no-scroll");
+}
+
+function showSuccessModal() {
+  successModalEl.showModal();
   document.body.classList.add("body-no-scroll");
 }
 
 function closeModal() {
   pledgesDialogEl.close();
+  successModalEl.close();
   document.body.classList.remove("body-no-scroll");
 }
 
@@ -90,7 +99,11 @@ function stylePickedOption() {
 
 function checkBookmark() {
   isBookmarked = !isBookmarked;
-  bookmarkBtn.classList.toggle("bookmarked");
+  bookmarkBox.classList.toggle('bookmarked');
+  bookmarkBox.classList.toggle('not-bookmarked');
+
+  isBookmarked? bookmarkBtn.textContent = "Bookmarked" : bookmarkBtn.textContent = "Bookmark";
+  // bookmarkBtn.classList.toggle("bookmarked");
   console.log(isBookmarked);
 }
 
@@ -120,6 +133,8 @@ function updateProjectStats() {
   }
   progressBarEl.style.width = `${projectProgress}%`;
 }
+
+updateProjectStats();
 
 function validatePledge(e) {
   console.log(pledgeValue);
@@ -219,6 +234,16 @@ function checkIfDisable() {
 
 checkIfDisable();
 
+function resetModalState() {
+  modalOptionsElements.forEach((el) => {
+    el.querySelector('input[type="radio"]').checked = false;
+
+    if (el.id !== "no-reward-p") {
+      el.querySelector('input[type="text"]').value = "";
+    }
+  })
+}
+
 function pickPledge(e) {
   pickedPledge = e.target.value;
 }
@@ -245,15 +270,19 @@ function backProject(e) {
     }
 
     updateProjectStats();
+    checkIfDisable();
     closeModal();
+    resetModalState();
+    showSuccessModal();
   }
 }
 
 // Event listeners
 
 mobMenuIconEl.addEventListener("click", toggleMenu);
-backProjectBtn.addEventListener("click", showModal);
+backProjectBtn.addEventListener("click", showOptionsModal);
 closeModalBtn.addEventListener("click", closeModal);
+closeSuccessBtn.addEventListener('click', closeModal);
 
 pledgeOptionsElements.forEach((el) => {
   btnEl = el.querySelector("button");
