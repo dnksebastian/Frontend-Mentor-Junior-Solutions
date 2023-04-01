@@ -1,0 +1,62 @@
+/* Global styles, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+span {
+    display: block;
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+
+  /* ### Colors  */
+  /* ### Primary */
+
+  --custom-purple: hsl(259, 100%, 65%);
+  --custom-light-red: hsl(0, 100%, 67%);
+
+  /* ### Neutral */
+
+  --custom-white: hsl(0, 0%, 100%);
+  --custom-off-white: hsl(0, 0%, 94%);
+  --custom-light-grey: hsl(0, 0%, 86%);
+  --custom-smokey-grey: hsl(0, 1%, 44%);
+  --custom-off-black: hsl(0, 0%, 8%);
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 10px;
+}
+
+/* Mobile styles */
+
+/* Media queries */

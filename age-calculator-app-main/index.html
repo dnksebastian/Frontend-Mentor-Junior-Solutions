@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="./main.js" defer></script>
+
+</head>
+
+<body>
+
+  <main>
+
+    <section id="component-wrapper">
+      <div id="top-helper">
+        <form id="calc-form">
+          <ol id="form-list">
+            <li class="form-li">
+              <label class="label-wrap">
+                <span class="input-name">Day</span>
+                <input class="form-input" type="text" placeholder="DD">
+                <span class="error-msg"></span>
+              </label>
+            </li>
+            <li class="form-li">
+              <label class="label-wrap">
+                <span class="input-name">Month</span>
+                <input class="form-input" type="text" placeholder="MM">
+                <span class="error-msg"></span>
+              </label>
+            </li>
+            <li class="form-li">
+              <label class="label-wrap">
+                <span class="input-name">Year</span>
+                <input class="form-input" type="text" placeholder="YY">
+                <span class="error-msg"></span>
+              </label>
+            </li>
+          </ol>
+          <button id="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div id="bot-helper">
+        <ol id="results-display">
+          <li class="result-li">
+            <span class="results-value" id="years-result">--</span>
+            <span class="results-label">years</span>
+          </li>
+
+          <li class="result-li">
+            <span class="results-value" id="months-result">--</span>
+            <span class="results-label">months</span>
+          </li>
+
+          <li class="result-li">
+            <span class="results-value" id="days-result">--</span>
+            <span class="results-label">days</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>. Coded by <a href="#">Sebastian</a>.</p>
+  </footer>
+
+</body>
+
+</html>
