@@ -23,11 +23,12 @@ img {
   max-width: 100%;
 }
 
-button {
+button, input {
   font: inherit;
   cursor: pointer;
   border: 1px solid transparent;
   transition: 0.3s;
+  outline: none;
 }
 
 span {
@@ -57,6 +58,150 @@ html {
   font-size: 10px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    min-height: 100svh; /*Using both because of browser support*/
+    background-color: var(--custom-off-white);
+}
+
 /* Mobile styles */
+
+main {
+    /* background-color: rgba(255, 192, 203, 0.458); */
+    margin-top: 8.7rem;
+    width: 92%;
+}
+
+#component-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+    background-color: var(--custom-white);
+    border-radius: 2.5rem 2.5rem 10rem 2.5rem;
+    overflow: hidden;
+}
+
+#top-helper, #bot-helper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: .8rem 1rem;
+}
+
+/* Calculator form styles mobile */
+
+#top-helper {
+    background-color: green;
+}
+
+#calc-form {
+    position: relative;
+    border-bottom: 1px solid var(--custom-smokey-grey);
+    padding-bottom: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#form-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.label-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: rgba(255, 0, 0, 0.459);
+}
+
+.input-name {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+}
+
+.form-input {
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.error-msg {
+    display: none;
+}
+
+#submit-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 0;
+    padding: 3rem;
+    border-radius: 50%;
+    max-width: 5rem;
+    background-image: url(./assets/images/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-color: var(--custom-purple);
+}
+
+#submit-btn:hover, #submit-btn:focus {
+    background-color: var(--custom-off-black);
+}
+
+
+/* Results display styles mobile */
+
+#bot-helper {
+    background-color: yellow;
+    font-style: italic;
+    font-weight: 800;
+    padding: 3rem 1rem;
+}
+
+#results-display {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.result-li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    background-color: teal;
+    line-height: 1;
+}
+
+.results-value {
+    background-color: orange;
+    font-size: 5.5rem;
+    color: var(--custom-purple);
+}
+
+.results-label {
+    font-size: 5.5rem;
+    color: var(--custom-off-black);
+}
+
+/* Footer styles mobile */
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+
 
 /* Media queries */
