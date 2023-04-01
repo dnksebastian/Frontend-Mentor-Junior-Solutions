@@ -262,13 +262,16 @@ main {
 .controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   width: 100%;
   padding-top: 2.2rem;
 }
 
 #back-project-btn {
-  flex: 1;
+  min-width: 19rem;
+  max-width: 20.5rem;
+
 }
 
 .bookmark-helper {
@@ -280,7 +283,7 @@ main {
   color: var(--custom-dark-gray);
   font-size: 0;
   border-radius: 50%;
-  padding: 1.9rem 2.8rem;
+  padding: 2.5rem 2.7rem;
 }
 
 .bookmarked #bookmark-btn {
@@ -517,10 +520,13 @@ animation: changeColor .3s ease-in;
   font-size: 0;
   width: 2rem;
   height: 2rem;
+  background-color: var(--custom-dark-gray);
   mask-image: url(./images/icon-close-modal.svg);
   mask-position: center;
   mask-repeat: no-repeat;
-  background-color: var(--custom-dark-gray);
+  -webkit-mask-image: url(./images/icon-close-modal.svg);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
 }
 
 #close-modal:hover, #close-modal:focus {
@@ -752,6 +758,10 @@ button:disabled {
   cursor: default;
 }
 
+.error-msg {
+  color: red;
+}
+
 /* Footer styles mobile */
 
 footer {
@@ -785,6 +795,8 @@ footer a:active {
     /* -webkit-overflow-scrolling: none; */
     /* overflow: unset; */
     /* overscroll-behavior: unset; */
+    overflow-y: scroll;
+    overscroll-behavior: scroll;
   }
 
   #hero {
@@ -955,9 +967,102 @@ footer a:active {
   justify-content: space-between;
 }
 
+/* Modals desktop styles */
+
+#selection-modal {
+  width: 60%;
+  max-width: 73rem;
+  transform: translate(-50%, 18rem);
+  padding: 5.2rem 3rem 4rem 5rem;
+  max-height: unset;
+}
+
+.modal-helper {
+  padding-bottom: 2rem;
+}
+
+
+.modal-helper h2 {
+  font-size: 2.4rem;
+}
+
+.modal-info {
+  font-size: 1.6rem;
+  padding-bottom: 3rem;
+}
+
+#pledges-form ul {
+  /* background-color: blue; */
+  padding-right: 2rem;
+  gap: 2.3rem;
+}
+
+#selection-modal .pledge-top {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 10rem repeat(2, 1fr);
+  padding: 3rem 2.3rem 4rem 2.5rem;
+  gap: 1.5rem;
+}
+
+#selection-modal .pledge-li:first-of-type .pledge-top {
+  padding: 3rem 2.5rem 3.5rem 2.5rem;
+  gap: 1.5rem;
+}
+
+#selection-modal .pledge-li label {
+  gap: 2.5rem;
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+#selection-modal .pledge-label-wrap {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+#selection-modal .pledge-name {
+  font-size: 1.6rem;
+}
+
+#selection-modal .pledge-cost {
+  font-size: 1.6rem;
+}
+
+#selection-modal .pledge-top p {
+  grid-column: 1/4;
+  padding-left: 5rem;
+  font-size: 1.5rem;
+}
+
+.pledge-items-left {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  justify-self: flex-end;
+}
+
+.pledge-options {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  justify-content: space-between;
+}
+
+.pledge-helper {
+  gap: 1rem;
+}
+
+.error-msg {
+  width: 100%;
+  text-align: right;
+  padding-right: 5rem;
+}
+
+/* Success modal desktop styles */
+
 #success-modal {
   max-width: 54rem;
-  top: 33.5%;
+  top: 10%;
 }
 
 .modal-wrap {

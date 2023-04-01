@@ -101,9 +101,8 @@ function checkBookmark() {
   isBookmarked = !isBookmarked;
   bookmarkBox.classList.toggle('bookmarked');
   bookmarkBox.classList.toggle('not-bookmarked');
-
   isBookmarked? bookmarkBtn.textContent = "Bookmarked" : bookmarkBtn.textContent = "Bookmark";
-  // bookmarkBtn.classList.toggle("bookmarked");
+  
   console.log(isBookmarked);
 }
 
