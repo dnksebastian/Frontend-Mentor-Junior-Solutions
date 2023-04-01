@@ -269,9 +269,9 @@ main {
 }
 
 #back-project-btn {
-  min-width: 19rem;
-  max-width: 20.5rem;
-
+  /* min-width: 19rem;
+  max-width: 20.5rem; */
+  width: 21rem;
 }
 
 .bookmark-helper {
@@ -883,6 +883,7 @@ footer a:active {
   #back-project-btn {
     flex: unset;
     padding: 1.9rem 3.9rem;
+    width: 24rem;
   }
 
   #bookmark-btn {
