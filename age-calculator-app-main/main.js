@@ -29,3 +29,16 @@ const calculateResult = (e) => {
 
 // Event listeners
 calculatorFormEl.addEventListener('submit', calculateResult);
+
+
+
+
+// -.-.-.-.-.-...-.-.--.-.-.-.-.-.-.-.-
+
+const errorMsgs = [... document.getElementsByClassName('error-msg')];
+errorMsgs.forEach((el) => {
+    el.textContent = "This field is required";
+    // el.textContent = "Must be a valid month";
+    // el.textContent = "Must be in the past";
+});
+console.log(errorMsgs);
