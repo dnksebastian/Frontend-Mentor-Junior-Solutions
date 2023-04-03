@@ -9,7 +9,6 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 
 
@@ -45,34 +44,18 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
+### Useful resources & attribution
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- [https://stackoverflow.com/a/66759105](https://stackoverflow.com/a/66759105) - Solution to accessible numeric input configuration.
 
-To see how you can add code snippets, see below:
+- [https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/](https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/) - Styling form errors
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- [https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/](https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/) - Styling form errors
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+- [https://stackoverflow.com/a/64695744](https://stackoverflow.com/a/64695744) - Using Day.js to calculate time difference
 
+- [https://day.js.org/docs/en/display/difference](https://day.js.org/docs/en/display/difference) - Day.js docs
 
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [https://inorganik.github.io/countUp.js/](https://inorganik.github.io/countUp.js/) - CountUp.js docs
 
 

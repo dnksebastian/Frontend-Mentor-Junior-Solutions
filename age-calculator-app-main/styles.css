@@ -67,6 +67,7 @@ body {
   min-height: 100vh;
   min-height: 100svh; /*Using both because of browser support*/
   background-color: var(--custom-off-white);
+  min-width: 375px;
 }
 
 /* Mobile styles */
@@ -137,29 +138,38 @@ main {
   font-size: 2rem;
   font-weight: 800;
   padding: 1rem 1.5rem;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   width: 100%;
   border-color: var(--custom-light-grey);
 }
 
 .form-input:focus {
-    border-color: var(--custom-purple);
-    caret-color: var(--custom-purple);
+  border-color: var(--custom-purple);
+  caret-color: var(--custom-purple);
 }
+
+/* Form error messages styles */
 
 .error-msg {
-  /* display: none; */
+  display: none;
   font-style: italic;
   font-size: 1.1rem;
-}
-
-.whole-form-error {
-    display: none;
+  color: var(--custom-light-red);
 }
 
 .error {
-    color: var(--custom-light-red);
+  color: var(--custom-light-red);
 }
+
+.form-input:invalid {
+    border-color: var(--custom-light-red);
+}
+
+.form-input:invalid + .error-msg {
+    display: block;
+}
+
+
 
 #submit-btn {
   position: absolute;
@@ -220,6 +230,7 @@ main {
 /* Footer styles mobile */
 
 footer {
+  padding-top: 2rem;
   margin-top: auto;
   text-align: center;
 }
@@ -274,7 +285,7 @@ footer {
   }
 
   .error-msg {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
 
   #submit-btn {
@@ -298,7 +309,7 @@ footer {
   }
 
   .result-li {
-    line-height: .8;
+    line-height: 0.8;
     gap: 0rem;
   }
 

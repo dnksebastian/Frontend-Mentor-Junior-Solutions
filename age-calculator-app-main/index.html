@@ -17,6 +17,10 @@
 
   <link rel="stylesheet" href="./styles.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/countup/dist/countUp.min.js"></script>
+
   <script src="./main.js" defer></script>
 
 </head>
@@ -32,26 +36,26 @@
             <li class="form-li">
               <label class="label-wrap">
                 <span class="input-name">Day</span>
-                <input class="form-input" type="text" placeholder="DD">
+                <input id="day-input" class="form-input" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="DD" minlength="1" maxlength="2" required>
                 <span class="error-msg"></span>
               </label>
             </li>
             <li class="form-li">
               <label class="label-wrap">
                 <span class="input-name">Month</span>
-                <input class="form-input" type="text" placeholder="MM">
+                <input id="month-input" class="form-input" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="MM" minlength="1" maxlength="2" required>
                 <span class="error-msg"></span>
               </label>
             </li>
             <li class="form-li">
               <label class="label-wrap">
                 <span class="input-name">Year</span>
-                <input class="form-input" type="text" placeholder="YYYY">
+                <input id="year-input" class="form-input" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="YYYY" minlength="1" maxlength="4" required>
                 <span class="error-msg"></span>
               </label>
             </li>
           </ol>
-          <span class="error-msg whole-form-error"></span>
+          
           <button id="submit-btn">Submit</button>
         </form>
       </div>
