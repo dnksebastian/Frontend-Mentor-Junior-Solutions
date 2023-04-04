@@ -48,6 +48,8 @@ Users should be able to:
 
 - [https://stackoverflow.com/a/66759105](https://stackoverflow.com/a/66759105) - Solution to accessible numeric input configuration.
 
+- [https://bobbyhadz.com/blog/javascript-check-if-date-is-valid](https://bobbyhadz.com/blog/javascript-check-if-date-is-valid) - checking if date is valid
+
 - [https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/](https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/) - Styling form errors
 
 - [https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/](https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/) - Styling form errors
@@ -57,5 +59,9 @@ Users should be able to:
 - [https://day.js.org/docs/en/display/difference](https://day.js.org/docs/en/display/difference) - Day.js docs
 
 - [https://inorganik.github.io/countUp.js/](https://inorganik.github.io/countUp.js/) - CountUp.js docs
+
+- [https://stackoverflow.com/a/47774150](https://stackoverflow.com/a/47774150) - adding 0's to input for fixed format yyyy-mm-dd
+
+
 
 

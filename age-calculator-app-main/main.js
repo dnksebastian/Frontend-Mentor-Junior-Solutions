@@ -1,5 +1,7 @@
 // DOM Elements
 
+const formEls = [... document.querySelectorAll('.label-wrap')];
+
 const submitBtn = document.getElementById("submit-btn");
 const calculatorFormEl = document.getElementById("calc-form");
 const formInputEls = [...document.querySelectorAll(".form-input")];
@@ -36,14 +38,6 @@ let daysResult;
 
 // Functions
 
-// This prevents default input error messages
-formInputEls.forEach((el) => {
-  el.addEventListener("invalid", (e) => {
-    // e.preventDefault();
-    // el.setCustomValidity("");
-  });
-});
-
 // Form validation functions
 
 // Helper function to check if a date exists
@@ -62,40 +56,36 @@ function setUserDate() {
 
 // Helper function to render error messages
 function renderErrorMsgs() {
-  let error = [];
-  let validity = [];
   
   errorMsgs.forEach((el) => {
-    let val = el.previousElementSibling.checkValidity();
-    let err = el.previousElementSibling.validationMessage;
-    error.push(err);
-    validity.push(val);
     
     if (el.previousElementSibling.checkValidity() === false) {
-      el.parentElement.firstElementChild.classList.add("error");
+      el.parentElement.classList.add("error");
       el.textContent = el.previousElementSibling.validationMessage;
+      if (el.previousElementSibling.validity.valueMissing == true) {
+        el.textContent = "This field is required"
+        // I've hardcoded this because different browsers forced their own error messages
+      }
     } else if (el.previousElementSibling.checkValidity() === true) {
       el.textContent = "";
-      el.parentElement.firstElementChild.classList.remove("error");
+      el.parentElement.classList.remove("error");
     }
   });
-  
-  console.log(error);
-  console.log(validity);
+
+
 }
-validateInputs();
+
 
 // Validation function
 
 function validateInputs() {
-  console.log('validate');
-  const RegExpCheck = RegExp("^[0-9]+$");
 
+  const RegExpCheck = RegExp("^[0-9]+$");
   let inputsAreValid;
 
   // Check if input is empty
   formInputEls.forEach((el) => {
-    if (el.value = "") {
+    if (!el.value) {
       el.setCustomValidity("This field is required");
     } else {
       el.setCustomValidity("");
@@ -228,4 +218,15 @@ calculatorFormEl.addEventListener("submit", submitForm);
 formInputEls.forEach((el) => {
   el.addEventListener("blur", validateInputs);
   el.addEventListener("blur", setUserDate);
+
+
+  el.addEventListener("focus", (el) => {
+    calculatorFormEl.classList.add('focused');
+    el.target.parentElement.classList.add('fc');
+    el.target.parentElement.classList.add('itcd')
+  })
+  el.addEventListener('blur', () => {
+    el.parentElement.classList.remove('fc');
+  })
 });
+

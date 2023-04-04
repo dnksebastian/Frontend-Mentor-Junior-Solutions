@@ -157,19 +157,30 @@ main {
   color: var(--custom-light-red);
 }
 
-.error {
+.focused .error:not(.fc) .input-name {
   color: var(--custom-light-red);
 }
 
-.form-input:invalid {
+.focused .error:not(.itcd) .input-name {
+  color: var(--custom-smokey-grey);
+}
+
+.focused .form-input:invalid:not(:focus) {
     border-color: var(--custom-light-red);
 }
 
-.form-input:invalid + .error-msg {
-    display: block;
+.focused .label-wrap:not(.itcd) .form-input:invalid {
+  border-color: var(--custom-light-grey)!important;
 }
 
 
+.focused .form-input:invalid:not(:focus) + .error-msg {
+  display: block;
+}
+
+.focused .error:not(.itcd) .form-input:invalid + .error-msg {
+  display: none;
+}
 
 #submit-btn {
   position: absolute;
