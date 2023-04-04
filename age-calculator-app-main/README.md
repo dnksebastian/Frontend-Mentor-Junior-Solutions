@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-js-age-calculator-app-0s-UZeNCS3](https://www.frontendmentor.io/solutions/html-css-js-age-calculator-app-0s-UZeNCS3)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/age-calculator-app-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/age-calculator-app-main/)
 
 ## My process
