@@ -54,9 +54,9 @@ Users should be able to:
 
 - [https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/](https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/) - Styling form errors
 
-- [https://stackoverflow.com/a/64695744](https://stackoverflow.com/a/64695744) - Using Day.js to calculate time difference
+- [https://moment.github.io/luxon/#/math?id=diffs](https://moment.github.io/luxon/#/math?id=diffs) - Using luxon to calculate time difference
 
-- [https://day.js.org/docs/en/display/difference](https://day.js.org/docs/en/display/difference) - Day.js docs
+- [https://moment.github.io/luxon/#/?id=luxon](https://moment.github.io/luxon/#/?id=luxon) - luxon docs
 
 - [https://inorganik.github.io/countUp.js/](https://inorganik.github.io/countUp.js/) - CountUp.js docs
 

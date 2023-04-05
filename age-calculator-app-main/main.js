@@ -18,6 +18,8 @@ const daysDisplayEl = document.getElementById("days-result");
 
 // Global variables
 
+const DateTime = luxon.DateTime;
+
 let currentDate = new Date();
 
 let currentYear = currentDate.getFullYear();
@@ -52,6 +54,7 @@ function setUserDate() {
   userYear = yearInput.value.trim().padStart(4, "0");
 
   userDateYMD = `${userYear}-${userMonth}-${userDay}`;
+  console.log(userDateYMD);
 }
 
 // Helper function to render error messages
@@ -167,31 +170,19 @@ function validateForm() {
 
 // Calculate results
 
+
 function calculateResult() {
-  let currentTime = dayjs(currentDateYMD);
-  let userTime = dayjs(userDateYMD);
+  let currentTime = DateTime.fromISO(currentDateYMD);
+  let userTime = DateTime.fromISO(userDateYMD);
 
-  const getAgeDetails = (oldDate, newDate) => {
-    const years = newDate.diff(oldDate, "year");
-    const months = newDate.diff(oldDate, "month") - years * 12;
-    const days = newDate.diff(
-      oldDate.add(years, "year").add(months, "month"),
-      "day"
-    );
+  let differenceResult = currentTime.diff(userTime, ['years', 'months', 'days']).toObject();
+  
+  console.log(differenceResult);
 
-    return {
-      years,
-      months,
-      days,
-      allDays: newDate.diff(oldDate, "day"),
-    };
-  };
 
-  let result = getAgeDetails(userTime, currentTime);
-
-  let animateYears = new CountUp(yearsDisplayEl, 0, result.years);
-  let animateMonths = new CountUp(monthsDisplayEl, 0, result.months);
-  let animateDays = new CountUp(daysDisplayEl, 0, result.days);
+  let animateYears = new CountUp(yearsDisplayEl, 0, differenceResult.years);
+  let animateMonths = new CountUp(monthsDisplayEl, 0, differenceResult.months);
+  let animateDays = new CountUp(daysDisplayEl, 0, differenceResult.days);
 
   animateYears.start();
   animateMonths.start();
@@ -217,7 +208,7 @@ calculatorFormEl.addEventListener("submit", submitForm);
 
 formInputEls.forEach((el) => {
   el.addEventListener("blur", validateInputs);
-  el.addEventListener("blur", setUserDate);
+  el.addEventListener("input", setUserDate);
 
 
   el.addEventListener("focus", (el) => {
