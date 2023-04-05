@@ -54,7 +54,7 @@ function setUserDate() {
   userYear = yearInput.value.trim().padStart(4, "0");
 
   userDateYMD = `${userYear}-${userMonth}-${userDay}`;
-  console.log(userDateYMD);
+  // console.log(userDateYMD);
 }
 
 // Helper function to render error messages
@@ -176,7 +176,7 @@ function calculateResult() {
   let userTime = DateTime.fromISO(userDateYMD);
 
   let differenceResult = currentTime.diff(userTime, ['years', 'months', 'days']).toObject();
-  
+
   console.log(differenceResult);
 
 
