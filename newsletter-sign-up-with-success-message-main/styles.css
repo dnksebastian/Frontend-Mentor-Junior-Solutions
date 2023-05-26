@@ -1,0 +1,91 @@
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --custom-font: "Roboto", sans-serif;
+
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --custom-tomato: hsl(4, 100%, 67%);
+
+  /* ### Neutral */
+
+  --custom-dark-slate-grey: hsl(234, 29%, 20%);
+  --custom-charcoal-grey: hsl(235, 18%, 26%);
+  --custom-grey: hsl(231, 7%, 60%);
+  --custom-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--custom-font);
+}
+
+body {
+  min-height: 100vh; /*fallback*/
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr 1rem;
+  background-color: var(--custom-white);
+}
+
+/* Utility classes */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile styles */
+
+#img-desktop {
+  display: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 875px) {
+  
+    #img-mobile {
+    display: none;
+  }
+
+  #img-desktop {
+    display: block;
+  }
+}
