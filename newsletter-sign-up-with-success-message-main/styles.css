@@ -143,30 +143,23 @@ body {
   gap: 1rem;
 }
 
-#label-helper > * {
-  font-weight: 700;
-  font-size: 1.25rem;
+.form-label {
+  position: relative;
+  gap: 1rem;
 }
 
-#err-msg {
-  display: none;
-}
-
-.form-helper {
-  gap: 2.5rem;
-}
-
-.form-helper > * {
-  flex: 1;
-  padding: 1.8rem 2.5rem;
-  border-radius: 1rem;
-  font-size: 1.6rem;
+.form-label span {
+  font-size: 1.2rem;
 }
 
 .form-input,
 .btn {
   outline: none;
+  font-size: 1.6rem;
+  padding: 1.7rem 2.5rem;
+  border-radius: 1rem;
 }
+
 .form-input:focus,
 .btn:focus {
   box-shadow: 0rem 0.5rem 1rem 0rem var(--custom-charcoal-grey);
@@ -174,6 +167,7 @@ body {
 
 .form-input {
   border: 1px solid var(--custom-grey);
+  margin-bottom: 1.5rem;
 }
 
 .form-input:hover,
@@ -213,6 +207,25 @@ body {
 
 .btn:hover::after {
   opacity: 100;
+}
+
+/* Form error styles */
+#err-msg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  color: hsl(var(--custom-tomato));
+}
+
+.interacted input:not(:focus):invalid {
+  border-color: hsl(var(--custom-tomato));
+  background-color: hsla(var(--custom-tomato), 40%);
+  color: hsl(var(--custom-tomato));
+}
+
+.interacted input:not(:focus):invalid ~ #err-msg {
+  display: block;
 }
 
 /* Footer mobile styles */
@@ -269,7 +282,7 @@ footer a {
   #component-content {
     width: unset;
     padding: 1.5rem 2rem 2rem 4rem;
-    background-color: rgba(0, 128, 128, 0.566);
+    /* background-color: rgba(0, 128, 128, 0.566); */
   }
 
   #desc-h1 {
@@ -292,14 +305,10 @@ footer a {
     padding-right: 2rem;
   }
 
-  .form-helper {
-    padding: unset;
-  }
-
-  .form-helper > * {
-    flex: 1;
-    padding: 1.5rem 2.5rem;
+  .form-input,
+  .btn {
     font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
   }
 
   /* Footer desktop styles */
@@ -331,8 +340,9 @@ footer a {
     margin-top: 4rem;
   }
 
-  .form-helper > * {
-    padding: 1.8rem 2.5rem;
+  .form-input,
+  .btn {
     font-size: 1.6rem;
+    padding: 1.7rem 2.5rem;
   }
 }

@@ -35,20 +35,15 @@
       </div>
 
       <!-- Sign-up form start -->
-      <form id="component-form" method="GET" class="flex-col">
-        <div id="label-helper" class="flex-row">
-          <label for="email" class="form-label">Email address</label>
-          <span id="err-msg">Valid email required</span>
-        </div>
-        <div class="form-helper flex-col">
-          <input class="form-input" type="text" placeholder="email@company.com" name="email" id="email" required>
-          <button class="btn">Subscribe to monthly newsletter</button>
-        </div>
+      <form id="component-form" method="GET" class="flex-col" novalidate>
+        <label for="email" class="form-label flex-col">
+          <span>Email address</span><input class="form-input" type="email" placeholder="email@company.com" name="email" id="email" required>
+          <span id="err-msg"></span>
+        </label>
+        <button class="btn">Subscribe to monthly newsletter</button>
       </form>
       <!-- Sign-up form end -->
-
     </div>
-
 
     <div id="component-illustration">
       <img src="./assets/images/illustration-sign-up-mobile.svg"
@@ -66,7 +61,8 @@
 
       <h2>Thanks for subscribing!</h2>
 
-      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button
+        inside to confirm your subscription.</p>
 
       <form method="dialog">
         <button>Dismiss message</button>
