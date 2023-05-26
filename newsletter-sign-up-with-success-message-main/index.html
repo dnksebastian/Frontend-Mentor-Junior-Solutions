@@ -21,27 +21,29 @@
 
 <body>
 
-  <main id="component-wrapper">
+  <main id="component-wrapper" class="flex-col">
 
-    <div id="component-content">
-      <div id="component-desc">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
+    <div id="component-content" class="flex-col">
+      <div id="component-desc" class="flex-col">
+        <h1 id="desc-h1">Stay updated!</h1>
+        <p id="desc-p">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul id="desc-ul">
+          <li class="desc-li">Product discovery and building what matters</li>
+          <li class="desc-li">Measuring to ensure updates are a success</li>
+          <li class="desc-li">And much more!</li>
         </ul>
       </div>
 
       <!-- Sign-up form start -->
-      <form id="component-form" method="GET">
-        <div id="label-helper">
-          <label for="email">Email address</label>
-          <span id="err-msg"></span>
+      <form id="component-form" method="GET" class="flex-col">
+        <div id="label-helper" class="flex-row">
+          <label for="email" class="form-label">Email address</label>
+          <span id="err-msg">Valid email required</span>
         </div>
-        <input type="text" placeholder="email@company.com" name="email" id="email">
-        <button>Subscribe to monthly newsletter</button>
+        <div class="form-helper flex-col">
+          <input class="form-input" type="text" placeholder="email@company.com" name="email" id="email">
+          <button class="btn">Subscribe to monthly newsletter</button>
+        </div>
       </form>
       <!-- Sign-up form end -->
 

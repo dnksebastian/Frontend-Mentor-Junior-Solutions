@@ -22,8 +22,8 @@ button,
 input {
   cursor: pointer;
   font: inherit;
-  transition: 0.3s;
   border: 1px solid transparent;
+  transition: .3s;
 }
 
 ul,
@@ -38,7 +38,7 @@ ol {
 
   /* ### Primary */
 
-  --custom-tomato: hsl(4, 100%, 67%);
+  --custom-tomato: 4, 100%, 67%;
 
   /* ### Neutral */
 
@@ -46,6 +46,7 @@ ol {
   --custom-charcoal-grey: hsl(235, 18%, 26%);
   --custom-grey: hsl(231, 7%, 60%);
   --custom-white: hsl(0, 0%, 100%);
+  --custom-gradient: linear-gradient(90deg, rgba(255,83,122,1) 0%, rgba(253,105,58,1) 100%);
 }
 
 html {
@@ -57,7 +58,7 @@ body {
   min-height: 100vh; /*fallback*/
   min-height: 100svh;
   display: grid;
-  grid-template-rows: 1fr 1rem;
+  grid-template-rows: 1fr min(3%, 1rem);
   background-color: var(--custom-white);
 }
 
@@ -74,8 +75,142 @@ body {
 
 /* Mobile styles */
 
+body {
+    align-items: flex-start;
+    justify-items: center;
+    color: var(--custom-dark-slate-grey);
+}
+
 #img-desktop {
-  display: none;
+    display: none;
+  }
+
+/* Component mobile styles */
+/* Component description mobile styles */
+
+#component-wrapper {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+#component-content {
+    width: 100%;
+    padding: 1.7rem 2.2rem;
+    /* background-color: rgba(0, 128, 128, 0.592); */
+}
+
+#component-desc {
+    gap: 1.7rem;
+}
+
+#desc-h1 {
+    font-size: 4rem;
+}
+
+#desc-p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+#desc-ul {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    list-style-position: inside;
+    gap: .5rem;
+    list-style: url(./assets/images/icon-list.svg);
+    font-size: 1.6rem;
+}
+
+.desc-li {
+    /* background-color: teal; */
+    margin-left: 2.7rem;
+    padding-left: 1rem;
+    line-height: 1.5;
+}
+
+/* Component form mobile styles */
+
+#component-form {
+    margin-top: 3rem;
+    /* background-color: rgba(0, 128, 0, 0.382); */
+    gap: 1rem;
+}
+
+#label-helper > * {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#err-msg {
+    display: none;
+}
+
+.form-helper {
+    gap: 2.5rem;
+}
+
+.form-helper > * {
+    flex: 1;
+    padding: 1.8rem 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.form-input, .btn {
+    outline: none;
+}
+.form-input:focus, .btn:focus {
+    box-shadow: 0rem .5rem 1rem 0rem var(--custom-charcoal-grey);
+}
+
+.form-input {
+    border: 1px solid var(--custom-grey);
+}
+
+.form-input:hover, .form-input:focus {
+    border: 1px solid var(--custom-charcoal-grey);
+}
+
+.btn {
+    position: relative;
+    transition: .3s;
+    font-weight: 700;
+    color: var(--custom-white);
+    background-color: var(--custom-dark-slate-grey);
+    overflow: hidden;
+}
+
+.btn::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Subscribe to monthly newsletter";
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: var(--custom-gradient);
+    z-index: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.btn:hover {
+    border-color: transparent;
+    box-shadow: 0rem 1rem 1.5rem 0rem hsla(var(--custom-tomato), 60%);
+    background-color: hsla(var(--custom-tomato), 100);
+}
+
+.btn:hover::after {
+    opacity: 100;
+}
+
+
+/* Footer mobile styles */
+footer {
+    align-self: center;
 }
 
 /* Media queries */
