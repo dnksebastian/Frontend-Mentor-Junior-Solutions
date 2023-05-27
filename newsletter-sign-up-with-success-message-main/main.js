@@ -3,6 +3,10 @@ const componentFormEl = document.getElementById("component-form");
 const emailInputEl = document.getElementById("email");
 const errMsgEl = document.getElementById("err-msg");
 
+const successModalEl = document.getElementById('success-modal')
+const modalMailEl = document.getElementById('modal-email');
+const modalDismissBtn = document.querySelector('.btn-modal');
+
 // Functions
 
 const submitForm = (e) => {
@@ -10,7 +14,10 @@ const submitForm = (e) => {
   let isValid = validateInput();
 
   if (isValid) {
-    console.log("submit form");
+    successModalEl.show()
+    modalMailEl.textContent = emailInputEl.value;
+    componentFormEl.reset();
+  
   } else {
     return;
   }
@@ -42,4 +49,9 @@ emailInputEl.addEventListener('click', () => {
 })
 componentFormEl.addEventListener('submit', () => {
     componentFormEl.classList.add('interacted')
+})
+
+modalDismissBtn.addEventListener('click', () => {
+  componentFormEl.reset()
+  componentFormEl.classList.remove('interacted')
 })

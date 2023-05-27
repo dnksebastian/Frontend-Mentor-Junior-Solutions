@@ -52,30 +52,25 @@
         alt="Red background with several icons of app views and graphs" id="img-desktop">
     </div>
 
-
     <!-- Success message start -->
-    <dialog id="success-modal">
-      <div class="img-wrap">
+  <dialog id="success-modal">
+    <div id="modal-wrap" class="flex-col">
+      <div class="modal-img img-wrap">
         <img src="./assets/images/icon-success.svg" alt="White checkmark on red background">
       </div>
-
-      <h2>Thanks for subscribing!</h2>
-
-      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button
+  
+      <h2 class="modal-h2">Thanks for subscribing!</h2>
+  
+      <p class="modal-p">A confirmation email has been sent to <span id="modal-email">ash@loremcompany.com</span>. Please open it and click the button
         inside to confirm your subscription.</p>
-
-      <form method="dialog">
-        <button>Dismiss message</button>
+  
+      <form id="modal-form" method="dialog">
+        <button class="btn btn-modal">Dismiss message</button>
       </form>
-
-    </dialog>
-    <!-- Success message end -->
-
-
-
-
+    </div>
+  </dialog>
+  <!-- Success message end -->
   </main>
-
 
   <footer>
     <div class="attribution">
@@ -83,7 +78,6 @@
       Coded by <a href="#">Sebastian</a>.
     </div>
   </footer>
-
 </body>
 
 </html>
