@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+  border: 1px solid lightgray;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:root {
+  --main-font: "Karla", sans-serif;
+
+  /* ## Colors */
+  /* ### Primary */
+
+/* --cs-green-200: hsl(148, 38%, 91%);
+--cs-green-600: hsl(169, 82%, 27%);
+--cs-red: hsl(0, 66%, 54%); */
+--cs-green-200: 148, 38%, 91%;
+--cs-green-600: 169, 82%, 27%;
+--cs-red: 0, 66%, 54%;
+
+/* ### Neutral */
+
+/* --cs-white: hsl(0, 0%, 100%);
+--cs-grey-500: hsl(186, 15%, 59%);
+--cs-grey-900: hsl(187, 24%, 22%); */
+--cs-white: 0, 0%, 100%;
+--cs-grey-500: 186, 15%, 59%;
+--cs-grey-900: 187, 24%, 22%;
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  min-height: 100vh;
+  background-color: hsla(var(--cs-green-200), 100%);
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  min-width: 30rem;
+}
+
+/* Utility classes */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
