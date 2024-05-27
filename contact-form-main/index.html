@@ -12,37 +12,70 @@
 </head>
 <body>
 
-  Contact Us
+  <main>
 
-  First Name
-  This field is required
+  <section id="component-wrap">
+    <h1>Contact Us</h1>
+    <form action="" class="form-wrap">
+      <div class="input-wrapper">
+        <label for="">First Name</label>
+        <input type="text" class="input-basic">
+        <p class="error-msg">This field is required</p>
+      </div>
+      <div class="input-wrapper">
+        <label for="">Last Name</label>
+        <input type="text" class="input-basic">
+        <p class="error-msg">This field is required</p>
+      </div>
+      <div class="input-wrapper">
+        <label for="">Email Address</label>
+        <input type="email" class="input-basic">
+        <p class="error-msg">Please enter a valid email address</p>
+      </div>
+      <div class="input-wrapper radio-wrapper">
+        <fieldset>
+          <legend>Query Type</legend>
+          <div class="radios-query-wrap">
+            <div class="radio-helper">
+              <label for="option-general">General Enquiry</label>
+              <input type="radio" id="option-general" name="query-type" value="query-general" />
+            </div>
+            <div class="radio-helper">
+              <label for="option-support">Support Request</label>
+              <input type="radio" id="option-support" name="query-type" value="query-support" />
+            </div>
+            
+          </div>
+        </fieldset>
+        
+        <p class="error-msg">Please select a query type</p>
+      </div>
+      <div class="input-wrapper message-wrapper">
+        <label for="form-message">Message</label>
+        <textarea name="message" id="form-message"></textarea>
+        <p class="error-msg">This field is required</p>
+      </div>
+      <div class="input-wrapper consent-wrapper">
+        <label for="consent-check">I consent to being contacted by the team</label>
+        <input type="checkbox" id="consent-check" name="consent">
+        <p class="error-msg">To submit this form, please consent to being contacted</p>
+      </div>
+      <input type="submit" class="btn submit-btn" value="Submit" />
+    </form>
+  </section>
 
-  Last Name
-  This field is required
+  </main>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  <section class="toasts-wrapper">
+    <div class="img-wrap">
+      <img src="./assets/images/icon-success-check.svg" alt="Success checkmark">
+    </div>
+    <h2>Message Sent!</h2>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </section>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#/">Sebastian</a>.
-  </div>
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#/">Sebastian</a>.</p>
+  </footer>
 </body>
 </html>
