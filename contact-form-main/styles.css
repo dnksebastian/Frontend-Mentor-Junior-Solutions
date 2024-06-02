@@ -91,7 +91,17 @@ body {
 }
 
 .obligatory {
-  position: absolute;
+  max-width: max-content;
+}
+
+.obligatory::after {
+  display: inline-block;
+  content: "*";
+  margin-left: .7rem;
+  color: hsla(var(--cs-green-600), 100%);
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: -1.5rem; */
 }
 
 /* Mobile styles */
@@ -124,9 +134,12 @@ main {
 
 .form-wrap {
   padding: 1.2rem 0rem 1.5rem 0rem;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2.7rem;
+  column-gap: 1.5rem;
   /* background-color: rgba(0, 0, 255, 0.445); */
   font-size: 1.6rem;
 }
@@ -139,13 +152,20 @@ main {
 }
 
 .input-basic {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
+  padding: 1.35rem 2.5rem;
+  font-size: 1.8rem;
   border-radius: 1rem;
   border: 1px solid hsla(var(--cs-grey-500), 100%);
   cursor: pointer;
 }
 
 .input-basic:hover {
+  border: 1px solid hsla(var(--cs-green-600), 100%);
+}
+
+.input-basic:focus {
+  outline: none;
   border: 1px solid hsla(var(--cs-green-600), 100%);
 }
 
@@ -234,6 +254,10 @@ main {
 /* .message-wrapper {} */
 
 .message-wrapper textarea {
+  font: inherit;
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
+  line-height: 1.5;
   resize: none;
   min-height: 24rem;
   border-radius: 1rem;
@@ -262,6 +286,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-end;
   gap: 2rem;
 }
 
@@ -270,12 +295,34 @@ main {
 }
 
 .checkbox-helper input {
-  width: 2.2rem;
-  height: 2.2rem;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  display: grid;
+  place-content: center;
+  color: hsla(var(--cs-grey-500), 100%);
+  min-width: 2rem;
+  min-height: 2rem;
   border: 1px solid hsla(var(--cs-grey-500), 100%);
+  transition: .3s;
+  border-radius: .5rem;
+  overflow: hidden;
 }
 
-.checkbox-helper input:checked {
+.checkbox-helper input:checked::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  transform: scale(0);
+  background-image: url(./assets/images/icon-checkbox-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.checkbox-helper input:checked::before {
+  transform: scale(1);
 }
 
 
@@ -319,3 +366,60 @@ footer a:hover, footer a:focus {
 }
 
 /* Media queries */
+
+@media screen and (max-width: 374px) {
+  main {
+    padding: 2.5rem 1.2rem;
+  }
+
+  #component-wrap {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 785px) {
+
+  main {
+    padding: 5rem 2rem;
+  }
+
+  #component-wrap {
+    margin-top: 8rem;
+    max-width: 74rem;
+    padding: 3.7rem 4rem 2.2rem 4rem;
+  }
+
+  .form-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-wrapper {
+    grid-column: 1/3;
+  }
+  .firstname-wrap {
+    grid-column: 1/2;
+  }
+
+  .lastname-wrap {
+    grid-column: 2/3;
+  }
+
+  .radios-query-wrap {
+    flex-direction: row;
+  }
+
+  .radios-query-wrap > .radio-helper {
+    flex: 1;
+  }
+
+  .message-wrapper textarea {
+    min-height: 10.5rem;
+  }
+
+  .submit-btn {
+    grid-column: 1/3;
+  }
+
+
+
+}

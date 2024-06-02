@@ -17,24 +17,24 @@
   <section id="component-wrap">
     <h1>Contact Us</h1>
     <form action="" class="form-wrap">
-      <div class="input-wrapper">
-        <label for="">First Name</label>
+      <div class="input-wrapper firstname-wrap">
+        <label for="" class="obligatory">First Name</label>
+        <input type="text" class="input-basic">
+        <p class="error-msg">This field is required</p>
+      </div>
+      <div class="input-wrapper lastname-wrap">
+        <label for="" class="obligatory">Last Name</label>
         <input type="text" class="input-basic">
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper">
-        <label for="">Last Name</label>
-        <input type="text" class="input-basic">
-        <p class="error-msg">This field is required</p>
-      </div>
-      <div class="input-wrapper">
-        <label for="">Email Address</label>
+        <label for="" class="obligatory">Email Address</label>
         <input type="email" class="input-basic">
         <p class="error-msg">Please enter a valid email address</p>
       </div>
       <div class="input-wrapper radio-wrapper">
         <fieldset>
-          <legend>Query Type</legend>
+          <legend class="obligatory">Query Type</legend>
           <div class="radios-query-wrap">
             <div class="radio-helper">
               <input type="radio" id="option-general" name="query-type" value="query-general" />
@@ -51,13 +51,13 @@
         <p class="error-msg">Please select a query type</p>
       </div>
       <div class="input-wrapper message-wrapper">
-        <label for="form-message">Message</label>
+        <label for="form-message" class="obligatory">Message</label>
         <textarea name="message" id="form-message"></textarea>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper consent-wrapper">
         <div class="checkbox-helper">
-          <label for="consent-check">I consent to being contacted by the team</label>
+          <label for="consent-check" class="obligatory">I consent to being contacted by the team</label>
           <input type="checkbox" id="consent-check" name="consent">
         </div>
         <p class="error-msg">To submit this form, please consent to being contacted</p>
