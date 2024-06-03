@@ -7,9 +7,9 @@ const toastTemplateEl = document.getElementById('toast-template');
 
 // Functions
 
-const changeTouched = (e) => {
-    const parentForm = e.target.closest('form');
-    const parentWrap = e.target.closest('.input-wrapper');
+const changeTouched = (el) => {
+    const parentForm = el.closest('form');
+    const parentWrap = el.closest('.input-wrapper');
 
     if (parentForm) {
         parentForm.classList.add('touched');
@@ -42,6 +42,16 @@ const validateInputs = () => {
             if (closestWrapper) {
                 closestWrapper.classList.add('invalid');
             }
+
+            if (el.id === 'input-email') {
+                const errMsgEl = el.closest('.input-wrapper').querySelector('.error-msg');
+                if (el.validity.valueMissing) {
+                    errMsgEl.textContent = 'This field is required';
+                } else {
+                    errMsgEl.textContent = 'Please enter a valid email address';
+                }
+            }
+
         } else {
             if (closestWrapper) {
                 closestWrapper.classList.remove('invalid')
@@ -71,6 +81,10 @@ const displayInitialToast = () => {
 
 const submitForm = (e) => {
     e.preventDefault();
+
+    formFields.forEach(el => {
+        changeTouched(el)
+    });
     
     validateInputs(e)
 
@@ -78,12 +92,12 @@ const submitForm = (e) => {
 
     if (formIsValid) {
         displayToast()
-        formElement.reset()
         formElement.classList.remove('touched');
         formFields.forEach(el => {
             el.classList.remove('wrap-touched');
             el.classList.remove('wrap-focused');
         });
+        formElement.reset()
     } else {
         console.log('There are invalid fields.');
         return;
@@ -96,7 +110,7 @@ formElement.addEventListener('blur', validateInputs)
 formElement.addEventListener('input', validateInputs)
 
 formFields.forEach(el => {
-    el.addEventListener('focus', changeTouched)
+    el.addEventListener('blur', changeTouched.bind(this, el))
     el.addEventListener('focus', addFocused)
 });
 
@@ -104,7 +118,7 @@ formFields.forEach(el => {
     el.addEventListener('blur', removeFocused)
 });
 
-formElement.addEventListener('focus', changeTouched);
+formElement.addEventListener('focus', changeTouched.bind(this, formElement));
 
 displayInitialToast()
 formElement.reset()

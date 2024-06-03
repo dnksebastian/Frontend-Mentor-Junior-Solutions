@@ -18,18 +18,18 @@
     <h1>Contact Us</h1>
     <form class="form-wrap" id="component-form" novalidate>
       <div class="input-wrapper firstname-wrap">
-        <label for="" class="obligatory">First Name</label>
-        <input type="text" class="input-basic" required>
+        <label for="input-fname" class="obligatory">First Name</label>
+        <input id="input-fname" type="text" class="input-basic" required>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper lastname-wrap">
-        <label for="" class="obligatory">Last Name</label>
-        <input type="text" class="input-basic" required>
+        <label for="input-lname" class="obligatory">Last Name</label>
+        <input id="input-lname" type="text" class="input-basic" required>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper">
-        <label for="" class="obligatory">Email Address</label>
-        <input type="email" class="input-basic" required>
+        <label for="input-email" class="obligatory">Email Address</label>
+        <input id="input-email" type="email" class="input-basic" required>
         <p class="error-msg">Please enter a valid email address</p>
       </div>
       <div class="input-wrapper radio-wrapper">
@@ -68,7 +68,7 @@
 
   <section class="toasts-box" id="toast-box">
     <template id="toast-template">
-      <div class="toast-wrapper">
+      <div class="toast-wrapper" role="status">
         <div class="toast-helper">
           <div class="img-wrap">
             <img src="./assets/images/icon-success-check.svg" alt="Success checkmark">

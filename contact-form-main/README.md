@@ -9,6 +9,7 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -39,3 +40,10 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### Useful resources & attribution
+
+- [Form Validation using Constraint API](https://medium.com/stackanatomy/form-validation-using-javascripts-constraint-validation-api-fd4b70720288) - Article on using native validation API.
+
+- [MDN Client Validation docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) - MDN docs about client side validation.
+

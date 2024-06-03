@@ -99,9 +99,6 @@ body {
   content: "*";
   margin-left: .7rem;
   color: hsla(var(--cs-green-600), 100%);
-  /* position: absolute; */
-  /* top: 0; */
-  /* right: -1.5rem; */
 }
 
 /* Mobile styles */
@@ -135,13 +132,10 @@ main {
 
 .form-wrap {
   padding: 1.2rem 0rem 1.5rem 0rem;
-  /* display: flex; */
-  /* flex-direction: column; */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.7rem;
   column-gap: 1.5rem;
-  /* background-color: rgba(0, 0, 255, 0.445); */
   font-size: 1.6rem;
 }
 
@@ -150,7 +144,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* background-color: pink; */
 }
 
 .input-basic {
@@ -170,10 +163,6 @@ main {
   outline: none;
   border: 1px solid hsla(var(--cs-green-600), 100%);
 }
-
-/* .radio-wrapper {
-  background-color: rgba(0, 128, 0, 0.249);
-} */
 
 .radio-wrapper fieldset {
   border: none;
@@ -253,8 +242,6 @@ main {
   border: 1px solid hsla(var(--cs-green-600), 100%);
 }
 
-/* .message-wrapper {} */
-
 .message-wrapper textarea {
   font: inherit;
   font-size: 1.8rem;
@@ -314,8 +301,8 @@ main {
 
 .checkbox-helper input:checked::before {
   content: "";
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   transform: scale(0);
   background-image: url(./assets/images/icon-checkbox-check.svg);
   background-repeat: no-repeat;
@@ -347,7 +334,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgba(255, 192, 203, 0.475); */
 }
 
 footer a {
@@ -372,7 +358,7 @@ footer a:hover, footer a:focus {
   display: block;
 } */
 
-.touched .invalid:not(.wrap-focused) .error-msg {
+.touched .invalid.wrap-touched:not(.wrap-focused) .error-msg {
   display: block;
 }
 
@@ -382,9 +368,9 @@ footer a:hover, footer a:focus {
   border-color: hsla(var(--cs-red), 100%);
 } */
 
-.touched .invalid input[type="text"]:not(:focus),
-.touched .invalid input[type="email"]:not(:focus),
-.touched .invalid textarea:not(:focus) {
+.touched .invalid.wrap-touched input[type="text"]:not(:focus),
+.touched .invalid.wrap-touched input[type="email"]:not(:focus),
+.touched .invalid.wrap-touched textarea:not(:focus) {
   border-color: hsla(var(--cs-red), 100%);
 }
 
@@ -448,12 +434,25 @@ footer a:hover, footer a:focus {
 /* Media queries */
 
 @media screen and (max-width: 374px) {
+
+  .toast-wrapper {
+    min-width: 28rem;
+  }
+
   main {
-    padding: 2.5rem 1.2rem;
+    padding: 2.5rem 1rem;
   }
 
   #component-wrap {
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3rem .7rem 2rem .7rem;
+  }
+
+  .input-basic {
+    padding: 1.35rem 1rem;
+  }
+
+  .message-wrapper textarea {
+    padding: 1rem 1rem;
   }
 }
 
