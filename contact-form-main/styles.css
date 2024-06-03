@@ -111,6 +111,7 @@ body {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,6 +146,7 @@ main {
 }
 
 .input-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -248,7 +250,7 @@ main {
 
 .radio-helper:hover label,
 .radio-helper:hover input {
-  border: 1px solid hsla(var(--cs-grey-900), 100%);
+  border: 1px solid hsla(var(--cs-green-600), 100%);
 }
 
 /* .message-wrapper {} */
@@ -357,12 +359,90 @@ footer a:hover, footer a:focus {
   opacity: 50%;
 }
 
+/* Error styles */
+
 .error-msg {
   display: none;
+  position: relative;
+  margin-bottom: .4rem;
+  color: hsla(var(--cs-red), 100%);
 }
 
-.toasts-wrapper {
-  display: none;
+/* .wrap-touched.invalid:not(.wrap-focused) .error-msg {
+  display: block;
+} */
+
+.touched .invalid:not(.wrap-focused) .error-msg {
+  display: block;
+}
+
+/* .wrap-touched.invalid input[type="text"]:not(:focus),
+.wrap-touched.invalid input[type="email"]:not(:focus),
+.wrap-touched.invalid textarea:not(:focus) {
+  border-color: hsla(var(--cs-red), 100%);
+} */
+
+.touched .invalid input[type="text"]:not(:focus),
+.touched .invalid input[type="email"]:not(:focus),
+.touched .invalid textarea:not(:focus) {
+  border-color: hsla(var(--cs-red), 100%);
+}
+
+
+/* Toast message styles */
+.toasts-box {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 2.4rem);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.toast-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsla(var(--cs-grey-900), 100%);
+  color: hsla(var(--cs-white), 100%);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  min-width: 29rem;
+  animation: slide-in .4s ease-in-out, slide-out .4s ease-in-out 2.5s forwards;
+}
+
+
+.toast-wrapper h2 {
+  font-size: 1.6rem;
+}
+
+.toast-helper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toast-wrapper p {
+  font-size: 1.4rem;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }
 
 /* Media queries */
@@ -420,6 +500,20 @@ footer a:hover, footer a:focus {
     grid-column: 1/3;
   }
 
+
+  .toast-wrapper {
+    gap: 1.5rem;
+    padding: 2.5rem 2.5rem;
+    min-width: 45rem;
+  }
+
+  .toast-wrapper h2 {
+    font-size: 1.8rem;
+  }
+
+  .toast-wrapper p {
+    font-size: 1.6rem;
+  }
 
 
 }

@@ -16,20 +16,20 @@
 
   <section id="component-wrap">
     <h1>Contact Us</h1>
-    <form action="" class="form-wrap">
+    <form class="form-wrap" id="component-form" novalidate>
       <div class="input-wrapper firstname-wrap">
         <label for="" class="obligatory">First Name</label>
-        <input type="text" class="input-basic">
+        <input type="text" class="input-basic" required>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper lastname-wrap">
         <label for="" class="obligatory">Last Name</label>
-        <input type="text" class="input-basic">
+        <input type="text" class="input-basic" required>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper">
         <label for="" class="obligatory">Email Address</label>
-        <input type="email" class="input-basic">
+        <input type="email" class="input-basic" required>
         <p class="error-msg">Please enter a valid email address</p>
       </div>
       <div class="input-wrapper radio-wrapper">
@@ -37,11 +37,11 @@
           <legend class="obligatory">Query Type</legend>
           <div class="radios-query-wrap">
             <div class="radio-helper">
-              <input type="radio" id="option-general" name="query-type" value="query-general" />
+              <input type="radio" id="option-general" name="query-type" value="query-general" required />
               <label for="option-general">General Enquiry</label>
             </div>
             <div class="radio-helper">
-              <input type="radio" id="option-support" name="query-type" value="query-support" />
+              <input type="radio" id="option-support" name="query-type" value="query-support" required />
               <label for="option-support">Support Request</label>
             </div>
             
@@ -52,13 +52,13 @@
       </div>
       <div class="input-wrapper message-wrapper">
         <label for="form-message" class="obligatory">Message</label>
-        <textarea name="message" id="form-message"></textarea>
+        <textarea name="message" id="form-message" required></textarea>
         <p class="error-msg">This field is required</p>
       </div>
       <div class="input-wrapper consent-wrapper">
         <div class="checkbox-helper">
           <label for="consent-check" class="obligatory">I consent to being contacted by the team</label>
-          <input type="checkbox" id="consent-check" name="consent">
+          <input type="checkbox" id="consent-check" name="consent" required>
         </div>
         <p class="error-msg">To submit this form, please consent to being contacted</p>
       </div>
@@ -66,15 +66,21 @@
     </form>
   </section>
 
-  </main>
-
-  <section class="toasts-wrapper">
-    <div class="img-wrap">
-      <img src="./assets/images/icon-success-check.svg" alt="Success checkmark">
-    </div>
-    <h2>Message Sent!</h2>
-    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  <section class="toasts-box" id="toast-box">
+    <template id="toast-template">
+      <div class="toast-wrapper">
+        <div class="toast-helper">
+          <div class="img-wrap">
+            <img src="./assets/images/icon-success-check.svg" alt="Success checkmark">
+          </div>
+          <h2>Message Sent!</h2>
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </template>
   </section>
+
+  </main>
   
   <footer class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#/">Sebastian</a>.</p>
