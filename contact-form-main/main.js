@@ -120,5 +120,5 @@ formFields.forEach(el => {
 
 formElement.addEventListener('focus', changeTouched.bind(this, formElement));
 
-// displayInitialToast()
+displayInitialToast()
 formElement.reset()
