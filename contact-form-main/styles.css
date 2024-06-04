@@ -441,6 +441,7 @@ footer a:hover, footer a:focus {
 
   main {
     padding: 2.5rem 1rem;
+    margin-bottom: 5rem;
   }
 
   #component-wrap {
