@@ -13,46 +13,82 @@
 </head>
 <body>
 
-  Mortgage Calculator
-  Clear All
+  <main>
+    <section id="component-wrapper">
+      <form id="calculator-form" novalidate>
+        <div class="form-head-helper">
+          <h1>Mortgage Calculator</h1>
+          <button type="reset">Clear All</button>
+        </div>
+        <div class="input-wrapper">
+          <label for="m-amount">Mortgage Amount</label>
+          <input id="m-amount" type="number" required>
+          <p class="error-msg">Invalid input</p>
+        </div>
+        <div class="input-helper">
+          <div class="input-wrapper">
+            <label for="m-term">Mortgage Term</label>
+            <input id="m-term" type="number" required>
+            <p class="error-msg">Invalid input</p>
+          </div>
+          <div class="input-wrapper">
+            <label for="i-rate">Interest Rate</label>
+            <input id="i-rate" type="number" required>
+            <p class="error-msg">Invalid input</p>
+          </div>
+        </div>
 
-  Mortgage Amount
-
-  Mortgage Term
-
-  Interest Rate
-
-  Mortgage Type
-  Repayment
-  Interest Only
-
-  Calculate Repayments
-
-  <!-- Empty results start -->
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what 
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
-
-  <!-- Completed results end -->
+        <div class="input-wrapper radio-wrapper">
+          <fieldset>
+            <legend>Mortgage Type</legend>
+            <div class="radios-wrapper">
+              <div class="radio-helper">
+                <input type="radio" id="option-repayment" name="mortgage-type" value="repayment" required>
+                <label for="option-repayment">Repayment</label>
+              </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#/">Sebastian</a>.
-  </div>
+              <div class="radio-helper">
+                <input type="radio" id="option-interest" name="mortgage-type" value="interest-only">
+                <label for="option-interest">Interest Only</label>
+              </div>
+            </div>
+          </fieldset>
+          <p class="error-msg">Invalid input</p>
+        </div>
+        <button type="submit" id="submit-btn">Calculate Repayments</button>
+      </form>
+      <div id="results-wrapper">
+        <!-- Empty results start -->
+        <div id="active-view">
+          <div class="img-wrap">
+            <img src="./assets/images/illustration-empty.svg" alt="A sketch-styled icon showing a receipt, calculator, pen and money" class="results-illustration">
+          </div>
+          <h2>Results shown here</h2>
+          <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
+        <!-- Empty results end -->
+        <!-- Completed results start -->
+        <div id="completed-view">
+          <h2>Your results</h2>
+          <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+          <div class="results-box">
+            <div class="monthly-helper">
+              <span class="result-desc">Your monthly repayments</span>
+              <span id="monthly-result"></span>
+            </div>
+            <div class="total-helper">
+              <span class="result-desc">Total you'll repay over the term</span>
+              <span id="total-result"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Completed results end -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="#/">Sebastian</a>.</p>
+  </footer>
 </body>
 </html>

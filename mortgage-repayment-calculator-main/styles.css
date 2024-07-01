@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 /* Global, reset & typography */
 
@@ -28,32 +28,31 @@ input {
   /* border: 1px solid lightgray; */
 }
 
-ul,
-ol {
-  list-style: none;
+fieldset {
+  border: none;
 }
 
 :root {
---main-font: "Plus Jakarta Sans", sans-serif;
+  --main-font: "Plus Jakarta Sans", sans-serif;
 
-/* ### Primary */
+  /* ### Primary */
 
-/* --cs-lime: hsl(61, 70%, 52%);
+  /* --cs-lime: hsl(61, 70%, 52%);
 --cs-red: hsl(4, 69%, 50%); */
 
---cs-lime: 61, 70%, 52%;
---cs-red: 4, 69%, 50%;
+  --cs-lime: 61, 70%, 52%;
+  --cs-red: 4, 69%, 50%;
 
-/* ### Neutral */
+  /* ### Neutral */
 
---cs-white: 0, 0%, 100%;
---cs-slate-100: 202, 86%, 94%;
---cs-slate-300: 203, 41%, 72%;
---cs-slate-500: 200, 26%, 54%;
---cs-slate-700: 200, 24%, 40%;
---cs-slate-900: 202, 55%, 16%;
+  --cs-white: 0, 0%, 100%;
+  --cs-slate-100: 202, 86%, 94%;
+  --cs-slate-300: 203, 41%, 72%;
+  --cs-slate-500: 200, 26%, 54%;
+  --cs-slate-700: 200, 24%, 40%;
+  --cs-slate-900: 202, 55%, 16%;
 
-/* --cs-white: hsl(0, 0%, 100%);
+  /* --cs-white: hsl(0, 0%, 100%);
 --cs-slate-100: hsl(202, 86%, 94%);
 --cs-slate-300: hsl(203, 41%, 72%);
 --cs-slate-500: hsl(200, 26%, 54%);
@@ -71,7 +70,7 @@ body {
   display: grid;
   min-height: 100svh;
   min-height: 100vh;
-  background-color: white;
+  background-color: hsla(var(--cs-slate-100), 100);
 }
 
 html,
@@ -93,3 +92,47 @@ body {
   white-space: nowrap; /* added line */
   border: 0;
 }
+
+/* Mobile styles */
+
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content;
+}
+
+#component-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#calculator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(0, 128, 0, 0.364);
+}
+
+#results-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 0, 128, 0.296);
+}
+
+footer {
+  display: grid;
+  place-content: center;
+  padding: 0.5rem;
+  background-color: rgba(255, 192, 203, 0.211);
+}
+
+/* Error styles */
+.error-msg {
+  display: none;
+  color: hsla(var(--cs-red), 100);
+}
+
+/* Media queries */
+
+/* Tablet styles */
+
+/* Desktop styles */
