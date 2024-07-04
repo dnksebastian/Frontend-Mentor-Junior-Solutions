@@ -22,18 +22,27 @@
         </div>
         <div class="input-wrapper">
           <label for="m-amount">Mortgage Amount</label>
-          <input id="m-amount" class="basic-input" type="number" required>
+          <div class="input-inner-helper inner-mortgage">
+            <input id="m-amount" class="basic-input" type="number" required>
+            <span class="helper-label">£</span>
+          </div>
           <p class="error-msg">Invalid input</p>
         </div>
         <div class="input-helper">
           <div class="input-wrapper">
             <label for="m-term">Mortgage Term</label>
-            <input id="m-term" class="basic-input" type="number" required>
+            <div class="input-inner-helper inner-term">
+              <input id="m-term" class="basic-input" type="number" required>
+              <span class="helper-label">years</span>
+            </div>
             <p class="error-msg">Invalid input</p>
           </div>
           <div class="input-wrapper">
             <label for="i-rate">Interest Rate</label>
-            <input id="i-rate" class="basic-input" type="number" required>
+            <div class="input-inner-helper inner-interest">
+              <input id="i-rate" class="basic-input" type="number" required>
+              <span class="helper-label">%</span>
+            </div>
             <p class="error-msg">Invalid input</p>
           </div>
         </div>
@@ -74,11 +83,11 @@
           <div class="results-box">
             <div class="monthly-helper">
               <span class="result-desc">Your monthly repayments</span>
-              <span id="monthly-result"></span>
+              <span id="monthly-result">£1,797.74</span>
             </div>
             <div class="total-helper">
               <span class="result-desc">Total you'll repay over the term</span>
-              <span id="total-result"></span>
+              <span id="total-result">£539,322.94</span>
             </div>
           </div>
         </div>
