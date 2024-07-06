@@ -18,12 +18,12 @@
       <form id="calculator-form" novalidate>
         <div class="form-head-helper">
           <h1>Mortgage Calculator</h1>
-          <button type="reset" class="btn btn-reset">Clear All</button>
+          <button type="reset" class="btn btn-reset" id="b-reset">Clear All</button>
         </div>
         <div class="input-wrapper">
           <label for="m-amount">Mortgage Amount</label>
           <div class="input-inner-helper inner-mortgage">
-            <input id="m-amount" class="basic-input" type="number" required>
+            <input id="m-amount" name="m-amount" class="basic-input" type="number" required min="1">
             <span class="helper-label">£</span>
           </div>
           <p class="error-msg">Invalid input</p>
@@ -32,7 +32,7 @@
           <div class="input-wrapper">
             <label for="m-term">Mortgage Term</label>
             <div class="input-inner-helper inner-term">
-              <input id="m-term" class="basic-input" type="number" required>
+              <input id="m-term" name="m-term" class="basic-input" type="number" required min="1">
               <span class="helper-label">years</span>
             </div>
             <p class="error-msg">Invalid input</p>
@@ -40,7 +40,7 @@
           <div class="input-wrapper">
             <label for="i-rate">Interest Rate</label>
             <div class="input-inner-helper inner-interest">
-              <input id="i-rate" class="basic-input" type="number" required>
+              <input id="i-rate" name="i-rate" class="basic-input" type="number" required step="0.01" min="0.01">
               <span class="helper-label">%</span>
             </div>
             <p class="error-msg">Invalid input</p>

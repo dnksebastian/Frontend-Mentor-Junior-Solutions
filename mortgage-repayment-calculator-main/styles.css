@@ -469,6 +469,19 @@ footer a:hover {
   color: hsla(var(--cs-red), 100);
 }
 
+.form-touched .invalid.wrap-touched:not(.wrap-focused) .error-msg {
+  display: block;
+}
+
+.form-touched .invalid.wrap-touched input[type="number"]:not(:focus) {
+  border: 1px solid hsla(var(--cs-red), 100%);
+}
+
+.form-touched .invalid.wrap-touched:not(.wrap-focused) .helper-label {
+  background-color: hsla(var(--cs-red), 100%);
+  color: hsla(var(--cs-white), 100%)
+}
+
 /* Media queries */
 /* Smallest screens adjustments */
 
