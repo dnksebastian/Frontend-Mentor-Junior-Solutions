@@ -473,7 +473,8 @@ footer a:hover {
   display: block;
 }
 
-.form-touched .invalid.wrap-touched input[type="number"]:not(:focus) {
+.form-touched .invalid.wrap-touched input[type="number"]:not(:focus),
+.form-touched .invalid.wrap-touched input[type="text"]:not(:focus) {
   border: 1px solid hsla(var(--cs-red), 100%);
 }
 

@@ -10,6 +10,16 @@ const completedViewEl = document.getElementById("completed-view");
 const monthlyResultEl = document.getElementById("monthly-result");
 const totalResultEl = document.getElementById("total-result");
 
+// AutoNumeric Config for Mortgage Input formatting
+const mValueFormattedEl = new AutoNumeric('#m-amount',{
+  digitGroupSeparator: ',',
+  decimalCharacter: '.',
+  allowDecimalPadding: false,
+  minimumValue: '0',
+  overrideMinMaxLimits: 'invalid',
+  showWarnings: false
+});
+
 // Functions
 
 const calculateMonthlyRepayments = (
@@ -118,6 +128,7 @@ const resetForm = (e) => {
       closestWrap.classList.remove("invalid");
     }
   });
+  mValueFormattedEl.clear(true)
   formElement.reset();
   activeViewEl.style.display = "flex";
   completedViewEl.style.display = "none";
@@ -137,7 +148,9 @@ const submitForm = (e) => {
   if (formIsValid) {
     const data = new FormData(e.target);
 
-    const mAmount = data.get("m-amount");
+    const mAmount = AutoNumeric.getNumber('#m-amount');
+
+    // const mAmount = data.get("m-amount");
     const mTerm = data.get("m-term");
     const mRate = data.get("i-rate");
     const mType = data.get("mortgage-type");

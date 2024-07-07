@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://unpkg.com/autonumeric"></script>
   <script src="./main.js" defer></script>
 </head>
 <body>
@@ -23,7 +24,7 @@
         <div class="input-wrapper">
           <label for="m-amount">Mortgage Amount</label>
           <div class="input-inner-helper inner-mortgage">
-            <input id="m-amount" name="m-amount" class="basic-input" type="number" required min="1">
+            <input id="m-amount" name="m-amount" class="basic-input" type="text" required>
             <span class="helper-label">£</span>
           </div>
           <p class="error-msg">Invalid input</p>
