@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html---css---js-mortgage-repayment-calculator-D5oz4Pvw91](https://www.frontendmentor.io/solutions/html---css---js-mortgage-repayment-calculator-D5oz4Pvw91)
 - Live Site URL: [https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/mortgage-repayment-calculator-main/](https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/mortgage-repayment-calculator-main/)
 
 ## My process
