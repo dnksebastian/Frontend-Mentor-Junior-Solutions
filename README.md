@@ -38,6 +38,11 @@
 | Newsletter Sign-up Component | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/newsletter-sign-up-with-success-message-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/newsletter-sign-up-with-success-message-main/" target="_blank">Repo</a>  |
 | Contact Form | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/contact-form-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/contact-form-main/" target="_blank">Repo</a>  |
 | Mortgage Repayment Calculator | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/mortgage-repayment-calculator-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/mortgage-repayment-calculator-main/" target="_blank">Repo</a>  |
-| 30 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
+| Product List With Cart | <a href="https://dnksebastian.github.io/Frontend-Mentor-Junior-Solutions/product-list-with-cart-main/" target="_blank">Live</a>  | <a href="https://github.com/dnksebastian/Frontend-Mentor-Junior-Solutions/tree/main/product-list-with-cart-main/" target="_blank">Repo</a>  |
+| 31 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
+| 32 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
+| 33 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
+| 34 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
+| 35 | <a href="#/" target="_blank">Live</a>  | <a href="#/" target="_blank">Repo</a>  |
 
 </div>

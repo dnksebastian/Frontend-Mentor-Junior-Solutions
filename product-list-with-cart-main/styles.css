@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+:root {
+  --main-font: "Red Hat Text", sans-serif;
+
+  /* Colors */
+  --cs-red: 14, 86%, 42%;
+  --cs-green: 159, 69%, 38%;
+
+  --cs-rose-50: 20, 50%, 98%;
+  --cs-rose-100: 13, 31%, 94%;
+  --cs-rose-300: 14, 25%, 72%;
+  --cs-rose-400: 7, 20%, 60%;
+  --cs-rose-500: 12, 20%, 44%;
+  --cs-rose-900: 14, 65%, 9%;
+
+    /* --cs-red: hsl(14, 86%, 42%);
+--cs-green: hsl(159, 69%, 38%);
+
+--cs-rose-50: hsl(20, 50%, 98%);
+--cs-rose-100: hsl(13, 31%, 94%);
+--cs-rose-300: hsl(14, 25%, 72%);
+--cs-rose-400: hsl(7, 20%, 60%);
+--cs-rose-500: hsl(12, 20%, 44%);
+--cs-rose-900: hsl(14, 65%, 9%); */
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  min-height: 100vh;
+  background-color: white;
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  min-width: 30rem;
+}
+
+/* Utility classes */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* Mobile styles */
