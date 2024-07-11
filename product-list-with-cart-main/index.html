@@ -13,55 +13,89 @@
 </head>
 <body>
 
-  Desserts
+  <main>
+    <form id="order-form" novalidate>
+      <section id="options-container">
+        <h1>Desserts</h1>
+        <div class="options-wrapper">
+          <div class="option-placeholder-wrap">
+            <div class="placeholder-img-wrap">
+              <img src="./assets/images/illustration-empty-cart.svg" alt="Chocolate cake" class="placeholder-img">
+            </div>
+            <p>Menu positions loading...</p>
+          </div>
+          <!-- Menu options... -->
+        </div>
+      </section>
+      <section id="cart-view">
+        <div class="cart-helper">
+          <span class="cart-label">Your Cart</span>
+          <span class="cart-label cart-quantity">(<!-- Quantity -->)</span>
+        </div>
+        <div class="cart-contents-wrap">
+          <div class="cart-contents-empty">
+            <div class="empty-img-wrap">
+              <img src="" alt="">
+            </div>
+            <p>Your added items will appear here</p>
+          </div>
+          <div class="cart-active">
+            <ul>
+              <!-- cart items... -->
+            </ul>
+            <div class="total-info-wrap">
+              <div class="total-helper">
+                <span class="total-desc"></span>
+                <span id="total-price"></span>
+              </div>
+              <div class="carbon-box">
+                <div class="carbon-img-wrap">
+                  <img src="./assets/images/icon-carbon-neutral.svg" alt="Green tree icon">
+                </div>
+              </div>
+            </div>
+            <button type="submit">Confirm Order</button>
+          </div>
+          <!-- Cart contents -->
+        </div>
+      </section>
+    </form>
+    <dialog id="order-confirmation">
+      <!-- Order summary -->
+    </dialog>
+  </main>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+  <template id="menu-option">
+    <div class="menu-option-wrapper">
+      <div class="option-helper">
+        <div class="illustration-wrap">
+          <img src="" alt="" class="menu-img">
+        </div>
+        <div class="controls-wrap">
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+        </div>
+      </div>
+      <div class="menu-desc">
+        <span class="category"></span>
+        <span class="option-name"></span>
+        <span class="price"></span>
+      </div>
+    </div>
+  </template>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+  <template id="cart-element">
+    <li class="cart-option">
+      <div class="cart-option-details">
+        <span class="cart-el-name"></span>
+        <div class="det-helper">
+          <span class="el-amount"></span>
+          <span class="el-base-price"></span>
+          <span class="el-total-price"></span>
+        </div>
+      </div>
+      <button class="btn-remove">Remove item from cart</button>
+    </li>
+  </template>
 
   <footer>
     <p class="attribution">

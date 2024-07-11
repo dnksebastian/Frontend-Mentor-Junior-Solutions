@@ -28,8 +28,8 @@ input {
 }
 
 button {
-  background-color: transparent;
-  border: none;
+  background-color: white;
+  border: 1px solid grey;
 }
 
 :root {
@@ -67,7 +67,7 @@ body {
   display: grid;
   min-height: 100svh;
   min-height: 100vh;
-  background-color: white;
+  background-color: hsla(var(--cs-rose-50), 100%);
 }
 
 html,
@@ -91,3 +91,8 @@ body {
 }
 
 /* Mobile styles */
+
+body {
+  grid-template-rows: 1fr max-content;
+  grid-template-columns: 1fr;
+}
