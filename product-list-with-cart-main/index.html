@@ -17,15 +17,15 @@
     <form id="order-form" novalidate>
       <section id="options-container">
         <h1>Desserts</h1>
-        <div class="options-wrapper">
-          <div class="option-placeholder-wrap">
+        <ul class="options-wrapper" id="menu-options-wrapper">
+          <li class="option-placeholder-wrap">
             <div class="placeholder-img-wrap">
               <img src="./assets/images/illustration-empty-cart.svg" alt="Chocolate cake" class="placeholder-img">
             </div>
             <p>Menu positions loading...</p>
-          </div>
+          </li>
           <!-- Menu options... -->
-        </div>
+        </ul>
       </section>
       <section id="cart-view">
         <div class="cart-helper">
@@ -66,10 +66,15 @@
   </main>
 
   <template id="menu-option">
-    <div class="menu-option-wrapper">
+    <li class="menu-option-wrapper">
       <div class="option-helper">
         <div class="illustration-wrap">
-          <img src="" alt="" class="menu-img">
+          <picture>
+            <source srcset="" media="(min-width: 1000px)" class="img-l"/>
+            <source srcset="" media="(min-width: 600px)" class="img-m"/>
+            <source srcset="" class="img-s"/>
+            <img src="" alt="" class="menu-img">
+          </picture>
         </div>
         <div class="controls-wrap">
 
@@ -80,7 +85,7 @@
         <span class="option-name"></span>
         <span class="price"></span>
       </div>
-    </div>
+    </li>
   </template>
 
   <template id="cart-element">
