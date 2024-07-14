@@ -40,7 +40,7 @@
             <p>Your added items will appear here</p>
           </div>
           <div class="cart-active">
-            <ul>
+            <ul id="active-cart-display">
               <!-- cart items... -->
             </ul>
             <div class="total-info-wrap">
@@ -66,22 +66,22 @@
   </main>
 
   <template id="menu-option">
-    <li class="menu-option-wrapper">
+    <li class="menu-option-wrapper" data-count="0">
       <div class="option-helper">
         <div class="illustration-wrap">
           <picture>
             <source srcset="" media="(min-width: 1000px)" class="img-l"/>
             <source srcset="" media="(min-width: 600px)" class="img-m"/>
             <source srcset="" class="img-s"/>
-            <img src="" alt="" class="menu-img">
+            <img src="" alt="" class="menu-img" data-thumbnail="">
           </picture>
         </div>
         <div class="controls-wrap">
-          <button class="btn-add">Add to Cart</button>
+          <button class="btn-add btn-addcart">Add to Cart</button>
           <div class="product-active-controls">
-            <button class="btn-s btn-minus">Remove one item</button>
+            <button class="btn-s btn-minus btn-removecart">Remove one item</button>
             <span class="current-product-amount"></span>
-            <button class="btn-s btn-plus">Add one item</button>
+            <button class="btn-s btn-plus btn-addcart">Add one item</button>
           </div>
         </div>
       </div>
