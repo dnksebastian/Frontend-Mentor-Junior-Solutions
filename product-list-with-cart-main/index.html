@@ -30,7 +30,7 @@
       <section id="cart-view">
         <div class="cart-helper">
           <span class="cart-label">Your Cart</span>
-          <span class="cart-label cart-quantity">(<!-- Quantity -->)</span>
+          <span class="cart-label" id="cart-q">(<!-- Quantity -->)</span>
         </div>
         <div class="cart-contents-wrap">
           <div class="cart-contents-empty">
@@ -45,25 +45,48 @@
             </ul>
             <div class="total-info-wrap">
               <div class="total-helper">
-                <span class="total-desc"></span>
-                <span id="total-price"></span>
+                <span class="total-desc">Order Total</span>
+                <span id="total-price">$46.50</span>
               </div>
               <div class="carbon-box">
                 <div class="carbon-img-wrap">
                   <img src="./assets/images/icon-carbon-neutral.svg" alt="Green tree icon">
                 </div>
+                <p>This is a <span>carbon-neutral</span> delivery</p>
               </div>
             </div>
-            <button type="submit">Confirm Order</button>
+            <button type="submit" id="btn-c-order" class="btn-hl">Confirm Order</button>
           </div>
           <!-- Cart contents -->
         </div>
       </section>
     </form>
-    <dialog id="order-confirmation">
-      <!-- Order summary -->
-    </dialog>
   </main>
+
+  <!-- Order summary dialog-->
+  <dialog id="order-confirmation">
+    <div id="dialog-display-wrapper">
+     <div class="dialog-desc">
+       <div class="d-img-wrapper">
+         <img src="./assets/images/icon-order-confirmed.svg" alt="Green checkmark in circle">
+       </div>
+       <h2>Order Confirmed</h2>
+       <p>We hope you enjoy your food!</p>
+     </div>
+     <div id="confirmed-items-wrap">
+       <ul id="confirm-items-list">
+         <!-- Ordered items -->
+       </ul>
+       <div class="total-info-helper">
+         <span class="confirm-label">Order Total</span>
+         <span id="confirm-total-price"></span>
+       </div>
+     </div>
+     <form method="dialog">
+       <button autofocus id="btn-dialog" class="btn-hl">Start New Order</button>
+     </form>
+    </div>
+ </dialog>
 
   <template id="menu-option">
     <li class="menu-option-wrapper" data-count="0">
@@ -103,7 +126,23 @@
           <span class="el-total-price"></span>
         </div>
       </div>
-      <button class="btn-remove">Remove item from cart</button>
+      <button class="btn-cart btn-remove">Remove item from cart</button>
+    </li>
+  </template>
+
+  <template id="dialog-element">
+    <li class="dialog-option">
+      <div class="thumbnail-wrap">
+        <img src="" alt="" class="thumbnail">
+      </div>
+      <div class="d-op-details">
+        <span class="d-op-name"></span>
+        <div class="d-helper">
+          <span class="d-count"></span>
+          <span class="d-bprice"></span>
+        </div>
+        <span class="d-op-price"></span>
+      </div>
     </li>
   </template>
 

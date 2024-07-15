@@ -2,14 +2,19 @@
 const formElement = document.getElementById('order-form');
 const menuOptionsList = document.getElementById('menu-options-wrapper');
 const cartItemsDisplayList = document.getElementById('active-cart-display');
+const cartQuantityEl = document.getElementById('cart-q');
+
+const confirmDialogEl = document.getElementById('order-confirmation');
+
 
 // Template Elements
 const singleMenuElementTemplate = document.getElementById('menu-option');
 const singleCartElementTemplate = document.getElementById('cart-element');
+const singleDialogElementTemplate = document.getElementById('dialog-element');
 
 
 // Cart Data
-const cartItems = [];
+let cartItems = [];
 let cartUnique = [];
 
 // Functions
@@ -42,9 +47,6 @@ const populateMenu = async () => {
     }
 };
 
-populateMenu();
-
-
 const makeSingleMenuElement = (elementData) => {
     const menuElClone = singleMenuElementTemplate.content.cloneNode(true);
 
@@ -66,23 +68,25 @@ const makeSingleMenuElement = (elementData) => {
 
     elCategory.textContent = elementData.category;
     elName.textContent = elementData.name;
-    elPrice.textContent = `$${elementData.price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    elPrice.textContent = `$${parseFloat(+elementData.price).toFixed(2)}`;
 
     return menuElClone;
 };
 
 
-const delegateChangeItem = (e) => {
+const delegateFormEvents = (e) => {
     e.preventDefault();
 
     let target = e.target;
 
     if (target.tagName == 'BUTTON' && target.classList.contains('btn-addcart')) {
-        addItemToCart(e)
-    } else if (
-        target.tagName == 'BUTTON' && target.classList.contains('btn-removecart')
-    ) {
-        removeItemFromCart(e)
+        addItemToCart(e);
+    } else if (target.tagName == 'BUTTON' && target.classList.contains('btn-removecart')) {
+        removeSingleItemFromCart(e);
+    } else if (target.tagName == "BUTTON" && target.classList.contains('btn-cart')) {
+        removeAllItemsOfType(e);
+    } else if (target.tagName == "BUTTON" && target.id == 'btn-c-order') {
+        submitForm(e);
     }
      else {
         return
@@ -113,13 +117,11 @@ const addItemToCart = (e) => {
         new Set(cartItems.map(JSON.stringify))
       ).map(JSON.parse);
 
-    console.log(cartItems);
-
     populateCart()
     updateStatus()
 };
 
-const removeItemFromCart = (e) => {
+const removeSingleItemFromCart = (e) => {
     e.preventDefault()
     const target = e.target;
 
@@ -144,7 +146,29 @@ const removeItemFromCart = (e) => {
 
     populateCart()
     updateStatus()
-    console.log('item removed');
+};
+
+
+const removeAllItemsOfType = (e) => {
+    e.preventDefault();
+    const target = e.target;
+
+    const closestElWrapper = target.closest('.cart-option');
+
+    if (closestElWrapper) {
+        const itemName = closestElWrapper.querySelector('.cart-el-name').textContent;
+
+        const cartItemsFiltered = cartItems.filter(el => el.name !== itemName);
+
+        cartItems = [...cartItemsFiltered];
+
+        cartUnique = Array.from(
+            new Set(cartItems.map(JSON.stringify))
+          ).map(JSON.parse);
+    
+        populateCart()
+        updateStatus()
+    }
 };
 
 
@@ -169,7 +193,7 @@ const makeSingleCartElement = (elData) => {
     elName.textContent = elData.name;
     elAmount.textContent = `${elementCount}x`;
     elBasePrice.textContent = `@ $${elData.price}`;
-    elTotalPrice.textContent = `$${totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    elTotalPrice.textContent = `$${parseFloat(+totalPrice).toFixed(2)}`;
 
     return cartElClone
 };
@@ -193,20 +217,59 @@ const updateStatus = () => {
     } else {
         formElement.classList.remove('hasItems');
     }
+
+    const menuOptions = Array.from(document.querySelectorAll('.menu-option-wrapper'));
+
+    menuOptions.forEach(el => {
+        const el_name = el.querySelector('.option-name').textContent;
+
+        const current_count = el.querySelector('.current-product-amount');
+
+        if (el_name) {
+            el.dataset.count = countItemsOfType(el_name)
+        }
+
+        if (current_count) {
+            current_count.textContent = el.dataset.count
+        }
+
+        if (el.dataset.count > 0) {
+            el.classList.add('el-in-cart')
+        } else {
+            el.classList.remove('el-in-cart')
+        }
+
+    });
+
+
+    cartQuantityEl.textContent = `(${cartItems.length})`
+
+};
+
+
+const handleConfirmDialog = (e) => {
+    e.preventDefault()
+
+
+    confirmDialogEl.showModal();
+
 };
 
 
 const submitForm = (e) => {
     e.preventDefault();
 
-    console.log('form submitted');
+    handleConfirmDialog(e);
 
-    formElement.reset();
+    formElement.reset()
 };
+
+
+// Initial function calls
+populateMenu()
+updateStatus()
 
 
 // Event listeners
 
-formElement.addEventListener('submit', submitForm);
-
-menuOptionsList.addEventListener('click', delegateChangeItem);
+formElement.addEventListener('click', delegateFormEvents);
