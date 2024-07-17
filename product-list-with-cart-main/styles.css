@@ -50,21 +50,12 @@ button {
   --cs-rose-400: 7, 20%, 60%;
   --cs-rose-500: 12, 20%, 44%;
   --cs-rose-900: 14, 65%, 9%;
-
-  /* --cs-red: hsl(14, 86%, 42%);
---cs-green: hsl(159, 69%, 38%);
-
---cs-rose-50: hsl(20, 50%, 98%);
---cs-rose-100: hsl(13, 31%, 94%);
---cs-rose-300: hsl(14, 25%, 72%);
---cs-rose-400: hsl(7, 20%, 60%);
---cs-rose-500: hsl(12, 20%, 44%);
---cs-rose-900: hsl(14, 65%, 9%); */
 }
 
 html {
   font-family: var(--main-font);
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -144,6 +135,7 @@ main {
 
 #order-form {
   display: grid;
+  justify-items: center;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   padding: 1rem 1.5rem;
@@ -157,6 +149,7 @@ main {
 
 #menu-options-wrapper {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   gap: 2.2rem;
   padding: 1rem 0rem;
@@ -166,6 +159,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  max-width: 35rem;
 }
 
 .option-placeholder-wrap {
@@ -308,6 +302,8 @@ main {
   background-color: white;
   border-radius: 1rem;
   padding: 2rem 2.5rem 2.5rem 2.5rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .cart-helper {
@@ -430,11 +426,13 @@ main {
 .carbon-box {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 0.5rem;
   border-radius: 1rem;
   color: hsla(var(--cs-rose-900), 100%);
   background-color: hsla(var(--cs-rose-100), 100%);
-  padding: 1.5rem 0.5rem 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   font-size: 1.45rem;
 }
 
@@ -574,6 +572,12 @@ dialog::backdrop {
   font-weight: 900;
 }
 
+#dialog-form {
+  min-width: 100%;
+  align-self: center;
+}
+
+
 footer {
   display: flex;
   align-items: center;
@@ -593,15 +597,81 @@ footer a {
 /* Medium screens */
 
 @media screen and (min-width: 600px) {
-  #menu-options-wrapper {
-    grid-template-columns: 1fr 1fr;
+
+  #order-form {
+    align-items: start;
+    justify-items: stretch;
+    gap: 2.5rem;
   }
+
+  #menu-options-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1rem;
+    row-gap: 3rem;
+  }
+
+  .menu-option-wrapper {
+    max-width: 25rem;
+  }
+
+  #cart-view {
+    justify-self: center;
+    max-width: 60rem;
+  }
+
+  dialog {
+    min-width: 59rem;
+    margin: auto;
+    border-radius: 1rem;
+  }
+
+  #dialog-display-wrapper {
+    padding: 4rem;
+    gap: 2rem;
+  }
+
+  .d-op-name {
+    max-width: unset;
+  }
+
 }
+
 
 /* Large screens */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 945px) {
+
+  main {
+    padding: 1rem;
+  }
+
+  #order-form {
+    grid-template-columns: 1fr max-content;
+    padding: 1.5rem 1rem;
+  }
+
   #menu-options-wrapper {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(19rem, 1fr));
+  }
+
+  #cart-view {
+    margin-top: 1rem;
+    min-width: 28rem;
+  }
+
+}
+
+
+@media screen and (min-width: 1350px) {
+  main {
+    padding: 7rem 7rem 4rem 7rem;
+  }
+
+  #order-form {
+    padding: 1.5rem 4rem;
+  }
+
+  #cart-view {
+    min-width: 38.5rem;
   }
 }

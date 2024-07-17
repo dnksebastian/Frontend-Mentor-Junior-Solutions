@@ -296,6 +296,7 @@ const clearAll = () => {
   cartItems = [];
   updateStatus();
   formElement.reset();
+  window.scroll({top: 0, behavior: 'smooth'});
 };
 
 const submitForm = (e) => {
