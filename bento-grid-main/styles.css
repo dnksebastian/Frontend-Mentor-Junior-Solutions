@@ -1,0 +1,80 @@
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input {
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+}
+
+button {
+  background-color: white;
+  border: 1px solid grey;
+}
+
+:root {
+  --main-font: "DM Sans", sans-serif;
+
+  /* ## Colors */
+
+  /* --cs-purple-100: hsl(254, 88%, 90%);
+  --cs-purple-500: hsl(256, 67%, 59%);
+
+  --cs-yellow-100: hsl(31, 66%, 93%);
+  --cs-yellow-500: hsl(39, 100%, 71%);
+
+  --cs-white: hsl(0, 0%, 100%);
+  --cs-black: hsl(0, 0%, 7%); */
+
+  --cs-purple-100: 254, 88%, 90%;
+  --cs-purple-500: 256, 67%, 59%;
+
+  --cs-yellow-100: 31, 66%, 93%;
+  --cs-yellow-500: 39, 100%, 71%;
+
+  --cs-white: 0, 0%, 100%;
+  --cs-black: 0, 0%, 7%;
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+html,
+body {
+  min-width: 30rem;
+}
+
+/* Mobile styles */
