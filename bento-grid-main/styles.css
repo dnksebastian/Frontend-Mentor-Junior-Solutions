@@ -18,22 +18,6 @@ img {
   max-width: 100%;
 }
 
-ul,
-ol {
-  list-style: none;
-}
-
-button,
-input {
-  cursor: pointer;
-  font: inherit;
-  transition: 0.3s;
-}
-
-button {
-  background-color: white;
-  border: 1px solid grey;
-}
 
 :root {
   --main-font: "DM Sans", sans-serif;
@@ -57,6 +41,7 @@ button {
 
   --cs-white: 0, 0%, 100%;
   --cs-black: 0, 0%, 7%;
+  --cs-grey: 0, 0%, 96%;
 }
 
 html {
@@ -78,3 +63,96 @@ body {
 }
 
 /* Mobile styles */
+
+body {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2rem;
+  background-color: hsla(var(--cs-grey), 100%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2.7rem 1rem;
+}
+
+.bento-container {
+  background-color: rgba(0, 128, 0, 0.244);
+  padding: .5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "title"
+  "accounts"
+  "schedule"
+  "media"
+  "grow"
+  "audience"
+  "bcontent"
+  "ai";
+}
+
+.bento-element {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 255, 0.393);
+}
+
+#bento-title {
+  grid-area: title;
+}
+
+#bento-accounts {
+  grid-area: accounts;
+}
+
+#bento-schedule {
+  grid-area: schedule;
+}
+
+#bento-media {
+  grid-area: media;
+}
+
+#bento-grow {
+  grid-area: grow;
+}
+
+#bento-audience {
+  grid-area: audience;
+}
+
+#bento-content {
+  grid-area: bcontent;
+}
+
+#bento-ai {
+  grid-area: ai;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: hsla(var(--cs-purple-500), 100%);
+  background: linear-gradient(90deg, hsla(var(--cs-purple-500), 100%) 0%, hsla(var(--cs-purple-100), 100%) 100%);
+}
+
+footer a {
+  color: hsla(var(--cs-yellow-500), 100%);
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: hsla(var(--cs-yellow-100), 100%);
+}
+
+
+/* Desktop styles */
