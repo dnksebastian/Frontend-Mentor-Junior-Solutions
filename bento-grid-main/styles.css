@@ -134,8 +134,8 @@ main {
 }
 
 .bento-container {
-  /* background-color: rgba(0, 128, 0, 0.244); */
   padding: .5rem;
+  max-width: 35rem;
   display: grid;
   align-items: start;
   gap: 3rem;
@@ -200,6 +200,10 @@ main {
   justify-content: center;
 }
 
+.img-media {
+  max-width: 32rem;
+}
+
 #bento-grow {
   grid-area: grow;
   padding: 2.2rem 4rem;
@@ -262,4 +266,143 @@ footer a:hover {
 }
 
 
+/* Medium screen styles */
+@media screen and (min-width: 875px) {
+  .bento-container {
+    max-width: 70rem;
+    grid-template-columns: unset;
+    grid-auto-columns: auto;
+    grid-template-areas:
+    "title title"
+    "accounts schedule"
+    "media grow"
+    "audience bcontent"
+    "ai ai"
+    ;
+  }
+}
+
+
 /* Desktop styles */
+@media screen and (min-width: 1075px) {
+  .txt-xl {
+    font-size: 6.1rem;
+    line-height: 1;
+  }
+
+  .txt-l {
+    font-size: 3.7rem;
+    letter-spacing: -.05rem;
+  }
+
+  .txt-m {
+    font-size: 2.9rem;
+    line-height: 1;
+  }
+
+  .txt-s {
+    max-width: 26rem;
+  }
+
+
+  main {
+    padding: 7.8rem 2rem;
+  }
+
+  .bento-container {
+    background-color: rgba(0, 128, 128, 0.503);
+    padding: .5rem 1.5rem;
+    grid-template-columns: 25.5rem 1fr 1fr 25.5rem;
+    gap: 3.2rem;
+    max-width: 115rem;
+    align-items: stretch;
+    /* grid-template-areas:
+    "bcontent title title media"
+    "bcontent accounts schedule media"
+    "ai audience grow grow"
+    ; */
+    grid-template-areas:
+    "bcontent title title media"
+    "bcontent title title media"
+    "bcontent accounts schedule media"
+    "ai accounts schedule media"
+    "ai audience grow grow"
+    "ai audience grow grow"
+    ;
+  }
+
+  #bento-title {
+    padding: 4.5rem 2.5rem;
+  }
+  
+  #bento-accounts {
+    overflow: hidden;
+    padding: 2rem 0rem 0rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .img-accounts {
+    min-width: 32rem;
+  }
+
+  #bento-accounts p {
+    max-width: 20rem;
+  }
+  
+  #bento-schedule {
+    padding: 2rem;
+    max-height: 20rem;
+  }
+  
+  #bento-media {
+    padding: 5rem 0rem 5rem 3rem;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.8rem;
+  }
+
+  .img-media {
+    margin-bottom: -1rem;
+    min-width: 36rem;
+  }
+
+  #bento-media .txt-s {
+    transform: translate(-1rem, 0rem);
+  }
+  
+  #bento-grow {
+    flex-direction: row;
+    padding: 2rem 2.5rem;
+    text-align: left;
+    gap: 1rem;
+  }
+  
+  .img-grow {
+    min-width: 23rem;
+    max-width: 25rem;
+  }
+  
+  #bento-audience {
+    padding: 2rem 2rem;
+    justify-content: space-between;
+  }
+  
+  #bento-content {
+    /* max-width: 26rem; */
+    /* padding: 7.8rem 1rem 4rem 3rem; */
+    justify-content: center;
+  }
+
+  #bento-ai {
+    justify-content: flex-start;
+    padding: 2rem 1rem 2rem 2.5rem;
+  }
+
+  .img-ai {
+    max-width: 26rem;
+  }
+
+
+}
