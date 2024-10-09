@@ -280,6 +280,11 @@ footer a:hover {
     "ai ai"
     ;
   }
+
+  #bento-ai {
+    align-items: center;
+  }
+
 }
 
 
@@ -310,21 +315,21 @@ footer a:hover {
   }
 
   .bento-container {
-    background-color: rgba(0, 128, 128, 0.503);
     padding: .5rem 1.5rem;
-    grid-template-columns: 25.5rem 1fr 1fr 25.5rem;
-    gap: 3.2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-columns: unset;
+    grid-auto-rows: unset;
+    /* gap: 3.2rem; */
+    gap: 4rem;
+    row-gap: 3rem;
     max-width: 115rem;
-    align-items: stretch;
-    /* grid-template-areas:
-    "bcontent title title media"
-    "bcontent accounts schedule media"
-    "ai audience grow grow"
-    ; */
     grid-template-areas:
     "bcontent title title media"
     "bcontent title title media"
     "bcontent accounts schedule media"
+    "bcontent accounts schedule media"
+    "ai accounts schedule media"
     "ai accounts schedule media"
     "ai audience grow grow"
     "ai audience grow grow"
@@ -332,12 +337,12 @@ footer a:hover {
   }
 
   #bento-title {
-    padding: 4.5rem 2.5rem;
+    padding: 6rem 2.5rem;
   }
   
   #bento-accounts {
     overflow: hidden;
-    padding: 2rem 0rem 0rem 2.5rem;
+    padding: 2rem 0rem 2rem 1rem;
     gap: 2rem;
   }
 
@@ -350,12 +355,13 @@ footer a:hover {
   }
   
   #bento-schedule {
-    padding: 2rem;
-    max-height: 20rem;
+    align-self: flex-start;
+    padding: 2rem 0rem 1rem 2rem;
+    max-height: 24rem;
   }
   
   #bento-media {
-    padding: 5rem 0rem 5rem 3rem;
+    padding: 5rem 1rem 5rem 3rem;
     overflow: hidden;
     text-align: left;
     align-items: flex-start;
@@ -374,9 +380,9 @@ footer a:hover {
   
   #bento-grow {
     flex-direction: row;
-    padding: 2rem 2.5rem;
+    padding: 2rem 0rem 2rem 2rem;
     text-align: left;
-    gap: 1rem;
+    gap: 2rem;
   }
   
   .img-grow {
@@ -385,24 +391,27 @@ footer a:hover {
   }
   
   #bento-audience {
-    padding: 2rem 2rem;
-    justify-content: space-between;
+    padding: 1rem 1rem;
+    justify-content: space-evenly;
+    align-self: stretch;
   }
   
   #bento-content {
-    /* max-width: 26rem; */
-    /* padding: 7.8rem 1rem 4rem 3rem; */
-    justify-content: center;
+    max-width: 26rem;
+    padding: 8rem 2rem 2rem 3.2rem;
+    justify-content: flex-start;
+    align-self: stretch;
   }
 
   #bento-ai {
-    justify-content: flex-start;
-    padding: 2rem 1rem 2rem 2.5rem;
+    max-width: 26rem;
+    padding: 3rem 2.2rem 3rem 2.5rem;
+    justify-content: space-between;
+    align-self: stretch;
   }
 
   .img-ai {
     max-width: 26rem;
   }
-
 
 }
