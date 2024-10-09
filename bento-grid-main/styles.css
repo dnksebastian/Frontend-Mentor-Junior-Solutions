@@ -18,7 +18,6 @@ img {
   max-width: 100%;
 }
 
-
 :root {
   --main-font: "DM Sans", sans-serif;
 
@@ -59,13 +58,13 @@ body {
 .txt-xl {
   font-size: 4.7rem;
   font-weight: 500;
-  line-height: .9;
+  line-height: 0.9;
 }
 
 .txt-l {
   font-size: 3rem;
   font-weight: 500;
-  line-height: .95;
+  line-height: 0.95;
 }
 
 .txt-m {
@@ -117,8 +116,6 @@ body {
   background-color: hsla(var(--cs-white), 100%);
 }
 
-
-
 /* Mobile styles */
 
 body {
@@ -134,7 +131,7 @@ main {
 }
 
 .bento-container {
-  padding: .5rem;
+  padding: 0.5rem;
   max-width: 35rem;
   display: grid;
   align-items: start;
@@ -142,14 +139,14 @@ main {
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
   grid-template-areas:
-  "title"
-  "accounts"
-  "schedule"
-  "media"
-  "grow"
-  "audience"
-  "bcontent"
-  "ai";
+    "title"
+    "accounts"
+    "schedule"
+    "media"
+    "grow"
+    "audience"
+    "bcontent"
+    "ai";
 }
 
 .bento-element {
@@ -246,14 +243,17 @@ main {
   max-width: 22rem;
 }
 
-
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   background: hsla(var(--cs-purple-500), 100%);
-  background: linear-gradient(90deg, hsla(var(--cs-purple-500), 100%) 0%, hsla(var(--cs-purple-100), 100%) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(var(--cs-purple-500), 100%) 0%,
+    hsla(var(--cs-purple-100), 100%) 100%
+  );
 }
 
 footer a {
@@ -265,7 +265,6 @@ footer a:hover {
   color: hsla(var(--cs-yellow-100), 100%);
 }
 
-
 /* Medium screen styles */
 @media screen and (min-width: 875px) {
   .bento-container {
@@ -273,20 +272,17 @@ footer a:hover {
     grid-template-columns: unset;
     grid-auto-columns: auto;
     grid-template-areas:
-    "title title"
-    "accounts schedule"
-    "media grow"
-    "audience bcontent"
-    "ai ai"
-    ;
+      "title title"
+      "accounts schedule"
+      "media grow"
+      "audience bcontent"
+      "ai ai";
   }
 
   #bento-ai {
     align-items: center;
   }
-
 }
-
 
 /* Desktop styles */
 @media screen and (min-width: 1075px) {
@@ -297,7 +293,7 @@ footer a:hover {
 
   .txt-l {
     font-size: 3.7rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -0.05rem;
   }
 
   .txt-m {
@@ -309,13 +305,12 @@ footer a:hover {
     max-width: 26rem;
   }
 
-
   main {
-    padding: 7.8rem 2rem;
+    padding: 7.8rem 2rem 4rem 2rem;
   }
 
   .bento-container {
-    padding: .5rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-auto-columns: unset;
@@ -325,21 +320,20 @@ footer a:hover {
     row-gap: 3rem;
     max-width: 115rem;
     grid-template-areas:
-    "bcontent title title media"
-    "bcontent title title media"
-    "bcontent accounts schedule media"
-    "bcontent accounts schedule media"
-    "ai accounts schedule media"
-    "ai accounts schedule media"
-    "ai audience grow grow"
-    "ai audience grow grow"
-    ;
+      "bcontent title title media"
+      "bcontent title title media"
+      "bcontent accounts schedule media"
+      "bcontent accounts schedule media"
+      "ai accounts schedule media"
+      "ai accounts schedule media"
+      "ai audience grow grow"
+      "ai audience grow grow";
   }
 
   #bento-title {
     padding: 6rem 2.5rem;
   }
-  
+
   #bento-accounts {
     overflow: hidden;
     padding: 2rem 0rem 2rem 1rem;
@@ -353,13 +347,13 @@ footer a:hover {
   #bento-accounts p {
     max-width: 20rem;
   }
-  
+
   #bento-schedule {
     align-self: flex-start;
     padding: 2rem 0rem 1rem 2rem;
     max-height: 24rem;
   }
-  
+
   #bento-media {
     padding: 5rem 1rem 5rem 3rem;
     overflow: hidden;
@@ -377,25 +371,25 @@ footer a:hover {
   #bento-media .txt-s {
     transform: translate(-1rem, 0rem);
   }
-  
+
   #bento-grow {
     flex-direction: row;
     padding: 2rem 0rem 2rem 2rem;
     text-align: left;
     gap: 2rem;
   }
-  
+
   .img-grow {
     min-width: 23rem;
     max-width: 25rem;
   }
-  
+
   #bento-audience {
     padding: 1rem 1rem;
     justify-content: space-evenly;
     align-self: stretch;
   }
-  
+
   #bento-content {
     max-width: 26rem;
     padding: 8rem 2rem 2rem 3.2rem;
@@ -413,5 +407,4 @@ footer a:hover {
   .img-ai {
     max-width: 26rem;
   }
-
 }
